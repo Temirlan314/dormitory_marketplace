@@ -1,0 +1,3718 @@
+[
+  {
+    "path": "/ar",
+    "component": "~/pages/dashboard/sales/index.vue",
+    "_name": "_7a6dbb4c"
+  },
+  {
+    "path": "/es",
+    "component": "~/pages/dashboard/sales/index.vue",
+    "_name": "_7a6dbb4c"
+  },
+  {
+    "path": "/fr",
+    "component": "~/pages/dashboard/sales/index.vue",
+    "_name": "_7a6dbb4c"
+  },
+  {
+    "name": "widgets___en",
+    "path": "/widgets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/widgets/index.vue",
+    "chunkName": "pages/widgets/index",
+    "_name": "_400261c4"
+  },
+  {
+    "name": "account-forgot-password___en",
+    "path": "/account/forgot-password",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/forgot-password.vue",
+    "chunkName": "pages/account/forgot-password",
+    "_name": "_77d6b362"
+  },
+  {
+    "name": "account-login___en",
+    "path": "/account/login",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/login.vue",
+    "chunkName": "pages/account/login",
+    "_name": "_75a04833"
+  },
+  {
+    "name": "account-register___en",
+    "path": "/account/register",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/register.vue",
+    "chunkName": "pages/account/register",
+    "_name": "_0582ffc9"
+  },
+  {
+    "name": "apps-calendar___en",
+    "path": "/apps/calendar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/calendar/index.vue",
+    "chunkName": "pages/apps/calendar/index",
+    "_name": "_3af4b4aa"
+  },
+  {
+    "name": "apps-chat___en",
+    "path": "/apps/chat",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/chat/index.vue",
+    "chunkName": "pages/apps/chat/index",
+    "_name": "_469704c4"
+  },
+  {
+    "name": "apps-companies___en",
+    "path": "/apps/companies",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/companies/index.vue",
+    "chunkName": "pages/apps/companies/index",
+    "_name": "_44542585"
+  },
+  {
+    "name": "apps-file-manager___en",
+    "path": "/apps/file-manager",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/file-manager.vue",
+    "chunkName": "pages/apps/file-manager",
+    "_name": "_cfae4df6"
+  },
+  {
+    "name": "apps-tickets___en",
+    "path": "/apps/tickets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/tickets/index.vue",
+    "chunkName": "pages/apps/tickets/index",
+    "_name": "_3130b95e"
+  },
+  {
+    "name": "widgets___ar",
+    "path": "/ar/widgets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/widgets/index.vue",
+    "chunkName": "pages/widgets/index",
+    "_name": "_400261c4"
+  },
+  {
+    "name": "auth-confirm-mail___en",
+    "path": "/auth/confirm-mail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/confirm-mail.vue",
+    "chunkName": "pages/auth/confirm-mail",
+    "_name": "_373740d7"
+  },
+  {
+    "name": "auth-confirm-mail-2___en",
+    "path": "/auth/confirm-mail-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/confirm-mail-2.vue",
+    "chunkName": "pages/auth/confirm-mail-2",
+    "_name": "_40d7583c"
+  },
+  {
+    "name": "auth-lock-screen___en",
+    "path": "/auth/lock-screen",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/lock-screen.vue",
+    "chunkName": "pages/auth/lock-screen",
+    "_name": "_a6d6782a"
+  },
+  {
+    "name": "auth-lock-screen-2___en",
+    "path": "/auth/lock-screen-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/lock-screen-2.vue",
+    "chunkName": "pages/auth/lock-screen-2",
+    "_name": "_563f3360"
+  },
+  {
+    "name": "auth-login___en",
+    "path": "/auth/login",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_87557374"
+  },
+  {
+    "name": "auth-login-2___en",
+    "path": "/auth/login-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/login-2.vue",
+    "chunkName": "pages/auth/login-2",
+    "_name": "_12ec842a"
+  },
+  {
+    "name": "auth-logout___en",
+    "path": "/auth/logout",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/logout.vue",
+    "chunkName": "pages/auth/logout",
+    "_name": "_1b648afd"
+  },
+  {
+    "name": "auth-logout-2___en",
+    "path": "/auth/logout-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/logout-2.vue",
+    "chunkName": "pages/auth/logout-2",
+    "_name": "_624a9e3c"
+  },
+  {
+    "name": "auth-recoverpwd___en",
+    "path": "/auth/recoverpwd",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/recoverpwd.vue",
+    "chunkName": "pages/auth/recoverpwd",
+    "_name": "_25232868"
+  },
+  {
+    "name": "auth-recoverpwd-2___en",
+    "path": "/auth/recoverpwd-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/recoverpwd-2.vue",
+    "chunkName": "pages/auth/recoverpwd-2",
+    "_name": "_45ef99f1"
+  },
+  {
+    "name": "auth-register___en",
+    "path": "/auth/register",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_45cde4d6"
+  },
+  {
+    "name": "auth-register-2___en",
+    "path": "/auth/register-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/register-2.vue",
+    "chunkName": "pages/auth/register-2",
+    "_name": "_0454f87b"
+  },
+  {
+    "name": "auth-signin-signup___en",
+    "path": "/auth/signin-signup",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/signin-signup.vue",
+    "chunkName": "pages/auth/signin-signup",
+    "_name": "_8ef5f300"
+  },
+  {
+    "name": "auth-signin-signup-2___en",
+    "path": "/auth/signin-signup-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/signin-signup-2.vue",
+    "chunkName": "pages/auth/signin-signup-2",
+    "_name": "_b46b50b6"
+  },
+  {
+    "name": "charts-apex___en",
+    "path": "/charts/apex",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/apex/index.vue",
+    "chunkName": "pages/charts/apex/index",
+    "_name": "_2565d4cb"
+  },
+  {
+    "name": "charts-c3___en",
+    "path": "/charts/c3",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/c3/index.vue",
+    "chunkName": "pages/charts/c3/index",
+    "_name": "_c406ec4e"
+  },
+  {
+    "name": "charts-chartist___en",
+    "path": "/charts/chartist",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartist/index.vue",
+    "chunkName": "pages/charts/chartist/index",
+    "_name": "_47ebac15"
+  },
+  {
+    "name": "charts-chartjs___en",
+    "path": "/charts/chartjs",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/index.vue",
+    "chunkName": "pages/charts/chartjs/index",
+    "_name": "_48f20398"
+  },
+  {
+    "name": "charts-knob___en",
+    "path": "/charts/knob",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/knob.vue",
+    "chunkName": "pages/charts/knob",
+    "_name": "_0dfd5f9c"
+  },
+  {
+    "name": "contacts-list___en",
+    "path": "/contacts/list",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/contacts/list.vue",
+    "chunkName": "pages/contacts/list",
+    "_name": "_69204af4"
+  },
+  {
+    "name": "contacts-profile___en",
+    "path": "/contacts/profile",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/contacts/profile.vue",
+    "chunkName": "pages/contacts/profile",
+    "_name": "_3752e771"
+  },
+  {
+    "name": "dashboard-analytics___en",
+    "path": "/dashboard/analytics",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/index.vue",
+    "chunkName": "pages/dashboard/analytics/index",
+    "_name": "_1183513a"
+  },
+  {
+    "name": "dashboard-crm___en",
+    "path": "/dashboard/crm",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/crm/index.vue",
+    "chunkName": "pages/dashboard/crm/index",
+    "_name": "_c1c21f5c"
+  },
+  {
+    "name": "dashboard-sales___en",
+    "path": "/dashboard/sales",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/sales/index.vue",
+    "chunkName": "pages/dashboard/sales/index",
+    "_name": "_1d0d43c0"
+  },
+  {
+    "name": "ecommerce-cart___en",
+    "path": "/ecommerce/cart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/cart.vue",
+    "chunkName": "pages/ecommerce/cart",
+    "_name": "_1bdfe9da"
+  },
+  {
+    "name": "ecommerce-checkout___en",
+    "path": "/ecommerce/checkout",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/checkout.vue",
+    "chunkName": "pages/ecommerce/checkout",
+    "_name": "_275f34b9"
+  },
+  {
+    "name": "ecommerce-customers___en",
+    "path": "/ecommerce/customers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/customers/index.vue",
+    "chunkName": "pages/ecommerce/customers/index",
+    "_name": "_27e40e16"
+  },
+  {
+    "name": "ecommerce-data-products___en",
+    "path": "/ecommerce/data-products",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/data-products.js",
+    "chunkName": "pages/ecommerce/data-products",
+    "_name": "_c2151a6a"
+  },
+  {
+    "name": "ecommerce-order-detail___en",
+    "path": "/ecommerce/order-detail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/order-detail.vue",
+    "chunkName": "pages/ecommerce/order-detail",
+    "_name": "_3e1604a3"
+  },
+  {
+    "name": "ecommerce-orders___en",
+    "path": "/ecommerce/orders",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/orders/index.vue",
+    "chunkName": "pages/ecommerce/orders/index",
+    "_name": "_4884dbca"
+  },
+  {
+    "name": "ecommerce-product-create___en",
+    "path": "/ecommerce/product-create",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/product-create.vue",
+    "chunkName": "pages/ecommerce/product-create",
+    "_name": "_3b97b0cd"
+  },
+  {
+    "name": "ecommerce-products___en",
+    "path": "/ecommerce/products",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products/index.vue",
+    "chunkName": "pages/ecommerce/products/index",
+    "_name": "_49de031a"
+  },
+  {
+    "name": "ecommerce-products-grid___en",
+    "path": "/ecommerce/products-grid",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products-grid.vue",
+    "chunkName": "pages/ecommerce/products-grid",
+    "_name": "_0f53962c"
+  },
+  {
+    "name": "ecommerce-sellers___en",
+    "path": "/ecommerce/sellers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/sellers.vue",
+    "chunkName": "pages/ecommerce/sellers",
+    "_name": "_5394cb9e"
+  },
+  {
+    "name": "email-data-inbox___en",
+    "path": "/email/data-inbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/data-inbox.js",
+    "chunkName": "pages/email/data-inbox",
+    "_name": "_6e7d3655"
+  },
+  {
+    "name": "email-inbox___en",
+    "path": "/email/inbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/inbox.vue",
+    "chunkName": "pages/email/inbox",
+    "_name": "_9e9ac702"
+  },
+  {
+    "name": "email-sidepanel___en",
+    "path": "/email/sidepanel",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/sidepanel.vue",
+    "chunkName": "pages/email/sidepanel",
+    "_name": "_87749df4"
+  },
+  {
+    "name": "email-templates___en",
+    "path": "/email/templates",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/templates.vue",
+    "chunkName": "pages/email/templates",
+    "_name": "_33ea9332"
+  },
+  {
+    "name": "email-toolbar___en",
+    "path": "/email/toolbar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/toolbar.vue",
+    "chunkName": "pages/email/toolbar",
+    "_name": "_79532298"
+  },
+  {
+    "name": "widgets___es",
+    "path": "/es/widgets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/widgets/index.vue",
+    "chunkName": "pages/widgets/index",
+    "_name": "_400261c4"
+  },
+  {
+    "name": "extended-rangeslider___en",
+    "path": "/extended/rangeslider",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/rangeslider.vue",
+    "chunkName": "pages/extended/rangeslider",
+    "_name": "_c08396e8"
+  },
+  {
+    "name": "extended-scrollspy___en",
+    "path": "/extended/scrollspy",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/scrollspy.vue",
+    "chunkName": "pages/extended/scrollspy",
+    "_name": "_1d8f78fd"
+  },
+  {
+    "name": "extended-sweet-alert___en",
+    "path": "/extended/sweet-alert",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/sweet-alert.vue",
+    "chunkName": "pages/extended/sweet-alert",
+    "_name": "_01e023ed"
+  },
+  {
+    "name": "extended-tour___en",
+    "path": "/extended/tour",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/tour.vue",
+    "chunkName": "pages/extended/tour",
+    "_name": "_572985cc"
+  },
+  {
+    "name": "extras-404___en",
+    "path": "/extras/404",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/404.vue",
+    "chunkName": "pages/extras/404",
+    "_name": "_8445eee0"
+  },
+  {
+    "name": "extras-404-alt___en",
+    "path": "/extras/404-alt",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/404-alt.vue",
+    "chunkName": "pages/extras/404-alt",
+    "_name": "_32d0acec"
+  },
+  {
+    "name": "extras-500___en",
+    "path": "/extras/500",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/500.vue",
+    "chunkName": "pages/extras/500",
+    "_name": "_1aea3466"
+  },
+  {
+    "name": "extras-coming-soon___en",
+    "path": "/extras/coming-soon",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/coming-soon.vue",
+    "chunkName": "pages/extras/coming-soon",
+    "_name": "_0794a6c2"
+  },
+  {
+    "name": "extras-faqs___en",
+    "path": "/extras/faqs",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/faqs.vue",
+    "chunkName": "pages/extras/faqs",
+    "_name": "_58d93916"
+  },
+  {
+    "name": "extras-invoice___en",
+    "path": "/extras/invoice",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/invoice.vue",
+    "chunkName": "pages/extras/invoice",
+    "_name": "_6eafbff6"
+  },
+  {
+    "name": "extras-lightbox___en",
+    "path": "/extras/lightbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/lightbox.vue",
+    "chunkName": "pages/extras/lightbox",
+    "_name": "_7395e84d"
+  },
+  {
+    "name": "extras-maintenance___en",
+    "path": "/extras/maintenance",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/maintenance.vue",
+    "chunkName": "pages/extras/maintenance",
+    "_name": "_33880ceb"
+  },
+  {
+    "name": "extras-pricing___en",
+    "path": "/extras/pricing",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/pricing.vue",
+    "chunkName": "pages/extras/pricing",
+    "_name": "_58e8881e"
+  },
+  {
+    "name": "extras-search-results___en",
+    "path": "/extras/search-results",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/search-results.vue",
+    "chunkName": "pages/extras/search-results",
+    "_name": "_9dd343ae"
+  },
+  {
+    "name": "extras-sitemap___en",
+    "path": "/extras/sitemap",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/sitemap.vue",
+    "chunkName": "pages/extras/sitemap",
+    "_name": "_6d9d858d"
+  },
+  {
+    "name": "extras-starter___en",
+    "path": "/extras/starter",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/starter.vue",
+    "chunkName": "pages/extras/starter",
+    "_name": "_a948c732"
+  },
+  {
+    "name": "extras-timeline___en",
+    "path": "/extras/timeline",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/timeline.vue",
+    "chunkName": "pages/extras/timeline",
+    "_name": "_42dfe4ce"
+  },
+  {
+    "name": "forms-advanced___en",
+    "path": "/forms/advanced",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/advanced.vue",
+    "chunkName": "pages/forms/advanced",
+    "_name": "_289d1e06"
+  },
+  {
+    "name": "forms-elements___en",
+    "path": "/forms/elements",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/elements.vue",
+    "chunkName": "pages/forms/elements",
+    "_name": "_6244045b"
+  },
+  {
+    "name": "forms-file-uploads___en",
+    "path": "/forms/file-uploads",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/file-uploads.vue",
+    "chunkName": "pages/forms/file-uploads",
+    "_name": "_47c150b6"
+  },
+  {
+    "name": "forms-mask___en",
+    "path": "/forms/mask",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/mask.vue",
+    "chunkName": "pages/forms/mask",
+    "_name": "_0ac36460"
+  },
+  {
+    "name": "forms-quill___en",
+    "path": "/forms/quill",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/quill.vue",
+    "chunkName": "pages/forms/quill",
+    "_name": "_8857a35e"
+  },
+  {
+    "name": "forms-validation___en",
+    "path": "/forms/validation",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/validation.vue",
+    "chunkName": "pages/forms/validation",
+    "_name": "_654f17dd"
+  },
+  {
+    "name": "forms-wizard___en",
+    "path": "/forms/wizard",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/wizard.vue",
+    "chunkName": "pages/forms/wizard",
+    "_name": "_3259d1cf"
+  },
+  {
+    "name": "widgets___fr",
+    "path": "/fr/widgets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/widgets/index.vue",
+    "chunkName": "pages/widgets/index",
+    "_name": "_400261c4"
+  },
+  {
+    "name": "icons-boxicons___en",
+    "path": "/icons/boxicons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/boxicons.vue",
+    "chunkName": "pages/icons/boxicons",
+    "_name": "_700ab288"
+  },
+  {
+    "name": "icons-data-fontawesome___en",
+    "path": "/icons/data-fontawesome",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-fontawesome.js",
+    "chunkName": "pages/icons/data-fontawesome",
+    "_name": "_46985336"
+  },
+  {
+    "name": "icons-data-material___en",
+    "path": "/icons/data-material",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-material.js",
+    "chunkName": "pages/icons/data-material",
+    "_name": "_4dfda6e4"
+  },
+  {
+    "name": "icons-data-remix___en",
+    "path": "/icons/data-remix",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-remix.js",
+    "chunkName": "pages/icons/data-remix",
+    "_name": "_1ada89b0"
+  },
+  {
+    "name": "icons-feather___en",
+    "path": "/icons/feather",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/feather.vue",
+    "chunkName": "pages/icons/feather",
+    "_name": "_714ddb4c"
+  },
+  {
+    "name": "icons-font-awesome___en",
+    "path": "/icons/font-awesome",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/font-awesome.vue",
+    "chunkName": "pages/icons/font-awesome",
+    "_name": "_58ceb3be"
+  },
+  {
+    "name": "icons-mdi___en",
+    "path": "/icons/mdi",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/mdi.vue",
+    "chunkName": "pages/icons/mdi",
+    "_name": "_4e447769"
+  },
+  {
+    "name": "icons-remix___en",
+    "path": "/icons/remix",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/remix.vue",
+    "chunkName": "pages/icons/remix",
+    "_name": "_547ea9c0"
+  },
+  {
+    "name": "icons-weather___en",
+    "path": "/icons/weather",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/weather.vue",
+    "chunkName": "pages/icons/weather",
+    "_name": "_aaee1daa"
+  },
+  {
+    "name": "maps-google___en",
+    "path": "/maps/google",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/maps/google.vue",
+    "chunkName": "pages/maps/google",
+    "_name": "_09291fdd"
+  },
+  {
+    "name": "tables-advanced___en",
+    "path": "/tables/advanced",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/advanced/index.vue",
+    "chunkName": "pages/tables/advanced/index",
+    "_name": "_9afcee8a"
+  },
+  {
+    "name": "tables-basic___en",
+    "path": "/tables/basic",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/basic.vue",
+    "chunkName": "pages/tables/basic",
+    "_name": "_743f2e08"
+  },
+  {
+    "name": "task-detail___en",
+    "path": "/task/detail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/detail.vue",
+    "chunkName": "pages/task/detail",
+    "_name": "_29e0de47"
+  },
+  {
+    "name": "task-kanban___en",
+    "path": "/task/kanban",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/kanban/index.vue",
+    "chunkName": "pages/task/kanban/index",
+    "_name": "_07f57a20"
+  },
+  {
+    "name": "task-list___en",
+    "path": "/task/list",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/list.vue",
+    "chunkName": "pages/task/list",
+    "_name": "_cb6430d8"
+  },
+  {
+    "name": "ui-avatars___en",
+    "path": "/ui/avatars",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/avatars.vue",
+    "chunkName": "pages/ui/avatars",
+    "_name": "_49726d43"
+  },
+  {
+    "name": "ui-buttons___en",
+    "path": "/ui/buttons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/buttons.vue",
+    "chunkName": "pages/ui/buttons",
+    "_name": "_6e3471ec"
+  },
+  {
+    "name": "ui-cards___en",
+    "path": "/ui/cards",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/cards.vue",
+    "chunkName": "pages/ui/cards",
+    "_name": "_07bbd62c"
+  },
+  {
+    "name": "ui-carousel___en",
+    "path": "/ui/carousel",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/carousel.vue",
+    "chunkName": "pages/ui/carousel",
+    "_name": "_4ee914a7"
+  },
+  {
+    "name": "ui-dropdowns___en",
+    "path": "/ui/dropdowns",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/dropdowns.vue",
+    "chunkName": "pages/ui/dropdowns",
+    "_name": "_7c59454b"
+  },
+  {
+    "name": "ui-general___en",
+    "path": "/ui/general",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/general.vue",
+    "chunkName": "pages/ui/general",
+    "_name": "_651b04f1"
+  },
+  {
+    "name": "ui-grid___en",
+    "path": "/ui/grid",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/grid.vue",
+    "chunkName": "pages/ui/grid",
+    "_name": "_e118e9e6"
+  },
+  {
+    "name": "ui-images___en",
+    "path": "/ui/images",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/images.vue",
+    "chunkName": "pages/ui/images",
+    "_name": "_4133497f"
+  },
+  {
+    "name": "ui-list-group___en",
+    "path": "/ui/list-group",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/list-group.vue",
+    "chunkName": "pages/ui/list-group",
+    "_name": "_43fc7817"
+  },
+  {
+    "name": "ui-modals___en",
+    "path": "/ui/modals",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/modals.vue",
+    "chunkName": "pages/ui/modals",
+    "_name": "_4111fb6d"
+  },
+  {
+    "name": "ui-notifications___en",
+    "path": "/ui/notifications",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/notifications.vue",
+    "chunkName": "pages/ui/notifications",
+    "_name": "_3b80f831"
+  },
+  {
+    "name": "ui-portlets___en",
+    "path": "/ui/portlets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/portlets.vue",
+    "chunkName": "pages/ui/portlets",
+    "_name": "_4b3ff080"
+  },
+  {
+    "name": "ui-progress___en",
+    "path": "/ui/progress",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/progress.vue",
+    "chunkName": "pages/ui/progress",
+    "_name": "_132a46f4"
+  },
+  {
+    "name": "ui-ribbons___en",
+    "path": "/ui/ribbons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/ribbons.vue",
+    "chunkName": "pages/ui/ribbons",
+    "_name": "_2dcaa034"
+  },
+  {
+    "name": "ui-spinners___en",
+    "path": "/ui/spinners",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/spinners.vue",
+    "chunkName": "pages/ui/spinners",
+    "_name": "_993ab07e"
+  },
+  {
+    "name": "ui-tabs-accordions___en",
+    "path": "/ui/tabs-accordions",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/tabs-accordions.vue",
+    "chunkName": "pages/ui/tabs-accordions",
+    "_name": "_749cd3e3"
+  },
+  {
+    "name": "ui-tooltips-popovers___en",
+    "path": "/ui/tooltips-popovers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/tooltips-popovers.vue",
+    "chunkName": "pages/ui/tooltips-popovers",
+    "_name": "_2878a7d8"
+  },
+  {
+    "name": "ui-typography___en",
+    "path": "/ui/typography",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/typography.vue",
+    "chunkName": "pages/ui/typography",
+    "_name": "_2c653936"
+  },
+  {
+    "name": "ui-video___en",
+    "path": "/ui/video",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/video.vue",
+    "chunkName": "pages/ui/video",
+    "_name": "_64beb744"
+  },
+  {
+    "name": "widgets-data___en",
+    "path": "/widgets/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/widgets/data.js",
+    "chunkName": "pages/widgets/data",
+    "_name": "_ef3c087e"
+  },
+  {
+    "name": "apps-calendar-data-calendar___en",
+    "path": "/apps/calendar/data-calendar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/calendar/data-calendar.js",
+    "chunkName": "pages/apps/calendar/data-calendar",
+    "_name": "_7b1f73d4"
+  },
+  {
+    "name": "apps-chat-data___en",
+    "path": "/apps/chat/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/chat/data.js",
+    "chunkName": "pages/apps/chat/data",
+    "_name": "_2eb762e7"
+  },
+  {
+    "name": "apps-companies-data___en",
+    "path": "/apps/companies/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/companies/data.js",
+    "chunkName": "pages/apps/companies/data",
+    "_name": "_79d08030"
+  },
+  {
+    "name": "apps-tickets-data___en",
+    "path": "/apps/tickets/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/tickets/data.js",
+    "chunkName": "pages/apps/tickets/data",
+    "_name": "_1f6f7e98"
+  },
+  {
+    "name": "account-forgot-password___ar",
+    "path": "/ar/account/forgot-password",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/forgot-password.vue",
+    "chunkName": "pages/account/forgot-password",
+    "_name": "_77d6b362"
+  },
+  {
+    "name": "account-login___ar",
+    "path": "/ar/account/login",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/login.vue",
+    "chunkName": "pages/account/login",
+    "_name": "_75a04833"
+  },
+  {
+    "name": "account-register___ar",
+    "path": "/ar/account/register",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/register.vue",
+    "chunkName": "pages/account/register",
+    "_name": "_0582ffc9"
+  },
+  {
+    "name": "apps-calendar___ar",
+    "path": "/ar/apps/calendar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/calendar/index.vue",
+    "chunkName": "pages/apps/calendar/index",
+    "_name": "_3af4b4aa"
+  },
+  {
+    "name": "apps-chat___ar",
+    "path": "/ar/apps/chat",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/chat/index.vue",
+    "chunkName": "pages/apps/chat/index",
+    "_name": "_469704c4"
+  },
+  {
+    "name": "apps-companies___ar",
+    "path": "/ar/apps/companies",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/companies/index.vue",
+    "chunkName": "pages/apps/companies/index",
+    "_name": "_44542585"
+  },
+  {
+    "name": "apps-file-manager___ar",
+    "path": "/ar/apps/file-manager",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/file-manager.vue",
+    "chunkName": "pages/apps/file-manager",
+    "_name": "_cfae4df6"
+  },
+  {
+    "name": "apps-tickets___ar",
+    "path": "/ar/apps/tickets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/tickets/index.vue",
+    "chunkName": "pages/apps/tickets/index",
+    "_name": "_3130b95e"
+  },
+  {
+    "name": "auth-confirm-mail___ar",
+    "path": "/ar/auth/confirm-mail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/confirm-mail.vue",
+    "chunkName": "pages/auth/confirm-mail",
+    "_name": "_373740d7"
+  },
+  {
+    "name": "auth-confirm-mail-2___ar",
+    "path": "/ar/auth/confirm-mail-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/confirm-mail-2.vue",
+    "chunkName": "pages/auth/confirm-mail-2",
+    "_name": "_40d7583c"
+  },
+  {
+    "name": "auth-lock-screen___ar",
+    "path": "/ar/auth/lock-screen",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/lock-screen.vue",
+    "chunkName": "pages/auth/lock-screen",
+    "_name": "_a6d6782a"
+  },
+  {
+    "name": "auth-lock-screen-2___ar",
+    "path": "/ar/auth/lock-screen-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/lock-screen-2.vue",
+    "chunkName": "pages/auth/lock-screen-2",
+    "_name": "_563f3360"
+  },
+  {
+    "name": "auth-login___ar",
+    "path": "/ar/auth/login",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_87557374"
+  },
+  {
+    "name": "auth-login-2___ar",
+    "path": "/ar/auth/login-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/login-2.vue",
+    "chunkName": "pages/auth/login-2",
+    "_name": "_12ec842a"
+  },
+  {
+    "name": "auth-logout___ar",
+    "path": "/ar/auth/logout",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/logout.vue",
+    "chunkName": "pages/auth/logout",
+    "_name": "_1b648afd"
+  },
+  {
+    "name": "auth-logout-2___ar",
+    "path": "/ar/auth/logout-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/logout-2.vue",
+    "chunkName": "pages/auth/logout-2",
+    "_name": "_624a9e3c"
+  },
+  {
+    "name": "auth-recoverpwd___ar",
+    "path": "/ar/auth/recoverpwd",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/recoverpwd.vue",
+    "chunkName": "pages/auth/recoverpwd",
+    "_name": "_25232868"
+  },
+  {
+    "name": "auth-recoverpwd-2___ar",
+    "path": "/ar/auth/recoverpwd-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/recoverpwd-2.vue",
+    "chunkName": "pages/auth/recoverpwd-2",
+    "_name": "_45ef99f1"
+  },
+  {
+    "name": "auth-register___ar",
+    "path": "/ar/auth/register",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_45cde4d6"
+  },
+  {
+    "name": "auth-register-2___ar",
+    "path": "/ar/auth/register-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/register-2.vue",
+    "chunkName": "pages/auth/register-2",
+    "_name": "_0454f87b"
+  },
+  {
+    "name": "auth-signin-signup___ar",
+    "path": "/ar/auth/signin-signup",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/signin-signup.vue",
+    "chunkName": "pages/auth/signin-signup",
+    "_name": "_8ef5f300"
+  },
+  {
+    "name": "auth-signin-signup-2___ar",
+    "path": "/ar/auth/signin-signup-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/signin-signup-2.vue",
+    "chunkName": "pages/auth/signin-signup-2",
+    "_name": "_b46b50b6"
+  },
+  {
+    "name": "charts-apex___ar",
+    "path": "/ar/charts/apex",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/apex/index.vue",
+    "chunkName": "pages/charts/apex/index",
+    "_name": "_2565d4cb"
+  },
+  {
+    "name": "charts-c3___ar",
+    "path": "/ar/charts/c3",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/c3/index.vue",
+    "chunkName": "pages/charts/c3/index",
+    "_name": "_c406ec4e"
+  },
+  {
+    "name": "charts-chartist___ar",
+    "path": "/ar/charts/chartist",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartist/index.vue",
+    "chunkName": "pages/charts/chartist/index",
+    "_name": "_47ebac15"
+  },
+  {
+    "name": "charts-chartjs___ar",
+    "path": "/ar/charts/chartjs",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/index.vue",
+    "chunkName": "pages/charts/chartjs/index",
+    "_name": "_48f20398"
+  },
+  {
+    "name": "charts-knob___ar",
+    "path": "/ar/charts/knob",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/knob.vue",
+    "chunkName": "pages/charts/knob",
+    "_name": "_0dfd5f9c"
+  },
+  {
+    "name": "contacts-list___ar",
+    "path": "/ar/contacts/list",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/contacts/list.vue",
+    "chunkName": "pages/contacts/list",
+    "_name": "_69204af4"
+  },
+  {
+    "name": "contacts-profile___ar",
+    "path": "/ar/contacts/profile",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/contacts/profile.vue",
+    "chunkName": "pages/contacts/profile",
+    "_name": "_3752e771"
+  },
+  {
+    "name": "dashboard-analytics___ar",
+    "path": "/ar/dashboard/analytics",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/index.vue",
+    "chunkName": "pages/dashboard/analytics/index",
+    "_name": "_1183513a"
+  },
+  {
+    "name": "dashboard-crm___ar",
+    "path": "/ar/dashboard/crm",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/crm/index.vue",
+    "chunkName": "pages/dashboard/crm/index",
+    "_name": "_c1c21f5c"
+  },
+  {
+    "name": "dashboard-sales___ar",
+    "path": "/ar/dashboard/sales",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/sales/index.vue",
+    "chunkName": "pages/dashboard/sales/index",
+    "_name": "_1d0d43c0"
+  },
+  {
+    "name": "ecommerce-cart___ar",
+    "path": "/ar/ecommerce/cart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/cart.vue",
+    "chunkName": "pages/ecommerce/cart",
+    "_name": "_1bdfe9da"
+  },
+  {
+    "name": "ecommerce-checkout___ar",
+    "path": "/ar/ecommerce/checkout",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/checkout.vue",
+    "chunkName": "pages/ecommerce/checkout",
+    "_name": "_275f34b9"
+  },
+  {
+    "name": "ecommerce-customers___ar",
+    "path": "/ar/ecommerce/customers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/customers/index.vue",
+    "chunkName": "pages/ecommerce/customers/index",
+    "_name": "_27e40e16"
+  },
+  {
+    "name": "ecommerce-data-products___ar",
+    "path": "/ar/ecommerce/data-products",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/data-products.js",
+    "chunkName": "pages/ecommerce/data-products",
+    "_name": "_c2151a6a"
+  },
+  {
+    "name": "ecommerce-order-detail___ar",
+    "path": "/ar/ecommerce/order-detail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/order-detail.vue",
+    "chunkName": "pages/ecommerce/order-detail",
+    "_name": "_3e1604a3"
+  },
+  {
+    "name": "ecommerce-orders___ar",
+    "path": "/ar/ecommerce/orders",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/orders/index.vue",
+    "chunkName": "pages/ecommerce/orders/index",
+    "_name": "_4884dbca"
+  },
+  {
+    "name": "ecommerce-product-create___ar",
+    "path": "/ar/ecommerce/product-create",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/product-create.vue",
+    "chunkName": "pages/ecommerce/product-create",
+    "_name": "_3b97b0cd"
+  },
+  {
+    "name": "ecommerce-products___ar",
+    "path": "/ar/ecommerce/products",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products/index.vue",
+    "chunkName": "pages/ecommerce/products/index",
+    "_name": "_49de031a"
+  },
+  {
+    "name": "ecommerce-products-grid___ar",
+    "path": "/ar/ecommerce/products-grid",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products-grid.vue",
+    "chunkName": "pages/ecommerce/products-grid",
+    "_name": "_0f53962c"
+  },
+  {
+    "name": "ecommerce-sellers___ar",
+    "path": "/ar/ecommerce/sellers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/sellers.vue",
+    "chunkName": "pages/ecommerce/sellers",
+    "_name": "_5394cb9e"
+  },
+  {
+    "name": "email-data-inbox___ar",
+    "path": "/ar/email/data-inbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/data-inbox.js",
+    "chunkName": "pages/email/data-inbox",
+    "_name": "_6e7d3655"
+  },
+  {
+    "name": "email-inbox___ar",
+    "path": "/ar/email/inbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/inbox.vue",
+    "chunkName": "pages/email/inbox",
+    "_name": "_9e9ac702"
+  },
+  {
+    "name": "email-sidepanel___ar",
+    "path": "/ar/email/sidepanel",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/sidepanel.vue",
+    "chunkName": "pages/email/sidepanel",
+    "_name": "_87749df4"
+  },
+  {
+    "name": "email-templates___ar",
+    "path": "/ar/email/templates",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/templates.vue",
+    "chunkName": "pages/email/templates",
+    "_name": "_33ea9332"
+  },
+  {
+    "name": "email-toolbar___ar",
+    "path": "/ar/email/toolbar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/toolbar.vue",
+    "chunkName": "pages/email/toolbar",
+    "_name": "_79532298"
+  },
+  {
+    "name": "extended-rangeslider___ar",
+    "path": "/ar/extended/rangeslider",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/rangeslider.vue",
+    "chunkName": "pages/extended/rangeslider",
+    "_name": "_c08396e8"
+  },
+  {
+    "name": "extended-scrollspy___ar",
+    "path": "/ar/extended/scrollspy",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/scrollspy.vue",
+    "chunkName": "pages/extended/scrollspy",
+    "_name": "_1d8f78fd"
+  },
+  {
+    "name": "extended-sweet-alert___ar",
+    "path": "/ar/extended/sweet-alert",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/sweet-alert.vue",
+    "chunkName": "pages/extended/sweet-alert",
+    "_name": "_01e023ed"
+  },
+  {
+    "name": "extended-tour___ar",
+    "path": "/ar/extended/tour",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/tour.vue",
+    "chunkName": "pages/extended/tour",
+    "_name": "_572985cc"
+  },
+  {
+    "name": "extras-404___ar",
+    "path": "/ar/extras/404",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/404.vue",
+    "chunkName": "pages/extras/404",
+    "_name": "_8445eee0"
+  },
+  {
+    "name": "extras-404-alt___ar",
+    "path": "/ar/extras/404-alt",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/404-alt.vue",
+    "chunkName": "pages/extras/404-alt",
+    "_name": "_32d0acec"
+  },
+  {
+    "name": "extras-500___ar",
+    "path": "/ar/extras/500",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/500.vue",
+    "chunkName": "pages/extras/500",
+    "_name": "_1aea3466"
+  },
+  {
+    "name": "extras-coming-soon___ar",
+    "path": "/ar/extras/coming-soon",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/coming-soon.vue",
+    "chunkName": "pages/extras/coming-soon",
+    "_name": "_0794a6c2"
+  },
+  {
+    "name": "extras-faqs___ar",
+    "path": "/ar/extras/faqs",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/faqs.vue",
+    "chunkName": "pages/extras/faqs",
+    "_name": "_58d93916"
+  },
+  {
+    "name": "extras-invoice___ar",
+    "path": "/ar/extras/invoice",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/invoice.vue",
+    "chunkName": "pages/extras/invoice",
+    "_name": "_6eafbff6"
+  },
+  {
+    "name": "extras-lightbox___ar",
+    "path": "/ar/extras/lightbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/lightbox.vue",
+    "chunkName": "pages/extras/lightbox",
+    "_name": "_7395e84d"
+  },
+  {
+    "name": "extras-maintenance___ar",
+    "path": "/ar/extras/maintenance",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/maintenance.vue",
+    "chunkName": "pages/extras/maintenance",
+    "_name": "_33880ceb"
+  },
+  {
+    "name": "extras-pricing___ar",
+    "path": "/ar/extras/pricing",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/pricing.vue",
+    "chunkName": "pages/extras/pricing",
+    "_name": "_58e8881e"
+  },
+  {
+    "name": "extras-search-results___ar",
+    "path": "/ar/extras/search-results",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/search-results.vue",
+    "chunkName": "pages/extras/search-results",
+    "_name": "_9dd343ae"
+  },
+  {
+    "name": "extras-sitemap___ar",
+    "path": "/ar/extras/sitemap",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/sitemap.vue",
+    "chunkName": "pages/extras/sitemap",
+    "_name": "_6d9d858d"
+  },
+  {
+    "name": "extras-starter___ar",
+    "path": "/ar/extras/starter",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/starter.vue",
+    "chunkName": "pages/extras/starter",
+    "_name": "_a948c732"
+  },
+  {
+    "name": "extras-timeline___ar",
+    "path": "/ar/extras/timeline",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/timeline.vue",
+    "chunkName": "pages/extras/timeline",
+    "_name": "_42dfe4ce"
+  },
+  {
+    "name": "forms-advanced___ar",
+    "path": "/ar/forms/advanced",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/advanced.vue",
+    "chunkName": "pages/forms/advanced",
+    "_name": "_289d1e06"
+  },
+  {
+    "name": "forms-elements___ar",
+    "path": "/ar/forms/elements",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/elements.vue",
+    "chunkName": "pages/forms/elements",
+    "_name": "_6244045b"
+  },
+  {
+    "name": "forms-file-uploads___ar",
+    "path": "/ar/forms/file-uploads",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/file-uploads.vue",
+    "chunkName": "pages/forms/file-uploads",
+    "_name": "_47c150b6"
+  },
+  {
+    "name": "forms-mask___ar",
+    "path": "/ar/forms/mask",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/mask.vue",
+    "chunkName": "pages/forms/mask",
+    "_name": "_0ac36460"
+  },
+  {
+    "name": "forms-quill___ar",
+    "path": "/ar/forms/quill",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/quill.vue",
+    "chunkName": "pages/forms/quill",
+    "_name": "_8857a35e"
+  },
+  {
+    "name": "forms-validation___ar",
+    "path": "/ar/forms/validation",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/validation.vue",
+    "chunkName": "pages/forms/validation",
+    "_name": "_654f17dd"
+  },
+  {
+    "name": "forms-wizard___ar",
+    "path": "/ar/forms/wizard",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/wizard.vue",
+    "chunkName": "pages/forms/wizard",
+    "_name": "_3259d1cf"
+  },
+  {
+    "name": "icons-boxicons___ar",
+    "path": "/ar/icons/boxicons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/boxicons.vue",
+    "chunkName": "pages/icons/boxicons",
+    "_name": "_700ab288"
+  },
+  {
+    "name": "icons-data-fontawesome___ar",
+    "path": "/ar/icons/data-fontawesome",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-fontawesome.js",
+    "chunkName": "pages/icons/data-fontawesome",
+    "_name": "_46985336"
+  },
+  {
+    "name": "icons-data-material___ar",
+    "path": "/ar/icons/data-material",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-material.js",
+    "chunkName": "pages/icons/data-material",
+    "_name": "_4dfda6e4"
+  },
+  {
+    "name": "icons-data-remix___ar",
+    "path": "/ar/icons/data-remix",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-remix.js",
+    "chunkName": "pages/icons/data-remix",
+    "_name": "_1ada89b0"
+  },
+  {
+    "name": "icons-feather___ar",
+    "path": "/ar/icons/feather",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/feather.vue",
+    "chunkName": "pages/icons/feather",
+    "_name": "_714ddb4c"
+  },
+  {
+    "name": "icons-font-awesome___ar",
+    "path": "/ar/icons/font-awesome",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/font-awesome.vue",
+    "chunkName": "pages/icons/font-awesome",
+    "_name": "_58ceb3be"
+  },
+  {
+    "name": "icons-mdi___ar",
+    "path": "/ar/icons/mdi",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/mdi.vue",
+    "chunkName": "pages/icons/mdi",
+    "_name": "_4e447769"
+  },
+  {
+    "name": "icons-remix___ar",
+    "path": "/ar/icons/remix",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/remix.vue",
+    "chunkName": "pages/icons/remix",
+    "_name": "_547ea9c0"
+  },
+  {
+    "name": "icons-weather___ar",
+    "path": "/ar/icons/weather",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/weather.vue",
+    "chunkName": "pages/icons/weather",
+    "_name": "_aaee1daa"
+  },
+  {
+    "name": "maps-google___ar",
+    "path": "/ar/maps/google",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/maps/google.vue",
+    "chunkName": "pages/maps/google",
+    "_name": "_09291fdd"
+  },
+  {
+    "name": "tables-advanced___ar",
+    "path": "/ar/tables/advanced",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/advanced/index.vue",
+    "chunkName": "pages/tables/advanced/index",
+    "_name": "_9afcee8a"
+  },
+  {
+    "name": "tables-basic___ar",
+    "path": "/ar/tables/basic",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/basic.vue",
+    "chunkName": "pages/tables/basic",
+    "_name": "_743f2e08"
+  },
+  {
+    "name": "task-detail___ar",
+    "path": "/ar/task/detail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/detail.vue",
+    "chunkName": "pages/task/detail",
+    "_name": "_29e0de47"
+  },
+  {
+    "name": "task-kanban___ar",
+    "path": "/ar/task/kanban",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/kanban/index.vue",
+    "chunkName": "pages/task/kanban/index",
+    "_name": "_07f57a20"
+  },
+  {
+    "name": "task-list___ar",
+    "path": "/ar/task/list",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/list.vue",
+    "chunkName": "pages/task/list",
+    "_name": "_cb6430d8"
+  },
+  {
+    "name": "ui-avatars___ar",
+    "path": "/ar/ui/avatars",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/avatars.vue",
+    "chunkName": "pages/ui/avatars",
+    "_name": "_49726d43"
+  },
+  {
+    "name": "ui-buttons___ar",
+    "path": "/ar/ui/buttons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/buttons.vue",
+    "chunkName": "pages/ui/buttons",
+    "_name": "_6e3471ec"
+  },
+  {
+    "name": "ui-cards___ar",
+    "path": "/ar/ui/cards",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/cards.vue",
+    "chunkName": "pages/ui/cards",
+    "_name": "_07bbd62c"
+  },
+  {
+    "name": "ui-carousel___ar",
+    "path": "/ar/ui/carousel",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/carousel.vue",
+    "chunkName": "pages/ui/carousel",
+    "_name": "_4ee914a7"
+  },
+  {
+    "name": "ui-dropdowns___ar",
+    "path": "/ar/ui/dropdowns",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/dropdowns.vue",
+    "chunkName": "pages/ui/dropdowns",
+    "_name": "_7c59454b"
+  },
+  {
+    "name": "ui-general___ar",
+    "path": "/ar/ui/general",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/general.vue",
+    "chunkName": "pages/ui/general",
+    "_name": "_651b04f1"
+  },
+  {
+    "name": "ui-grid___ar",
+    "path": "/ar/ui/grid",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/grid.vue",
+    "chunkName": "pages/ui/grid",
+    "_name": "_e118e9e6"
+  },
+  {
+    "name": "ui-images___ar",
+    "path": "/ar/ui/images",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/images.vue",
+    "chunkName": "pages/ui/images",
+    "_name": "_4133497f"
+  },
+  {
+    "name": "ui-list-group___ar",
+    "path": "/ar/ui/list-group",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/list-group.vue",
+    "chunkName": "pages/ui/list-group",
+    "_name": "_43fc7817"
+  },
+  {
+    "name": "ui-modals___ar",
+    "path": "/ar/ui/modals",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/modals.vue",
+    "chunkName": "pages/ui/modals",
+    "_name": "_4111fb6d"
+  },
+  {
+    "name": "ui-notifications___ar",
+    "path": "/ar/ui/notifications",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/notifications.vue",
+    "chunkName": "pages/ui/notifications",
+    "_name": "_3b80f831"
+  },
+  {
+    "name": "ui-portlets___ar",
+    "path": "/ar/ui/portlets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/portlets.vue",
+    "chunkName": "pages/ui/portlets",
+    "_name": "_4b3ff080"
+  },
+  {
+    "name": "ui-progress___ar",
+    "path": "/ar/ui/progress",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/progress.vue",
+    "chunkName": "pages/ui/progress",
+    "_name": "_132a46f4"
+  },
+  {
+    "name": "ui-ribbons___ar",
+    "path": "/ar/ui/ribbons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/ribbons.vue",
+    "chunkName": "pages/ui/ribbons",
+    "_name": "_2dcaa034"
+  },
+  {
+    "name": "ui-spinners___ar",
+    "path": "/ar/ui/spinners",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/spinners.vue",
+    "chunkName": "pages/ui/spinners",
+    "_name": "_993ab07e"
+  },
+  {
+    "name": "ui-tabs-accordions___ar",
+    "path": "/ar/ui/tabs-accordions",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/tabs-accordions.vue",
+    "chunkName": "pages/ui/tabs-accordions",
+    "_name": "_749cd3e3"
+  },
+  {
+    "name": "ui-tooltips-popovers___ar",
+    "path": "/ar/ui/tooltips-popovers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/tooltips-popovers.vue",
+    "chunkName": "pages/ui/tooltips-popovers",
+    "_name": "_2878a7d8"
+  },
+  {
+    "name": "ui-typography___ar",
+    "path": "/ar/ui/typography",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/typography.vue",
+    "chunkName": "pages/ui/typography",
+    "_name": "_2c653936"
+  },
+  {
+    "name": "ui-video___ar",
+    "path": "/ar/ui/video",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/video.vue",
+    "chunkName": "pages/ui/video",
+    "_name": "_64beb744"
+  },
+  {
+    "name": "widgets-data___ar",
+    "path": "/ar/widgets/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/widgets/data.js",
+    "chunkName": "pages/widgets/data",
+    "_name": "_ef3c087e"
+  },
+  {
+    "name": "charts-apex-data___en",
+    "path": "/charts/apex/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/apex/data.js",
+    "chunkName": "pages/charts/apex/data",
+    "_name": "_ad8eeea4"
+  },
+  {
+    "name": "charts-c3-data___en",
+    "path": "/charts/c3/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/c3/data.js",
+    "chunkName": "pages/charts/c3/data",
+    "_name": "_7e75293c"
+  },
+  {
+    "name": "charts-chartist-data___en",
+    "path": "/charts/chartist/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartist/data.js",
+    "chunkName": "pages/charts/chartist/data",
+    "_name": "_be00ab10"
+  },
+  {
+    "name": "charts-chartjs-BarChart___en",
+    "path": "/charts/chartjs/BarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/BarChart.vue",
+    "chunkName": "pages/charts/chartjs/BarChart",
+    "_name": "_d34b3e8e"
+  },
+  {
+    "name": "charts-chartjs-DonutChart___en",
+    "path": "/charts/chartjs/DonutChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/DonutChart.vue",
+    "chunkName": "pages/charts/chartjs/DonutChart",
+    "_name": "_8d323dec"
+  },
+  {
+    "name": "charts-chartjs-LineChart___en",
+    "path": "/charts/chartjs/LineChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/LineChart.vue",
+    "chunkName": "pages/charts/chartjs/LineChart",
+    "_name": "_6fd4b6e8"
+  },
+  {
+    "name": "charts-chartjs-PieChart___en",
+    "path": "/charts/chartjs/PieChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/PieChart.vue",
+    "chunkName": "pages/charts/chartjs/PieChart",
+    "_name": "_417c4360"
+  },
+  {
+    "name": "charts-chartjs-PolarChart___en",
+    "path": "/charts/chartjs/PolarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/PolarChart.vue",
+    "chunkName": "pages/charts/chartjs/PolarChart",
+    "_name": "_940f9f24"
+  },
+  {
+    "name": "charts-chartjs-RadarChart___en",
+    "path": "/charts/chartjs/RadarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/RadarChart.vue",
+    "chunkName": "pages/charts/chartjs/RadarChart",
+    "_name": "_30fc3da6"
+  },
+  {
+    "name": "dashboard-analytics-channels___en",
+    "path": "/dashboard/analytics/channels",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/channels.vue",
+    "chunkName": "pages/dashboard/analytics/channels",
+    "_name": "_2813e4d0"
+  },
+  {
+    "name": "dashboard-analytics-overview___en",
+    "path": "/dashboard/analytics/overview",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/overview.vue",
+    "chunkName": "pages/dashboard/analytics/overview",
+    "_name": "_d4284a7e"
+  },
+  {
+    "name": "dashboard-analytics-social-media___en",
+    "path": "/dashboard/analytics/social-media",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/social-media.vue",
+    "chunkName": "pages/dashboard/analytics/social-media",
+    "_name": "_04f26d4c"
+  },
+  {
+    "name": "dashboard-analytics-sources___en",
+    "path": "/dashboard/analytics/sources",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/sources.vue",
+    "chunkName": "pages/dashboard/analytics/sources",
+    "_name": "_ae5725c0"
+  },
+  {
+    "name": "dashboard-analytics-users___en",
+    "path": "/dashboard/analytics/users",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/users.vue",
+    "chunkName": "pages/dashboard/analytics/users",
+    "_name": "_56ed2b70"
+  },
+  {
+    "name": "ecommerce-customers-data___en",
+    "path": "/ecommerce/customers/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/customers/data.js",
+    "chunkName": "pages/ecommerce/customers/data",
+    "_name": "_090faf58"
+  },
+  {
+    "name": "ecommerce-orders-data___en",
+    "path": "/ecommerce/orders/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/orders/data.js",
+    "chunkName": "pages/ecommerce/orders/data",
+    "_name": "_75ff59fe"
+  },
+  {
+    "name": "ecommerce-products-data___en",
+    "path": "/ecommerce/products/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products/data.js",
+    "chunkName": "pages/ecommerce/products/data",
+    "_name": "_5735febd"
+  },
+  {
+    "name": "account-forgot-password___es",
+    "path": "/es/account/forgot-password",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/forgot-password.vue",
+    "chunkName": "pages/account/forgot-password",
+    "_name": "_77d6b362"
+  },
+  {
+    "name": "account-login___es",
+    "path": "/es/account/login",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/login.vue",
+    "chunkName": "pages/account/login",
+    "_name": "_75a04833"
+  },
+  {
+    "name": "account-register___es",
+    "path": "/es/account/register",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/register.vue",
+    "chunkName": "pages/account/register",
+    "_name": "_0582ffc9"
+  },
+  {
+    "name": "apps-calendar___es",
+    "path": "/es/apps/calendar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/calendar/index.vue",
+    "chunkName": "pages/apps/calendar/index",
+    "_name": "_3af4b4aa"
+  },
+  {
+    "name": "apps-chat___es",
+    "path": "/es/apps/chat",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/chat/index.vue",
+    "chunkName": "pages/apps/chat/index",
+    "_name": "_469704c4"
+  },
+  {
+    "name": "apps-companies___es",
+    "path": "/es/apps/companies",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/companies/index.vue",
+    "chunkName": "pages/apps/companies/index",
+    "_name": "_44542585"
+  },
+  {
+    "name": "apps-file-manager___es",
+    "path": "/es/apps/file-manager",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/file-manager.vue",
+    "chunkName": "pages/apps/file-manager",
+    "_name": "_cfae4df6"
+  },
+  {
+    "name": "apps-tickets___es",
+    "path": "/es/apps/tickets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/tickets/index.vue",
+    "chunkName": "pages/apps/tickets/index",
+    "_name": "_3130b95e"
+  },
+  {
+    "name": "auth-confirm-mail___es",
+    "path": "/es/auth/confirm-mail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/confirm-mail.vue",
+    "chunkName": "pages/auth/confirm-mail",
+    "_name": "_373740d7"
+  },
+  {
+    "name": "auth-confirm-mail-2___es",
+    "path": "/es/auth/confirm-mail-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/confirm-mail-2.vue",
+    "chunkName": "pages/auth/confirm-mail-2",
+    "_name": "_40d7583c"
+  },
+  {
+    "name": "auth-lock-screen___es",
+    "path": "/es/auth/lock-screen",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/lock-screen.vue",
+    "chunkName": "pages/auth/lock-screen",
+    "_name": "_a6d6782a"
+  },
+  {
+    "name": "auth-lock-screen-2___es",
+    "path": "/es/auth/lock-screen-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/lock-screen-2.vue",
+    "chunkName": "pages/auth/lock-screen-2",
+    "_name": "_563f3360"
+  },
+  {
+    "name": "auth-login___es",
+    "path": "/es/auth/login",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_87557374"
+  },
+  {
+    "name": "auth-login-2___es",
+    "path": "/es/auth/login-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/login-2.vue",
+    "chunkName": "pages/auth/login-2",
+    "_name": "_12ec842a"
+  },
+  {
+    "name": "auth-logout___es",
+    "path": "/es/auth/logout",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/logout.vue",
+    "chunkName": "pages/auth/logout",
+    "_name": "_1b648afd"
+  },
+  {
+    "name": "auth-logout-2___es",
+    "path": "/es/auth/logout-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/logout-2.vue",
+    "chunkName": "pages/auth/logout-2",
+    "_name": "_624a9e3c"
+  },
+  {
+    "name": "auth-recoverpwd___es",
+    "path": "/es/auth/recoverpwd",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/recoverpwd.vue",
+    "chunkName": "pages/auth/recoverpwd",
+    "_name": "_25232868"
+  },
+  {
+    "name": "auth-recoverpwd-2___es",
+    "path": "/es/auth/recoverpwd-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/recoverpwd-2.vue",
+    "chunkName": "pages/auth/recoverpwd-2",
+    "_name": "_45ef99f1"
+  },
+  {
+    "name": "auth-register___es",
+    "path": "/es/auth/register",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_45cde4d6"
+  },
+  {
+    "name": "auth-register-2___es",
+    "path": "/es/auth/register-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/register-2.vue",
+    "chunkName": "pages/auth/register-2",
+    "_name": "_0454f87b"
+  },
+  {
+    "name": "auth-signin-signup___es",
+    "path": "/es/auth/signin-signup",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/signin-signup.vue",
+    "chunkName": "pages/auth/signin-signup",
+    "_name": "_8ef5f300"
+  },
+  {
+    "name": "auth-signin-signup-2___es",
+    "path": "/es/auth/signin-signup-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/signin-signup-2.vue",
+    "chunkName": "pages/auth/signin-signup-2",
+    "_name": "_b46b50b6"
+  },
+  {
+    "name": "charts-apex___es",
+    "path": "/es/charts/apex",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/apex/index.vue",
+    "chunkName": "pages/charts/apex/index",
+    "_name": "_2565d4cb"
+  },
+  {
+    "name": "charts-c3___es",
+    "path": "/es/charts/c3",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/c3/index.vue",
+    "chunkName": "pages/charts/c3/index",
+    "_name": "_c406ec4e"
+  },
+  {
+    "name": "charts-chartist___es",
+    "path": "/es/charts/chartist",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartist/index.vue",
+    "chunkName": "pages/charts/chartist/index",
+    "_name": "_47ebac15"
+  },
+  {
+    "name": "charts-chartjs___es",
+    "path": "/es/charts/chartjs",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/index.vue",
+    "chunkName": "pages/charts/chartjs/index",
+    "_name": "_48f20398"
+  },
+  {
+    "name": "charts-knob___es",
+    "path": "/es/charts/knob",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/knob.vue",
+    "chunkName": "pages/charts/knob",
+    "_name": "_0dfd5f9c"
+  },
+  {
+    "name": "contacts-list___es",
+    "path": "/es/contacts/list",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/contacts/list.vue",
+    "chunkName": "pages/contacts/list",
+    "_name": "_69204af4"
+  },
+  {
+    "name": "contacts-profile___es",
+    "path": "/es/contacts/profile",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/contacts/profile.vue",
+    "chunkName": "pages/contacts/profile",
+    "_name": "_3752e771"
+  },
+  {
+    "name": "dashboard-analytics___es",
+    "path": "/es/dashboard/analytics",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/index.vue",
+    "chunkName": "pages/dashboard/analytics/index",
+    "_name": "_1183513a"
+  },
+  {
+    "name": "dashboard-crm___es",
+    "path": "/es/dashboard/crm",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/crm/index.vue",
+    "chunkName": "pages/dashboard/crm/index",
+    "_name": "_c1c21f5c"
+  },
+  {
+    "name": "dashboard-sales___es",
+    "path": "/es/dashboard/sales",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/sales/index.vue",
+    "chunkName": "pages/dashboard/sales/index",
+    "_name": "_1d0d43c0"
+  },
+  {
+    "name": "ecommerce-cart___es",
+    "path": "/es/ecommerce/cart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/cart.vue",
+    "chunkName": "pages/ecommerce/cart",
+    "_name": "_1bdfe9da"
+  },
+  {
+    "name": "ecommerce-checkout___es",
+    "path": "/es/ecommerce/checkout",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/checkout.vue",
+    "chunkName": "pages/ecommerce/checkout",
+    "_name": "_275f34b9"
+  },
+  {
+    "name": "ecommerce-customers___es",
+    "path": "/es/ecommerce/customers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/customers/index.vue",
+    "chunkName": "pages/ecommerce/customers/index",
+    "_name": "_27e40e16"
+  },
+  {
+    "name": "ecommerce-data-products___es",
+    "path": "/es/ecommerce/data-products",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/data-products.js",
+    "chunkName": "pages/ecommerce/data-products",
+    "_name": "_c2151a6a"
+  },
+  {
+    "name": "ecommerce-order-detail___es",
+    "path": "/es/ecommerce/order-detail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/order-detail.vue",
+    "chunkName": "pages/ecommerce/order-detail",
+    "_name": "_3e1604a3"
+  },
+  {
+    "name": "ecommerce-orders___es",
+    "path": "/es/ecommerce/orders",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/orders/index.vue",
+    "chunkName": "pages/ecommerce/orders/index",
+    "_name": "_4884dbca"
+  },
+  {
+    "name": "ecommerce-product-create___es",
+    "path": "/es/ecommerce/product-create",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/product-create.vue",
+    "chunkName": "pages/ecommerce/product-create",
+    "_name": "_3b97b0cd"
+  },
+  {
+    "name": "ecommerce-products___es",
+    "path": "/es/ecommerce/products",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products/index.vue",
+    "chunkName": "pages/ecommerce/products/index",
+    "_name": "_49de031a"
+  },
+  {
+    "name": "ecommerce-products-grid___es",
+    "path": "/es/ecommerce/products-grid",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products-grid.vue",
+    "chunkName": "pages/ecommerce/products-grid",
+    "_name": "_0f53962c"
+  },
+  {
+    "name": "ecommerce-sellers___es",
+    "path": "/es/ecommerce/sellers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/sellers.vue",
+    "chunkName": "pages/ecommerce/sellers",
+    "_name": "_5394cb9e"
+  },
+  {
+    "name": "email-data-inbox___es",
+    "path": "/es/email/data-inbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/data-inbox.js",
+    "chunkName": "pages/email/data-inbox",
+    "_name": "_6e7d3655"
+  },
+  {
+    "name": "email-inbox___es",
+    "path": "/es/email/inbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/inbox.vue",
+    "chunkName": "pages/email/inbox",
+    "_name": "_9e9ac702"
+  },
+  {
+    "name": "email-sidepanel___es",
+    "path": "/es/email/sidepanel",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/sidepanel.vue",
+    "chunkName": "pages/email/sidepanel",
+    "_name": "_87749df4"
+  },
+  {
+    "name": "email-templates___es",
+    "path": "/es/email/templates",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/templates.vue",
+    "chunkName": "pages/email/templates",
+    "_name": "_33ea9332"
+  },
+  {
+    "name": "email-toolbar___es",
+    "path": "/es/email/toolbar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/toolbar.vue",
+    "chunkName": "pages/email/toolbar",
+    "_name": "_79532298"
+  },
+  {
+    "name": "extended-rangeslider___es",
+    "path": "/es/extended/rangeslider",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/rangeslider.vue",
+    "chunkName": "pages/extended/rangeslider",
+    "_name": "_c08396e8"
+  },
+  {
+    "name": "extended-scrollspy___es",
+    "path": "/es/extended/scrollspy",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/scrollspy.vue",
+    "chunkName": "pages/extended/scrollspy",
+    "_name": "_1d8f78fd"
+  },
+  {
+    "name": "extended-sweet-alert___es",
+    "path": "/es/extended/sweet-alert",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/sweet-alert.vue",
+    "chunkName": "pages/extended/sweet-alert",
+    "_name": "_01e023ed"
+  },
+  {
+    "name": "extended-tour___es",
+    "path": "/es/extended/tour",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/tour.vue",
+    "chunkName": "pages/extended/tour",
+    "_name": "_572985cc"
+  },
+  {
+    "name": "extras-404___es",
+    "path": "/es/extras/404",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/404.vue",
+    "chunkName": "pages/extras/404",
+    "_name": "_8445eee0"
+  },
+  {
+    "name": "extras-404-alt___es",
+    "path": "/es/extras/404-alt",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/404-alt.vue",
+    "chunkName": "pages/extras/404-alt",
+    "_name": "_32d0acec"
+  },
+  {
+    "name": "extras-500___es",
+    "path": "/es/extras/500",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/500.vue",
+    "chunkName": "pages/extras/500",
+    "_name": "_1aea3466"
+  },
+  {
+    "name": "extras-coming-soon___es",
+    "path": "/es/extras/coming-soon",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/coming-soon.vue",
+    "chunkName": "pages/extras/coming-soon",
+    "_name": "_0794a6c2"
+  },
+  {
+    "name": "extras-faqs___es",
+    "path": "/es/extras/faqs",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/faqs.vue",
+    "chunkName": "pages/extras/faqs",
+    "_name": "_58d93916"
+  },
+  {
+    "name": "extras-invoice___es",
+    "path": "/es/extras/invoice",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/invoice.vue",
+    "chunkName": "pages/extras/invoice",
+    "_name": "_6eafbff6"
+  },
+  {
+    "name": "extras-lightbox___es",
+    "path": "/es/extras/lightbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/lightbox.vue",
+    "chunkName": "pages/extras/lightbox",
+    "_name": "_7395e84d"
+  },
+  {
+    "name": "extras-maintenance___es",
+    "path": "/es/extras/maintenance",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/maintenance.vue",
+    "chunkName": "pages/extras/maintenance",
+    "_name": "_33880ceb"
+  },
+  {
+    "name": "extras-pricing___es",
+    "path": "/es/extras/pricing",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/pricing.vue",
+    "chunkName": "pages/extras/pricing",
+    "_name": "_58e8881e"
+  },
+  {
+    "name": "extras-search-results___es",
+    "path": "/es/extras/search-results",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/search-results.vue",
+    "chunkName": "pages/extras/search-results",
+    "_name": "_9dd343ae"
+  },
+  {
+    "name": "extras-sitemap___es",
+    "path": "/es/extras/sitemap",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/sitemap.vue",
+    "chunkName": "pages/extras/sitemap",
+    "_name": "_6d9d858d"
+  },
+  {
+    "name": "extras-starter___es",
+    "path": "/es/extras/starter",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/starter.vue",
+    "chunkName": "pages/extras/starter",
+    "_name": "_a948c732"
+  },
+  {
+    "name": "extras-timeline___es",
+    "path": "/es/extras/timeline",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/timeline.vue",
+    "chunkName": "pages/extras/timeline",
+    "_name": "_42dfe4ce"
+  },
+  {
+    "name": "forms-advanced___es",
+    "path": "/es/forms/advanced",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/advanced.vue",
+    "chunkName": "pages/forms/advanced",
+    "_name": "_289d1e06"
+  },
+  {
+    "name": "forms-elements___es",
+    "path": "/es/forms/elements",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/elements.vue",
+    "chunkName": "pages/forms/elements",
+    "_name": "_6244045b"
+  },
+  {
+    "name": "forms-file-uploads___es",
+    "path": "/es/forms/file-uploads",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/file-uploads.vue",
+    "chunkName": "pages/forms/file-uploads",
+    "_name": "_47c150b6"
+  },
+  {
+    "name": "forms-mask___es",
+    "path": "/es/forms/mask",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/mask.vue",
+    "chunkName": "pages/forms/mask",
+    "_name": "_0ac36460"
+  },
+  {
+    "name": "forms-quill___es",
+    "path": "/es/forms/quill",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/quill.vue",
+    "chunkName": "pages/forms/quill",
+    "_name": "_8857a35e"
+  },
+  {
+    "name": "forms-validation___es",
+    "path": "/es/forms/validation",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/validation.vue",
+    "chunkName": "pages/forms/validation",
+    "_name": "_654f17dd"
+  },
+  {
+    "name": "forms-wizard___es",
+    "path": "/es/forms/wizard",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/wizard.vue",
+    "chunkName": "pages/forms/wizard",
+    "_name": "_3259d1cf"
+  },
+  {
+    "name": "icons-boxicons___es",
+    "path": "/es/icons/boxicons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/boxicons.vue",
+    "chunkName": "pages/icons/boxicons",
+    "_name": "_700ab288"
+  },
+  {
+    "name": "icons-data-fontawesome___es",
+    "path": "/es/icons/data-fontawesome",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-fontawesome.js",
+    "chunkName": "pages/icons/data-fontawesome",
+    "_name": "_46985336"
+  },
+  {
+    "name": "icons-data-material___es",
+    "path": "/es/icons/data-material",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-material.js",
+    "chunkName": "pages/icons/data-material",
+    "_name": "_4dfda6e4"
+  },
+  {
+    "name": "icons-data-remix___es",
+    "path": "/es/icons/data-remix",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-remix.js",
+    "chunkName": "pages/icons/data-remix",
+    "_name": "_1ada89b0"
+  },
+  {
+    "name": "icons-feather___es",
+    "path": "/es/icons/feather",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/feather.vue",
+    "chunkName": "pages/icons/feather",
+    "_name": "_714ddb4c"
+  },
+  {
+    "name": "icons-font-awesome___es",
+    "path": "/es/icons/font-awesome",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/font-awesome.vue",
+    "chunkName": "pages/icons/font-awesome",
+    "_name": "_58ceb3be"
+  },
+  {
+    "name": "icons-mdi___es",
+    "path": "/es/icons/mdi",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/mdi.vue",
+    "chunkName": "pages/icons/mdi",
+    "_name": "_4e447769"
+  },
+  {
+    "name": "icons-remix___es",
+    "path": "/es/icons/remix",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/remix.vue",
+    "chunkName": "pages/icons/remix",
+    "_name": "_547ea9c0"
+  },
+  {
+    "name": "icons-weather___es",
+    "path": "/es/icons/weather",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/weather.vue",
+    "chunkName": "pages/icons/weather",
+    "_name": "_aaee1daa"
+  },
+  {
+    "name": "maps-google___es",
+    "path": "/es/maps/google",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/maps/google.vue",
+    "chunkName": "pages/maps/google",
+    "_name": "_09291fdd"
+  },
+  {
+    "name": "tables-advanced___es",
+    "path": "/es/tables/advanced",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/advanced/index.vue",
+    "chunkName": "pages/tables/advanced/index",
+    "_name": "_9afcee8a"
+  },
+  {
+    "name": "tables-basic___es",
+    "path": "/es/tables/basic",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/basic.vue",
+    "chunkName": "pages/tables/basic",
+    "_name": "_743f2e08"
+  },
+  {
+    "name": "task-detail___es",
+    "path": "/es/task/detail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/detail.vue",
+    "chunkName": "pages/task/detail",
+    "_name": "_29e0de47"
+  },
+  {
+    "name": "task-kanban___es",
+    "path": "/es/task/kanban",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/kanban/index.vue",
+    "chunkName": "pages/task/kanban/index",
+    "_name": "_07f57a20"
+  },
+  {
+    "name": "task-list___es",
+    "path": "/es/task/list",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/list.vue",
+    "chunkName": "pages/task/list",
+    "_name": "_cb6430d8"
+  },
+  {
+    "name": "ui-avatars___es",
+    "path": "/es/ui/avatars",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/avatars.vue",
+    "chunkName": "pages/ui/avatars",
+    "_name": "_49726d43"
+  },
+  {
+    "name": "ui-buttons___es",
+    "path": "/es/ui/buttons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/buttons.vue",
+    "chunkName": "pages/ui/buttons",
+    "_name": "_6e3471ec"
+  },
+  {
+    "name": "ui-cards___es",
+    "path": "/es/ui/cards",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/cards.vue",
+    "chunkName": "pages/ui/cards",
+    "_name": "_07bbd62c"
+  },
+  {
+    "name": "ui-carousel___es",
+    "path": "/es/ui/carousel",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/carousel.vue",
+    "chunkName": "pages/ui/carousel",
+    "_name": "_4ee914a7"
+  },
+  {
+    "name": "ui-dropdowns___es",
+    "path": "/es/ui/dropdowns",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/dropdowns.vue",
+    "chunkName": "pages/ui/dropdowns",
+    "_name": "_7c59454b"
+  },
+  {
+    "name": "ui-general___es",
+    "path": "/es/ui/general",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/general.vue",
+    "chunkName": "pages/ui/general",
+    "_name": "_651b04f1"
+  },
+  {
+    "name": "ui-grid___es",
+    "path": "/es/ui/grid",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/grid.vue",
+    "chunkName": "pages/ui/grid",
+    "_name": "_e118e9e6"
+  },
+  {
+    "name": "ui-images___es",
+    "path": "/es/ui/images",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/images.vue",
+    "chunkName": "pages/ui/images",
+    "_name": "_4133497f"
+  },
+  {
+    "name": "ui-list-group___es",
+    "path": "/es/ui/list-group",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/list-group.vue",
+    "chunkName": "pages/ui/list-group",
+    "_name": "_43fc7817"
+  },
+  {
+    "name": "ui-modals___es",
+    "path": "/es/ui/modals",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/modals.vue",
+    "chunkName": "pages/ui/modals",
+    "_name": "_4111fb6d"
+  },
+  {
+    "name": "ui-notifications___es",
+    "path": "/es/ui/notifications",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/notifications.vue",
+    "chunkName": "pages/ui/notifications",
+    "_name": "_3b80f831"
+  },
+  {
+    "name": "ui-portlets___es",
+    "path": "/es/ui/portlets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/portlets.vue",
+    "chunkName": "pages/ui/portlets",
+    "_name": "_4b3ff080"
+  },
+  {
+    "name": "ui-progress___es",
+    "path": "/es/ui/progress",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/progress.vue",
+    "chunkName": "pages/ui/progress",
+    "_name": "_132a46f4"
+  },
+  {
+    "name": "ui-ribbons___es",
+    "path": "/es/ui/ribbons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/ribbons.vue",
+    "chunkName": "pages/ui/ribbons",
+    "_name": "_2dcaa034"
+  },
+  {
+    "name": "ui-spinners___es",
+    "path": "/es/ui/spinners",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/spinners.vue",
+    "chunkName": "pages/ui/spinners",
+    "_name": "_993ab07e"
+  },
+  {
+    "name": "ui-tabs-accordions___es",
+    "path": "/es/ui/tabs-accordions",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/tabs-accordions.vue",
+    "chunkName": "pages/ui/tabs-accordions",
+    "_name": "_749cd3e3"
+  },
+  {
+    "name": "ui-tooltips-popovers___es",
+    "path": "/es/ui/tooltips-popovers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/tooltips-popovers.vue",
+    "chunkName": "pages/ui/tooltips-popovers",
+    "_name": "_2878a7d8"
+  },
+  {
+    "name": "ui-typography___es",
+    "path": "/es/ui/typography",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/typography.vue",
+    "chunkName": "pages/ui/typography",
+    "_name": "_2c653936"
+  },
+  {
+    "name": "ui-video___es",
+    "path": "/es/ui/video",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/video.vue",
+    "chunkName": "pages/ui/video",
+    "_name": "_64beb744"
+  },
+  {
+    "name": "widgets-data___es",
+    "path": "/es/widgets/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/widgets/data.js",
+    "chunkName": "pages/widgets/data",
+    "_name": "_ef3c087e"
+  },
+  {
+    "name": "account-forgot-password___fr",
+    "path": "/fr/account/forgot-password",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/forgot-password.vue",
+    "chunkName": "pages/account/forgot-password",
+    "_name": "_77d6b362"
+  },
+  {
+    "name": "account-login___fr",
+    "path": "/fr/account/login",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/login.vue",
+    "chunkName": "pages/account/login",
+    "_name": "_75a04833"
+  },
+  {
+    "name": "account-register___fr",
+    "path": "/fr/account/register",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/account/register.vue",
+    "chunkName": "pages/account/register",
+    "_name": "_0582ffc9"
+  },
+  {
+    "name": "apps-calendar___fr",
+    "path": "/fr/apps/calendar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/calendar/index.vue",
+    "chunkName": "pages/apps/calendar/index",
+    "_name": "_3af4b4aa"
+  },
+  {
+    "name": "apps-chat___fr",
+    "path": "/fr/apps/chat",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/chat/index.vue",
+    "chunkName": "pages/apps/chat/index",
+    "_name": "_469704c4"
+  },
+  {
+    "name": "apps-companies___fr",
+    "path": "/fr/apps/companies",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/companies/index.vue",
+    "chunkName": "pages/apps/companies/index",
+    "_name": "_44542585"
+  },
+  {
+    "name": "apps-file-manager___fr",
+    "path": "/fr/apps/file-manager",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/file-manager.vue",
+    "chunkName": "pages/apps/file-manager",
+    "_name": "_cfae4df6"
+  },
+  {
+    "name": "apps-tickets___fr",
+    "path": "/fr/apps/tickets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/tickets/index.vue",
+    "chunkName": "pages/apps/tickets/index",
+    "_name": "_3130b95e"
+  },
+  {
+    "name": "auth-confirm-mail___fr",
+    "path": "/fr/auth/confirm-mail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/confirm-mail.vue",
+    "chunkName": "pages/auth/confirm-mail",
+    "_name": "_373740d7"
+  },
+  {
+    "name": "auth-confirm-mail-2___fr",
+    "path": "/fr/auth/confirm-mail-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/confirm-mail-2.vue",
+    "chunkName": "pages/auth/confirm-mail-2",
+    "_name": "_40d7583c"
+  },
+  {
+    "name": "auth-lock-screen___fr",
+    "path": "/fr/auth/lock-screen",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/lock-screen.vue",
+    "chunkName": "pages/auth/lock-screen",
+    "_name": "_a6d6782a"
+  },
+  {
+    "name": "auth-lock-screen-2___fr",
+    "path": "/fr/auth/lock-screen-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/lock-screen-2.vue",
+    "chunkName": "pages/auth/lock-screen-2",
+    "_name": "_563f3360"
+  },
+  {
+    "name": "auth-login___fr",
+    "path": "/fr/auth/login",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_87557374"
+  },
+  {
+    "name": "auth-login-2___fr",
+    "path": "/fr/auth/login-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/login-2.vue",
+    "chunkName": "pages/auth/login-2",
+    "_name": "_12ec842a"
+  },
+  {
+    "name": "auth-logout___fr",
+    "path": "/fr/auth/logout",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/logout.vue",
+    "chunkName": "pages/auth/logout",
+    "_name": "_1b648afd"
+  },
+  {
+    "name": "auth-logout-2___fr",
+    "path": "/fr/auth/logout-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/logout-2.vue",
+    "chunkName": "pages/auth/logout-2",
+    "_name": "_624a9e3c"
+  },
+  {
+    "name": "auth-recoverpwd___fr",
+    "path": "/fr/auth/recoverpwd",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/recoverpwd.vue",
+    "chunkName": "pages/auth/recoverpwd",
+    "_name": "_25232868"
+  },
+  {
+    "name": "auth-recoverpwd-2___fr",
+    "path": "/fr/auth/recoverpwd-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/recoverpwd-2.vue",
+    "chunkName": "pages/auth/recoverpwd-2",
+    "_name": "_45ef99f1"
+  },
+  {
+    "name": "auth-register___fr",
+    "path": "/fr/auth/register",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_45cde4d6"
+  },
+  {
+    "name": "auth-register-2___fr",
+    "path": "/fr/auth/register-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/register-2.vue",
+    "chunkName": "pages/auth/register-2",
+    "_name": "_0454f87b"
+  },
+  {
+    "name": "auth-signin-signup___fr",
+    "path": "/fr/auth/signin-signup",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/signin-signup.vue",
+    "chunkName": "pages/auth/signin-signup",
+    "_name": "_8ef5f300"
+  },
+  {
+    "name": "auth-signin-signup-2___fr",
+    "path": "/fr/auth/signin-signup-2",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/auth/signin-signup-2.vue",
+    "chunkName": "pages/auth/signin-signup-2",
+    "_name": "_b46b50b6"
+  },
+  {
+    "name": "charts-apex___fr",
+    "path": "/fr/charts/apex",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/apex/index.vue",
+    "chunkName": "pages/charts/apex/index",
+    "_name": "_2565d4cb"
+  },
+  {
+    "name": "charts-c3___fr",
+    "path": "/fr/charts/c3",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/c3/index.vue",
+    "chunkName": "pages/charts/c3/index",
+    "_name": "_c406ec4e"
+  },
+  {
+    "name": "charts-chartist___fr",
+    "path": "/fr/charts/chartist",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartist/index.vue",
+    "chunkName": "pages/charts/chartist/index",
+    "_name": "_47ebac15"
+  },
+  {
+    "name": "charts-chartjs___fr",
+    "path": "/fr/charts/chartjs",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/index.vue",
+    "chunkName": "pages/charts/chartjs/index",
+    "_name": "_48f20398"
+  },
+  {
+    "name": "charts-knob___fr",
+    "path": "/fr/charts/knob",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/knob.vue",
+    "chunkName": "pages/charts/knob",
+    "_name": "_0dfd5f9c"
+  },
+  {
+    "name": "contacts-list___fr",
+    "path": "/fr/contacts/list",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/contacts/list.vue",
+    "chunkName": "pages/contacts/list",
+    "_name": "_69204af4"
+  },
+  {
+    "name": "contacts-profile___fr",
+    "path": "/fr/contacts/profile",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/contacts/profile.vue",
+    "chunkName": "pages/contacts/profile",
+    "_name": "_3752e771"
+  },
+  {
+    "name": "dashboard-analytics___fr",
+    "path": "/fr/dashboard/analytics",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/index.vue",
+    "chunkName": "pages/dashboard/analytics/index",
+    "_name": "_1183513a"
+  },
+  {
+    "name": "dashboard-crm___fr",
+    "path": "/fr/dashboard/crm",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/crm/index.vue",
+    "chunkName": "pages/dashboard/crm/index",
+    "_name": "_c1c21f5c"
+  },
+  {
+    "name": "dashboard-sales___fr",
+    "path": "/fr/dashboard/sales",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/sales/index.vue",
+    "chunkName": "pages/dashboard/sales/index",
+    "_name": "_1d0d43c0"
+  },
+  {
+    "name": "ecommerce-cart___fr",
+    "path": "/fr/ecommerce/cart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/cart.vue",
+    "chunkName": "pages/ecommerce/cart",
+    "_name": "_1bdfe9da"
+  },
+  {
+    "name": "ecommerce-checkout___fr",
+    "path": "/fr/ecommerce/checkout",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/checkout.vue",
+    "chunkName": "pages/ecommerce/checkout",
+    "_name": "_275f34b9"
+  },
+  {
+    "name": "ecommerce-customers___fr",
+    "path": "/fr/ecommerce/customers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/customers/index.vue",
+    "chunkName": "pages/ecommerce/customers/index",
+    "_name": "_27e40e16"
+  },
+  {
+    "name": "ecommerce-data-products___fr",
+    "path": "/fr/ecommerce/data-products",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/data-products.js",
+    "chunkName": "pages/ecommerce/data-products",
+    "_name": "_c2151a6a"
+  },
+  {
+    "name": "ecommerce-order-detail___fr",
+    "path": "/fr/ecommerce/order-detail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/order-detail.vue",
+    "chunkName": "pages/ecommerce/order-detail",
+    "_name": "_3e1604a3"
+  },
+  {
+    "name": "ecommerce-orders___fr",
+    "path": "/fr/ecommerce/orders",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/orders/index.vue",
+    "chunkName": "pages/ecommerce/orders/index",
+    "_name": "_4884dbca"
+  },
+  {
+    "name": "ecommerce-product-create___fr",
+    "path": "/fr/ecommerce/product-create",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/product-create.vue",
+    "chunkName": "pages/ecommerce/product-create",
+    "_name": "_3b97b0cd"
+  },
+  {
+    "name": "ecommerce-products___fr",
+    "path": "/fr/ecommerce/products",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products/index.vue",
+    "chunkName": "pages/ecommerce/products/index",
+    "_name": "_49de031a"
+  },
+  {
+    "name": "ecommerce-products-grid___fr",
+    "path": "/fr/ecommerce/products-grid",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products-grid.vue",
+    "chunkName": "pages/ecommerce/products-grid",
+    "_name": "_0f53962c"
+  },
+  {
+    "name": "ecommerce-sellers___fr",
+    "path": "/fr/ecommerce/sellers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/sellers.vue",
+    "chunkName": "pages/ecommerce/sellers",
+    "_name": "_5394cb9e"
+  },
+  {
+    "name": "email-data-inbox___fr",
+    "path": "/fr/email/data-inbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/data-inbox.js",
+    "chunkName": "pages/email/data-inbox",
+    "_name": "_6e7d3655"
+  },
+  {
+    "name": "email-inbox___fr",
+    "path": "/fr/email/inbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/inbox.vue",
+    "chunkName": "pages/email/inbox",
+    "_name": "_9e9ac702"
+  },
+  {
+    "name": "email-sidepanel___fr",
+    "path": "/fr/email/sidepanel",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/sidepanel.vue",
+    "chunkName": "pages/email/sidepanel",
+    "_name": "_87749df4"
+  },
+  {
+    "name": "email-templates___fr",
+    "path": "/fr/email/templates",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/templates.vue",
+    "chunkName": "pages/email/templates",
+    "_name": "_33ea9332"
+  },
+  {
+    "name": "email-toolbar___fr",
+    "path": "/fr/email/toolbar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/toolbar.vue",
+    "chunkName": "pages/email/toolbar",
+    "_name": "_79532298"
+  },
+  {
+    "name": "extended-rangeslider___fr",
+    "path": "/fr/extended/rangeslider",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/rangeslider.vue",
+    "chunkName": "pages/extended/rangeslider",
+    "_name": "_c08396e8"
+  },
+  {
+    "name": "extended-scrollspy___fr",
+    "path": "/fr/extended/scrollspy",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/scrollspy.vue",
+    "chunkName": "pages/extended/scrollspy",
+    "_name": "_1d8f78fd"
+  },
+  {
+    "name": "extended-sweet-alert___fr",
+    "path": "/fr/extended/sweet-alert",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/sweet-alert.vue",
+    "chunkName": "pages/extended/sweet-alert",
+    "_name": "_01e023ed"
+  },
+  {
+    "name": "extended-tour___fr",
+    "path": "/fr/extended/tour",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extended/tour.vue",
+    "chunkName": "pages/extended/tour",
+    "_name": "_572985cc"
+  },
+  {
+    "name": "extras-404___fr",
+    "path": "/fr/extras/404",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/404.vue",
+    "chunkName": "pages/extras/404",
+    "_name": "_8445eee0"
+  },
+  {
+    "name": "extras-404-alt___fr",
+    "path": "/fr/extras/404-alt",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/404-alt.vue",
+    "chunkName": "pages/extras/404-alt",
+    "_name": "_32d0acec"
+  },
+  {
+    "name": "extras-500___fr",
+    "path": "/fr/extras/500",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/500.vue",
+    "chunkName": "pages/extras/500",
+    "_name": "_1aea3466"
+  },
+  {
+    "name": "extras-coming-soon___fr",
+    "path": "/fr/extras/coming-soon",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/coming-soon.vue",
+    "chunkName": "pages/extras/coming-soon",
+    "_name": "_0794a6c2"
+  },
+  {
+    "name": "extras-faqs___fr",
+    "path": "/fr/extras/faqs",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/faqs.vue",
+    "chunkName": "pages/extras/faqs",
+    "_name": "_58d93916"
+  },
+  {
+    "name": "extras-invoice___fr",
+    "path": "/fr/extras/invoice",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/invoice.vue",
+    "chunkName": "pages/extras/invoice",
+    "_name": "_6eafbff6"
+  },
+  {
+    "name": "extras-lightbox___fr",
+    "path": "/fr/extras/lightbox",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/lightbox.vue",
+    "chunkName": "pages/extras/lightbox",
+    "_name": "_7395e84d"
+  },
+  {
+    "name": "extras-maintenance___fr",
+    "path": "/fr/extras/maintenance",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/maintenance.vue",
+    "chunkName": "pages/extras/maintenance",
+    "_name": "_33880ceb"
+  },
+  {
+    "name": "extras-pricing___fr",
+    "path": "/fr/extras/pricing",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/pricing.vue",
+    "chunkName": "pages/extras/pricing",
+    "_name": "_58e8881e"
+  },
+  {
+    "name": "extras-search-results___fr",
+    "path": "/fr/extras/search-results",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/search-results.vue",
+    "chunkName": "pages/extras/search-results",
+    "_name": "_9dd343ae"
+  },
+  {
+    "name": "extras-sitemap___fr",
+    "path": "/fr/extras/sitemap",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/sitemap.vue",
+    "chunkName": "pages/extras/sitemap",
+    "_name": "_6d9d858d"
+  },
+  {
+    "name": "extras-starter___fr",
+    "path": "/fr/extras/starter",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/starter.vue",
+    "chunkName": "pages/extras/starter",
+    "_name": "_a948c732"
+  },
+  {
+    "name": "extras-timeline___fr",
+    "path": "/fr/extras/timeline",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/extras/timeline.vue",
+    "chunkName": "pages/extras/timeline",
+    "_name": "_42dfe4ce"
+  },
+  {
+    "name": "forms-advanced___fr",
+    "path": "/fr/forms/advanced",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/advanced.vue",
+    "chunkName": "pages/forms/advanced",
+    "_name": "_289d1e06"
+  },
+  {
+    "name": "forms-elements___fr",
+    "path": "/fr/forms/elements",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/elements.vue",
+    "chunkName": "pages/forms/elements",
+    "_name": "_6244045b"
+  },
+  {
+    "name": "forms-file-uploads___fr",
+    "path": "/fr/forms/file-uploads",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/file-uploads.vue",
+    "chunkName": "pages/forms/file-uploads",
+    "_name": "_47c150b6"
+  },
+  {
+    "name": "forms-mask___fr",
+    "path": "/fr/forms/mask",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/mask.vue",
+    "chunkName": "pages/forms/mask",
+    "_name": "_0ac36460"
+  },
+  {
+    "name": "forms-quill___fr",
+    "path": "/fr/forms/quill",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/quill.vue",
+    "chunkName": "pages/forms/quill",
+    "_name": "_8857a35e"
+  },
+  {
+    "name": "forms-validation___fr",
+    "path": "/fr/forms/validation",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/validation.vue",
+    "chunkName": "pages/forms/validation",
+    "_name": "_654f17dd"
+  },
+  {
+    "name": "forms-wizard___fr",
+    "path": "/fr/forms/wizard",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/forms/wizard.vue",
+    "chunkName": "pages/forms/wizard",
+    "_name": "_3259d1cf"
+  },
+  {
+    "name": "icons-boxicons___fr",
+    "path": "/fr/icons/boxicons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/boxicons.vue",
+    "chunkName": "pages/icons/boxicons",
+    "_name": "_700ab288"
+  },
+  {
+    "name": "icons-data-fontawesome___fr",
+    "path": "/fr/icons/data-fontawesome",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-fontawesome.js",
+    "chunkName": "pages/icons/data-fontawesome",
+    "_name": "_46985336"
+  },
+  {
+    "name": "icons-data-material___fr",
+    "path": "/fr/icons/data-material",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-material.js",
+    "chunkName": "pages/icons/data-material",
+    "_name": "_4dfda6e4"
+  },
+  {
+    "name": "icons-data-remix___fr",
+    "path": "/fr/icons/data-remix",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/data-remix.js",
+    "chunkName": "pages/icons/data-remix",
+    "_name": "_1ada89b0"
+  },
+  {
+    "name": "icons-feather___fr",
+    "path": "/fr/icons/feather",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/feather.vue",
+    "chunkName": "pages/icons/feather",
+    "_name": "_714ddb4c"
+  },
+  {
+    "name": "icons-font-awesome___fr",
+    "path": "/fr/icons/font-awesome",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/font-awesome.vue",
+    "chunkName": "pages/icons/font-awesome",
+    "_name": "_58ceb3be"
+  },
+  {
+    "name": "icons-mdi___fr",
+    "path": "/fr/icons/mdi",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/mdi.vue",
+    "chunkName": "pages/icons/mdi",
+    "_name": "_4e447769"
+  },
+  {
+    "name": "icons-remix___fr",
+    "path": "/fr/icons/remix",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/remix.vue",
+    "chunkName": "pages/icons/remix",
+    "_name": "_547ea9c0"
+  },
+  {
+    "name": "icons-weather___fr",
+    "path": "/fr/icons/weather",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/icons/weather.vue",
+    "chunkName": "pages/icons/weather",
+    "_name": "_aaee1daa"
+  },
+  {
+    "name": "maps-google___fr",
+    "path": "/fr/maps/google",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/maps/google.vue",
+    "chunkName": "pages/maps/google",
+    "_name": "_09291fdd"
+  },
+  {
+    "name": "tables-advanced___fr",
+    "path": "/fr/tables/advanced",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/advanced/index.vue",
+    "chunkName": "pages/tables/advanced/index",
+    "_name": "_9afcee8a"
+  },
+  {
+    "name": "tables-basic___fr",
+    "path": "/fr/tables/basic",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/basic.vue",
+    "chunkName": "pages/tables/basic",
+    "_name": "_743f2e08"
+  },
+  {
+    "name": "task-detail___fr",
+    "path": "/fr/task/detail",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/detail.vue",
+    "chunkName": "pages/task/detail",
+    "_name": "_29e0de47"
+  },
+  {
+    "name": "task-kanban___fr",
+    "path": "/fr/task/kanban",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/kanban/index.vue",
+    "chunkName": "pages/task/kanban/index",
+    "_name": "_07f57a20"
+  },
+  {
+    "name": "task-list___fr",
+    "path": "/fr/task/list",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/list.vue",
+    "chunkName": "pages/task/list",
+    "_name": "_cb6430d8"
+  },
+  {
+    "name": "ui-avatars___fr",
+    "path": "/fr/ui/avatars",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/avatars.vue",
+    "chunkName": "pages/ui/avatars",
+    "_name": "_49726d43"
+  },
+  {
+    "name": "ui-buttons___fr",
+    "path": "/fr/ui/buttons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/buttons.vue",
+    "chunkName": "pages/ui/buttons",
+    "_name": "_6e3471ec"
+  },
+  {
+    "name": "ui-cards___fr",
+    "path": "/fr/ui/cards",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/cards.vue",
+    "chunkName": "pages/ui/cards",
+    "_name": "_07bbd62c"
+  },
+  {
+    "name": "ui-carousel___fr",
+    "path": "/fr/ui/carousel",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/carousel.vue",
+    "chunkName": "pages/ui/carousel",
+    "_name": "_4ee914a7"
+  },
+  {
+    "name": "ui-dropdowns___fr",
+    "path": "/fr/ui/dropdowns",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/dropdowns.vue",
+    "chunkName": "pages/ui/dropdowns",
+    "_name": "_7c59454b"
+  },
+  {
+    "name": "ui-general___fr",
+    "path": "/fr/ui/general",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/general.vue",
+    "chunkName": "pages/ui/general",
+    "_name": "_651b04f1"
+  },
+  {
+    "name": "ui-grid___fr",
+    "path": "/fr/ui/grid",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/grid.vue",
+    "chunkName": "pages/ui/grid",
+    "_name": "_e118e9e6"
+  },
+  {
+    "name": "ui-images___fr",
+    "path": "/fr/ui/images",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/images.vue",
+    "chunkName": "pages/ui/images",
+    "_name": "_4133497f"
+  },
+  {
+    "name": "ui-list-group___fr",
+    "path": "/fr/ui/list-group",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/list-group.vue",
+    "chunkName": "pages/ui/list-group",
+    "_name": "_43fc7817"
+  },
+  {
+    "name": "ui-modals___fr",
+    "path": "/fr/ui/modals",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/modals.vue",
+    "chunkName": "pages/ui/modals",
+    "_name": "_4111fb6d"
+  },
+  {
+    "name": "ui-notifications___fr",
+    "path": "/fr/ui/notifications",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/notifications.vue",
+    "chunkName": "pages/ui/notifications",
+    "_name": "_3b80f831"
+  },
+  {
+    "name": "ui-portlets___fr",
+    "path": "/fr/ui/portlets",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/portlets.vue",
+    "chunkName": "pages/ui/portlets",
+    "_name": "_4b3ff080"
+  },
+  {
+    "name": "ui-progress___fr",
+    "path": "/fr/ui/progress",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/progress.vue",
+    "chunkName": "pages/ui/progress",
+    "_name": "_132a46f4"
+  },
+  {
+    "name": "ui-ribbons___fr",
+    "path": "/fr/ui/ribbons",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/ribbons.vue",
+    "chunkName": "pages/ui/ribbons",
+    "_name": "_2dcaa034"
+  },
+  {
+    "name": "ui-spinners___fr",
+    "path": "/fr/ui/spinners",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/spinners.vue",
+    "chunkName": "pages/ui/spinners",
+    "_name": "_993ab07e"
+  },
+  {
+    "name": "ui-tabs-accordions___fr",
+    "path": "/fr/ui/tabs-accordions",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/tabs-accordions.vue",
+    "chunkName": "pages/ui/tabs-accordions",
+    "_name": "_749cd3e3"
+  },
+  {
+    "name": "ui-tooltips-popovers___fr",
+    "path": "/fr/ui/tooltips-popovers",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/tooltips-popovers.vue",
+    "chunkName": "pages/ui/tooltips-popovers",
+    "_name": "_2878a7d8"
+  },
+  {
+    "name": "ui-typography___fr",
+    "path": "/fr/ui/typography",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/typography.vue",
+    "chunkName": "pages/ui/typography",
+    "_name": "_2c653936"
+  },
+  {
+    "name": "ui-video___fr",
+    "path": "/fr/ui/video",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ui/video.vue",
+    "chunkName": "pages/ui/video",
+    "_name": "_64beb744"
+  },
+  {
+    "name": "widgets-data___fr",
+    "path": "/fr/widgets/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/widgets/data.js",
+    "chunkName": "pages/widgets/data",
+    "_name": "_ef3c087e"
+  },
+  {
+    "name": "tables-advanced-data___en",
+    "path": "/tables/advanced/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/advanced/data.js",
+    "chunkName": "pages/tables/advanced/data",
+    "_name": "_a6df0ec4"
+  },
+  {
+    "name": "task-kanban-data___en",
+    "path": "/task/kanban/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/kanban/data.js",
+    "chunkName": "pages/task/kanban/data",
+    "_name": "_64b73c13"
+  },
+  {
+    "name": "apps-calendar-data-calendar___ar",
+    "path": "/ar/apps/calendar/data-calendar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/calendar/data-calendar.js",
+    "chunkName": "pages/apps/calendar/data-calendar",
+    "_name": "_7b1f73d4"
+  },
+  {
+    "name": "apps-chat-data___ar",
+    "path": "/ar/apps/chat/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/chat/data.js",
+    "chunkName": "pages/apps/chat/data",
+    "_name": "_2eb762e7"
+  },
+  {
+    "name": "apps-companies-data___ar",
+    "path": "/ar/apps/companies/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/companies/data.js",
+    "chunkName": "pages/apps/companies/data",
+    "_name": "_79d08030"
+  },
+  {
+    "name": "apps-tickets-data___ar",
+    "path": "/ar/apps/tickets/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/tickets/data.js",
+    "chunkName": "pages/apps/tickets/data",
+    "_name": "_1f6f7e98"
+  },
+  {
+    "name": "charts-apex-data___ar",
+    "path": "/ar/charts/apex/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/apex/data.js",
+    "chunkName": "pages/charts/apex/data",
+    "_name": "_ad8eeea4"
+  },
+  {
+    "name": "charts-c3-data___ar",
+    "path": "/ar/charts/c3/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/c3/data.js",
+    "chunkName": "pages/charts/c3/data",
+    "_name": "_7e75293c"
+  },
+  {
+    "name": "charts-chartist-data___ar",
+    "path": "/ar/charts/chartist/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartist/data.js",
+    "chunkName": "pages/charts/chartist/data",
+    "_name": "_be00ab10"
+  },
+  {
+    "name": "charts-chartjs-BarChart___ar",
+    "path": "/ar/charts/chartjs/BarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/BarChart.vue",
+    "chunkName": "pages/charts/chartjs/BarChart",
+    "_name": "_d34b3e8e"
+  },
+  {
+    "name": "charts-chartjs-DonutChart___ar",
+    "path": "/ar/charts/chartjs/DonutChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/DonutChart.vue",
+    "chunkName": "pages/charts/chartjs/DonutChart",
+    "_name": "_8d323dec"
+  },
+  {
+    "name": "charts-chartjs-LineChart___ar",
+    "path": "/ar/charts/chartjs/LineChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/LineChart.vue",
+    "chunkName": "pages/charts/chartjs/LineChart",
+    "_name": "_6fd4b6e8"
+  },
+  {
+    "name": "charts-chartjs-PieChart___ar",
+    "path": "/ar/charts/chartjs/PieChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/PieChart.vue",
+    "chunkName": "pages/charts/chartjs/PieChart",
+    "_name": "_417c4360"
+  },
+  {
+    "name": "charts-chartjs-PolarChart___ar",
+    "path": "/ar/charts/chartjs/PolarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/PolarChart.vue",
+    "chunkName": "pages/charts/chartjs/PolarChart",
+    "_name": "_940f9f24"
+  },
+  {
+    "name": "charts-chartjs-RadarChart___ar",
+    "path": "/ar/charts/chartjs/RadarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/RadarChart.vue",
+    "chunkName": "pages/charts/chartjs/RadarChart",
+    "_name": "_30fc3da6"
+  },
+  {
+    "name": "dashboard-analytics-channels___ar",
+    "path": "/ar/dashboard/analytics/channels",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/channels.vue",
+    "chunkName": "pages/dashboard/analytics/channels",
+    "_name": "_2813e4d0"
+  },
+  {
+    "name": "dashboard-analytics-overview___ar",
+    "path": "/ar/dashboard/analytics/overview",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/overview.vue",
+    "chunkName": "pages/dashboard/analytics/overview",
+    "_name": "_d4284a7e"
+  },
+  {
+    "name": "dashboard-analytics-social-media___ar",
+    "path": "/ar/dashboard/analytics/social-media",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/social-media.vue",
+    "chunkName": "pages/dashboard/analytics/social-media",
+    "_name": "_04f26d4c"
+  },
+  {
+    "name": "dashboard-analytics-sources___ar",
+    "path": "/ar/dashboard/analytics/sources",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/sources.vue",
+    "chunkName": "pages/dashboard/analytics/sources",
+    "_name": "_ae5725c0"
+  },
+  {
+    "name": "dashboard-analytics-users___ar",
+    "path": "/ar/dashboard/analytics/users",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/users.vue",
+    "chunkName": "pages/dashboard/analytics/users",
+    "_name": "_56ed2b70"
+  },
+  {
+    "name": "ecommerce-customers-data___ar",
+    "path": "/ar/ecommerce/customers/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/customers/data.js",
+    "chunkName": "pages/ecommerce/customers/data",
+    "_name": "_090faf58"
+  },
+  {
+    "name": "ecommerce-orders-data___ar",
+    "path": "/ar/ecommerce/orders/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/orders/data.js",
+    "chunkName": "pages/ecommerce/orders/data",
+    "_name": "_75ff59fe"
+  },
+  {
+    "name": "ecommerce-products-data___ar",
+    "path": "/ar/ecommerce/products/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products/data.js",
+    "chunkName": "pages/ecommerce/products/data",
+    "_name": "_5735febd"
+  },
+  {
+    "name": "tables-advanced-data___ar",
+    "path": "/ar/tables/advanced/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/advanced/data.js",
+    "chunkName": "pages/tables/advanced/data",
+    "_name": "_a6df0ec4"
+  },
+  {
+    "name": "task-kanban-data___ar",
+    "path": "/ar/task/kanban/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/kanban/data.js",
+    "chunkName": "pages/task/kanban/data",
+    "_name": "_64b73c13"
+  },
+  {
+    "name": "apps-calendar-data-calendar___es",
+    "path": "/es/apps/calendar/data-calendar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/calendar/data-calendar.js",
+    "chunkName": "pages/apps/calendar/data-calendar",
+    "_name": "_7b1f73d4"
+  },
+  {
+    "name": "apps-chat-data___es",
+    "path": "/es/apps/chat/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/chat/data.js",
+    "chunkName": "pages/apps/chat/data",
+    "_name": "_2eb762e7"
+  },
+  {
+    "name": "apps-companies-data___es",
+    "path": "/es/apps/companies/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/companies/data.js",
+    "chunkName": "pages/apps/companies/data",
+    "_name": "_79d08030"
+  },
+  {
+    "name": "apps-tickets-data___es",
+    "path": "/es/apps/tickets/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/tickets/data.js",
+    "chunkName": "pages/apps/tickets/data",
+    "_name": "_1f6f7e98"
+  },
+  {
+    "name": "charts-apex-data___es",
+    "path": "/es/charts/apex/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/apex/data.js",
+    "chunkName": "pages/charts/apex/data",
+    "_name": "_ad8eeea4"
+  },
+  {
+    "name": "charts-c3-data___es",
+    "path": "/es/charts/c3/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/c3/data.js",
+    "chunkName": "pages/charts/c3/data",
+    "_name": "_7e75293c"
+  },
+  {
+    "name": "charts-chartist-data___es",
+    "path": "/es/charts/chartist/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartist/data.js",
+    "chunkName": "pages/charts/chartist/data",
+    "_name": "_be00ab10"
+  },
+  {
+    "name": "charts-chartjs-BarChart___es",
+    "path": "/es/charts/chartjs/BarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/BarChart.vue",
+    "chunkName": "pages/charts/chartjs/BarChart",
+    "_name": "_d34b3e8e"
+  },
+  {
+    "name": "charts-chartjs-DonutChart___es",
+    "path": "/es/charts/chartjs/DonutChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/DonutChart.vue",
+    "chunkName": "pages/charts/chartjs/DonutChart",
+    "_name": "_8d323dec"
+  },
+  {
+    "name": "charts-chartjs-LineChart___es",
+    "path": "/es/charts/chartjs/LineChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/LineChart.vue",
+    "chunkName": "pages/charts/chartjs/LineChart",
+    "_name": "_6fd4b6e8"
+  },
+  {
+    "name": "charts-chartjs-PieChart___es",
+    "path": "/es/charts/chartjs/PieChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/PieChart.vue",
+    "chunkName": "pages/charts/chartjs/PieChart",
+    "_name": "_417c4360"
+  },
+  {
+    "name": "charts-chartjs-PolarChart___es",
+    "path": "/es/charts/chartjs/PolarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/PolarChart.vue",
+    "chunkName": "pages/charts/chartjs/PolarChart",
+    "_name": "_940f9f24"
+  },
+  {
+    "name": "charts-chartjs-RadarChart___es",
+    "path": "/es/charts/chartjs/RadarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/RadarChart.vue",
+    "chunkName": "pages/charts/chartjs/RadarChart",
+    "_name": "_30fc3da6"
+  },
+  {
+    "name": "dashboard-analytics-channels___es",
+    "path": "/es/dashboard/analytics/channels",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/channels.vue",
+    "chunkName": "pages/dashboard/analytics/channels",
+    "_name": "_2813e4d0"
+  },
+  {
+    "name": "dashboard-analytics-overview___es",
+    "path": "/es/dashboard/analytics/overview",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/overview.vue",
+    "chunkName": "pages/dashboard/analytics/overview",
+    "_name": "_d4284a7e"
+  },
+  {
+    "name": "dashboard-analytics-social-media___es",
+    "path": "/es/dashboard/analytics/social-media",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/social-media.vue",
+    "chunkName": "pages/dashboard/analytics/social-media",
+    "_name": "_04f26d4c"
+  },
+  {
+    "name": "dashboard-analytics-sources___es",
+    "path": "/es/dashboard/analytics/sources",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/sources.vue",
+    "chunkName": "pages/dashboard/analytics/sources",
+    "_name": "_ae5725c0"
+  },
+  {
+    "name": "dashboard-analytics-users___es",
+    "path": "/es/dashboard/analytics/users",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/users.vue",
+    "chunkName": "pages/dashboard/analytics/users",
+    "_name": "_56ed2b70"
+  },
+  {
+    "name": "ecommerce-customers-data___es",
+    "path": "/es/ecommerce/customers/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/customers/data.js",
+    "chunkName": "pages/ecommerce/customers/data",
+    "_name": "_090faf58"
+  },
+  {
+    "name": "ecommerce-orders-data___es",
+    "path": "/es/ecommerce/orders/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/orders/data.js",
+    "chunkName": "pages/ecommerce/orders/data",
+    "_name": "_75ff59fe"
+  },
+  {
+    "name": "ecommerce-products-data___es",
+    "path": "/es/ecommerce/products/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products/data.js",
+    "chunkName": "pages/ecommerce/products/data",
+    "_name": "_5735febd"
+  },
+  {
+    "name": "tables-advanced-data___es",
+    "path": "/es/tables/advanced/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/advanced/data.js",
+    "chunkName": "pages/tables/advanced/data",
+    "_name": "_a6df0ec4"
+  },
+  {
+    "name": "task-kanban-data___es",
+    "path": "/es/task/kanban/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/kanban/data.js",
+    "chunkName": "pages/task/kanban/data",
+    "_name": "_64b73c13"
+  },
+  {
+    "name": "apps-calendar-data-calendar___fr",
+    "path": "/fr/apps/calendar/data-calendar",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/calendar/data-calendar.js",
+    "chunkName": "pages/apps/calendar/data-calendar",
+    "_name": "_7b1f73d4"
+  },
+  {
+    "name": "apps-chat-data___fr",
+    "path": "/fr/apps/chat/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/chat/data.js",
+    "chunkName": "pages/apps/chat/data",
+    "_name": "_2eb762e7"
+  },
+  {
+    "name": "apps-companies-data___fr",
+    "path": "/fr/apps/companies/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/companies/data.js",
+    "chunkName": "pages/apps/companies/data",
+    "_name": "_79d08030"
+  },
+  {
+    "name": "apps-tickets-data___fr",
+    "path": "/fr/apps/tickets/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/apps/tickets/data.js",
+    "chunkName": "pages/apps/tickets/data",
+    "_name": "_1f6f7e98"
+  },
+  {
+    "name": "charts-apex-data___fr",
+    "path": "/fr/charts/apex/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/apex/data.js",
+    "chunkName": "pages/charts/apex/data",
+    "_name": "_ad8eeea4"
+  },
+  {
+    "name": "charts-c3-data___fr",
+    "path": "/fr/charts/c3/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/c3/data.js",
+    "chunkName": "pages/charts/c3/data",
+    "_name": "_7e75293c"
+  },
+  {
+    "name": "charts-chartist-data___fr",
+    "path": "/fr/charts/chartist/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartist/data.js",
+    "chunkName": "pages/charts/chartist/data",
+    "_name": "_be00ab10"
+  },
+  {
+    "name": "charts-chartjs-BarChart___fr",
+    "path": "/fr/charts/chartjs/BarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/BarChart.vue",
+    "chunkName": "pages/charts/chartjs/BarChart",
+    "_name": "_d34b3e8e"
+  },
+  {
+    "name": "charts-chartjs-DonutChart___fr",
+    "path": "/fr/charts/chartjs/DonutChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/DonutChart.vue",
+    "chunkName": "pages/charts/chartjs/DonutChart",
+    "_name": "_8d323dec"
+  },
+  {
+    "name": "charts-chartjs-LineChart___fr",
+    "path": "/fr/charts/chartjs/LineChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/LineChart.vue",
+    "chunkName": "pages/charts/chartjs/LineChart",
+    "_name": "_6fd4b6e8"
+  },
+  {
+    "name": "charts-chartjs-PieChart___fr",
+    "path": "/fr/charts/chartjs/PieChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/PieChart.vue",
+    "chunkName": "pages/charts/chartjs/PieChart",
+    "_name": "_417c4360"
+  },
+  {
+    "name": "charts-chartjs-PolarChart___fr",
+    "path": "/fr/charts/chartjs/PolarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/PolarChart.vue",
+    "chunkName": "pages/charts/chartjs/PolarChart",
+    "_name": "_940f9f24"
+  },
+  {
+    "name": "charts-chartjs-RadarChart___fr",
+    "path": "/fr/charts/chartjs/RadarChart",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/charts/chartjs/RadarChart.vue",
+    "chunkName": "pages/charts/chartjs/RadarChart",
+    "_name": "_30fc3da6"
+  },
+  {
+    "name": "dashboard-analytics-channels___fr",
+    "path": "/fr/dashboard/analytics/channels",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/channels.vue",
+    "chunkName": "pages/dashboard/analytics/channels",
+    "_name": "_2813e4d0"
+  },
+  {
+    "name": "dashboard-analytics-overview___fr",
+    "path": "/fr/dashboard/analytics/overview",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/overview.vue",
+    "chunkName": "pages/dashboard/analytics/overview",
+    "_name": "_d4284a7e"
+  },
+  {
+    "name": "dashboard-analytics-social-media___fr",
+    "path": "/fr/dashboard/analytics/social-media",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/social-media.vue",
+    "chunkName": "pages/dashboard/analytics/social-media",
+    "_name": "_04f26d4c"
+  },
+  {
+    "name": "dashboard-analytics-sources___fr",
+    "path": "/fr/dashboard/analytics/sources",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/sources.vue",
+    "chunkName": "pages/dashboard/analytics/sources",
+    "_name": "_ae5725c0"
+  },
+  {
+    "name": "dashboard-analytics-users___fr",
+    "path": "/fr/dashboard/analytics/users",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/dashboard/analytics/users.vue",
+    "chunkName": "pages/dashboard/analytics/users",
+    "_name": "_56ed2b70"
+  },
+  {
+    "name": "ecommerce-customers-data___fr",
+    "path": "/fr/ecommerce/customers/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/customers/data.js",
+    "chunkName": "pages/ecommerce/customers/data",
+    "_name": "_090faf58"
+  },
+  {
+    "name": "ecommerce-orders-data___fr",
+    "path": "/fr/ecommerce/orders/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/orders/data.js",
+    "chunkName": "pages/ecommerce/orders/data",
+    "_name": "_75ff59fe"
+  },
+  {
+    "name": "ecommerce-products-data___fr",
+    "path": "/fr/ecommerce/products/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/products/data.js",
+    "chunkName": "pages/ecommerce/products/data",
+    "_name": "_5735febd"
+  },
+  {
+    "name": "tables-advanced-data___fr",
+    "path": "/fr/tables/advanced/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/tables/advanced/data.js",
+    "chunkName": "pages/tables/advanced/data",
+    "_name": "_a6df0ec4"
+  },
+  {
+    "name": "task-kanban-data___fr",
+    "path": "/fr/task/kanban/data",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/task/kanban/data.js",
+    "chunkName": "pages/task/kanban/data",
+    "_name": "_64b73c13"
+  },
+  {
+    "name": "ecommerce-product-detail-id___ar",
+    "path": "/ar/ecommerce/product-detail/:id?",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/product-detail/_id.vue",
+    "chunkName": "pages/ecommerce/product-detail/_id",
+    "_name": "_a4c1bb66"
+  },
+  {
+    "name": "email-reademail-id___ar",
+    "path": "/ar/email/reademail/:id?",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/reademail/_id.vue",
+    "chunkName": "pages/email/reademail/_id",
+    "_name": "_0a18512c"
+  },
+  {
+    "name": "ecommerce-product-detail-id___es",
+    "path": "/es/ecommerce/product-detail/:id?",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/product-detail/_id.vue",
+    "chunkName": "pages/ecommerce/product-detail/_id",
+    "_name": "_a4c1bb66"
+  },
+  {
+    "name": "email-reademail-id___es",
+    "path": "/es/email/reademail/:id?",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/reademail/_id.vue",
+    "chunkName": "pages/email/reademail/_id",
+    "_name": "_0a18512c"
+  },
+  {
+    "name": "ecommerce-product-detail-id___fr",
+    "path": "/fr/ecommerce/product-detail/:id?",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/product-detail/_id.vue",
+    "chunkName": "pages/ecommerce/product-detail/_id",
+    "_name": "_a4c1bb66"
+  },
+  {
+    "name": "email-reademail-id___fr",
+    "path": "/fr/email/reademail/:id?",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/reademail/_id.vue",
+    "chunkName": "pages/email/reademail/_id",
+    "_name": "_0a18512c"
+  },
+  {
+    "name": "ecommerce-product-detail-id___en",
+    "path": "/ecommerce/product-detail/:id?",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/ecommerce/product-detail/_id.vue",
+    "chunkName": "pages/ecommerce/product-detail/_id",
+    "_name": "_a4c1bb66"
+  },
+  {
+    "name": "email-reademail-id___en",
+    "path": "/email/reademail/:id?",
+    "component": "/Users/temirlanprimtayev/Documents/dormitory_marketplace/pages/email/reademail/_id.vue",
+    "chunkName": "pages/email/reademail/_id",
+    "_name": "_0a18512c"
+  },
+  {
+    "path": "/",
+    "component": "~/pages/dashboard/sales/index.vue",
+    "_name": "_7a6dbb4c"
+  }
+]
