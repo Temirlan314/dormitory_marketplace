@@ -1,4 +1,4 @@
-# Minton - Nuxtjs Responsive Admin Dashboard Template
+Nuxtjs Responsive Admin Dashboard Template
 
 ## Build Setup
 
@@ -17,4 +17,4 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+For a detailed explanation of how things work, check out [Nuxt.js docs](https://nuxtjs.org).
