@@ -1,12 +1,12 @@
 export default {
   loading: "~/components/loading.vue",
   router: {
-    extendRoutes(routes) {
-      routes.push({
-        path: "/",
-        component: "~/pages/dashboard/sales/index.vue"
-      });
-    }
+    // extendRoutes(routes) {
+    //   routes.push({
+    //     path: "/",
+    //     component: "~/pages/dashboard/sales/index.vue"
+    //   });
+    // }
   },
   /*
   ** Nuxt rendering mode
@@ -71,10 +71,45 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
   ],
+
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'token',
+        },
+        user: {
+          property: false,
+        },
+        endpoints: {
+          login: { url: '/rest/api/login', method: 'post' },
+          logout: { url: '/rest/api/logout', method: 'post' },
+          user: { url: '/rest/api/user', method: 'get' }
+        }
+      },
+    },
+    redirect: {
+      login: '/auth/login',
+      home: '/'
+    },
+    middleware: [
+      { src: '~/middleware/authenticator.js' }
+    ],
+    localStorage: false,
+  },
+  axios: {
+    prefix: process.env.APP_URL || 'https://b2b.bueno.money',
+    proxy: true,
+    credentials: true,
+    https: process.env.HTTPS || true,
+
+  },
+
   i18n: {
     locales: ['en', 'fr', 'es', 'ar'],
     defaultLocale: 'en',

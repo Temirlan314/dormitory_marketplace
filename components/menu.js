@@ -111,29 +111,6 @@ export const menuItems = [
         link: '/apps/calendar'
     },
     {
-        id: 20,
-        label: 'menuitems.email.text',
-        icon: 'ri-mail-line',
-        isMenuCollapsed: false,
-        subItems: [
-            {
-                id: 21,
-                label: 'menuitems.email.list.inbox',
-                link: '/email/inbox'
-            },
-            {
-                id: 22,
-                label: 'menuitems.email.list.reademail',
-                link: '/email/reademail/1'
-            },
-            {
-                id: 23,
-                label: 'menuitems.email.list.template',
-                link: '/email/templates'
-            }
-        ]
-    },
-    {
         id: 24,
         label: 'menuitems.companies.text',
         icon: 'ri-building-4-line',

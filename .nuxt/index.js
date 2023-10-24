@@ -17,6 +17,7 @@ import nuxt_plugin_plugin_39b9996c from 'nuxt_plugin_plugin_39b9996c' // Source:
 import nuxt_plugin_pluginrouting_f61dc134 from 'nuxt_plugin_pluginrouting_f61dc134' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
 import nuxt_plugin_pluginmain_a5c7146e from 'nuxt_plugin_pluginmain_a5c7146e' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
 import nuxt_plugin_bootstrapvue_28c5fb8f from 'nuxt_plugin_bootstrapvue_28c5fb8f' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_4d507d60 from 'nuxt_plugin_axios_4d507d60' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_fireauth_22211b23 from 'nuxt_plugin_fireauth_22211b23' // Source: ../plugins/fireauth.js (mode: 'all')
 import nuxt_plugin_fakeauth_71f68924 from 'nuxt_plugin_fakeauth_71f68924' // Source: ../plugins/fakeauth.js (mode: 'all')
 import nuxt_plugin_simplebar_28d69fac from 'nuxt_plugin_simplebar_28d69fac' // Source: ../plugins/simplebar.js (mode: 'all')
@@ -31,6 +32,7 @@ import nuxt_plugin_quilleditor_dc45d328 from 'nuxt_plugin_quilleditor_dc45d328' 
 import nuxt_plugin_chartist_94bdd556 from 'nuxt_plugin_chartist_94bdd556' // Source: ../plugins/chartist.js (mode: 'all')
 import nuxt_plugin_vuegooglemap_75fccaf1 from 'nuxt_plugin_vuegooglemap_75fccaf1' // Source: ../plugins/vue-googlemap.js (mode: 'all')
 import nuxt_plugin_stringfilter_e448f604 from 'nuxt_plugin_stringfilter_e448f604' // Source: ../plugins/string-filter (mode: 'all')
+import nuxt_plugin_auth_ca440060 from 'nuxt_plugin_auth_ca440060' // Source: ./auth.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -80,7 +82,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"minton","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"## Build Setup"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"minton","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"```bash # install dependencies $ yarn install"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,
@@ -225,6 +227,10 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_bootstrapvue_28c5fb8f(app.context, inject)
   }
 
+  if (typeof nuxt_plugin_axios_4d507d60 === 'function') {
+    await nuxt_plugin_axios_4d507d60(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_fireauth_22211b23 === 'function') {
     await nuxt_plugin_fireauth_22211b23(app.context, inject)
   }
@@ -279,6 +285,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_stringfilter_e448f604 === 'function') {
     await nuxt_plugin_stringfilter_e448f604(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_auth_ca440060 === 'function') {
+    await nuxt_plugin_auth_ca440060(app.context, inject)
   }
 
   // Lock enablePreview in context
