@@ -87,9 +87,9 @@ export default {
           property: false,
         },
         endpoints: {
-          login: { url: '/rest/api/login', method: 'post' },
-          logout: { url: '/rest/api/logout', method: 'post' },
-          user: { url: '/rest/api/user', method: 'get' }
+          login: { url: '/rest/auth/authenticate', method: 'post' },
+          // logout: { url: '/rest/logout', method: 'post' },
+          // user: { url: '/rest/user', method: 'get' }
         }
       },
     },
@@ -108,6 +108,12 @@ export default {
     credentials: true,
     https: process.env.HTTPS || true,
 
+  },
+  proxy: {
+    '/rest': {
+      target: process.env.API_URL || 'https://apib2b.bueno.money',
+      pathRewrite: { '^/rest': '/' }
+    }
   },
 
   i18n: {
@@ -140,5 +146,16 @@ export default {
     message: process.env.VUE_APP_MESSAGINGSENDERID,
     appid: process.env.VUE_APP_APPId,
     measurement: process.env.VUE_APP_MEASUREMENTID,
-  }
+    apiUrl: process.env.API_URL || 'https://apisg.bueno.money',
+    appUrl: process.env.APP_URL || 'https://sg.bueno.money',
+    scoreUrl: process.env.SCORE_URL || 'https://scoring-sg.bueno.money',
+    localeDefault: process.env.LOCALE_DEFAULT || "en-US",
+    currencyDefault: process.env.CURRENCY_DEFAULT || "SGD",
+  },
+  publicRuntimeConfig: {
+    apiUrl: process.env.API_URL,
+    lkUrl: process.env.APP_URL,
+    wssUrl: process.env.WSS_URL,
+    notifications: process.env.NOTIFICATIONS
+  },
 }

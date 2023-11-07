@@ -9,7 +9,46 @@ export default {
     };
   },
   data() {
-    return {};
+    return {
+      form: {
+        username: null,
+        password: null,
+      },
+      error: null,
+    };
+  },
+  methods: {
+    async handleSubmit(e) {
+      // this.$v.$touch();
+      // if (this.$v.$invalid) {
+      //   return;
+      // } else {
+      this.submitted = true;
+      await this.logIn();
+      this.submitted = false;
+      // }
+    },
+    async logIn() {
+      try {
+        // await this.$axios.get("/sanctum/csrf-cookie", {
+        //   headers: {
+        //     "X-Requested-With": "XMLHttpRequest",
+        //   },
+        //   withCredentials: true,
+        // });
+        console.log(this.form);
+        this.error = null;
+        await this.$auth
+          .loginWith("local", {
+            data: this.form,
+          })
+          .then(() => {
+            this.$router.push("/account/profile");
+          });
+      } catch (e) {
+        this.error = handleError(e);
+      }
+    },
   },
   layout: "auth",
 };
@@ -37,14 +76,12 @@ margin-bottom: 32px;"
           >
             Log in
           </div>
-          <form action="#">
+          <form @submit.prevent="handleSubmit">
             <div class="form-group mb-3">
               <input
                 class="form-control"
-                type="email"
-                id="emailaddress"
-                required
                 placeholder="Username or email"
+                v-model="form.username"
               />
             </div>
 
@@ -55,6 +92,7 @@ margin-bottom: 32px;"
                   id="password"
                   class="form-control"
                   placeholder="Password"
+                  v-model="form.password"
                 />
                 <div class="input-group-append" data-password="false">
                   <div class="input-group-text">
