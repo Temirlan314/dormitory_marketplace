@@ -89,3 +89,7 @@ sw.*
 *.swp
 .nuxt-build-jest
 package-lock.json
+/node_modules/
+/.nuxt/
+.nuxt
+node_modules

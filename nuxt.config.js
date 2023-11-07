@@ -1,12 +1,12 @@
 export default {
   loading: "~/components/loading.vue",
   router: {
-    // extendRoutes(routes) {
-    //   routes.push({
-    //     path: "/",
-    //     component: "~/pages/dashboard/sales/index.vue"
-    //   });
-    // }
+    extendRoutes(routes) {
+      routes.push({
+        path: "/",
+        component: "~/pages/auth/login.vue",
+      });
+    }
   },
   /*
   ** Nuxt rendering mode
