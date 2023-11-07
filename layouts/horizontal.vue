@@ -1,5 +1,6 @@
 <script>
 import { mapState } from "vuex";
+import Topbar from "~/components/Topbar.vue";
 
 /**
  * Horizontal layout
@@ -21,6 +22,7 @@ export default {
       document.body.classList.remove("right-bar-enabled");
     },
   },
+  components: { Topbar },
 };
 </script>
 
@@ -28,14 +30,6 @@ export default {
   <!-- Begin page -->
   <div id="wrapper">
     <Topbar />
-    <HorizontalNavbar
-      :type="layout.topbar"
-      :width="layout.layoutWidth"
-      :menu="layout.menuPosition"
-    />
-    <!-- ============================================================== -->
-    <!-- Start Page Content here -->
-    <!-- ============================================================== -->
     <div class="content-page">
       <div class="content">
         <div class="container-fluid">
