@@ -7,7 +7,7 @@ import ProductCard from "~/components/products/ProductCard.vue";
 export default {
   head() {
     return {
-      title: `Profile page`,
+      title: `My posts`,
     };
   },
   data() {
@@ -42,38 +42,11 @@ export default {
 </script>
 <template>
   <div>
-    <div class="d-flex" style="margin-bottom: 60px;">
-      <b-avatar
-        size="lg"
-        class="bg-soft-danger text-dark font-20"
-        style="width: 112px; height: 112px; margin-right: 32px;"
-      >
-        <span style="font-size: 32px;">AA</span>
-      </b-avatar>
-      <div class="text-dark">
-        <p class="name-text">
-          Alen Amina
-        </p>
-        <div class="info-text">
-          <div style="margin-bottom: 8px;">amina.alen@nu.edu.kz</div>
-          <div>@lemontartaletka</div>
-        </div>
-      </div>
+    <div style="margin-bottom: 24px;">
+      <router-link to="/account/profile"> Profile </router-link>/ My posts
     </div>
     <div class="big-text hoverable" style="margin-bottom: 32px;">
       My posts
-      <i class="mdi mdi-chevron-right"></i>
-    </div>
-    <div class="d-flex">
-      <div v-for="post in posts" style="margin-right: 24px;">
-        <ProductCard :product="post" />
-      </div>
-    </div>
-
-    <br /><br />
-    <div class="big-text hoverable" style="margin-bottom: 32px;">
-      My purchases
-      <i class="mdi mdi-chevron-right"></i>
     </div>
     <div class="d-flex">
       <div v-for="post in posts" style="margin-right: 24px;">
