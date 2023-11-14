@@ -87,7 +87,7 @@ export default {
     </div>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .big-text {
   color: #0d0d0d;
   font-size: 32px;
