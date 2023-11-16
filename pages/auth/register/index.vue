@@ -5,11 +5,17 @@
 export default {
   head() {
     return {
-      title: `Register | Minton - Nuxtjs Responsive Admin Dashboard Template`,
+      title: `Register `,
     };
   },
   data() {
     return {};
+  },
+  methods: {
+    routeTo(item) {
+      if (item == 0) this.$router.push("/auth/register/customer");
+      else if (item == 1) this.$router.push("/auth/register/store");
+    },
   },
   layout: "auth",
 };
@@ -18,6 +24,30 @@ export default {
 <template>
   <div class="row justify-content-center" style="margin-top: 198px">
     <div class="col-md-8 col-lg-6 col-xl-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="big-text text-center" style="align-self: stretch;">
+            Sign up as a
+          </div>
+          <div
+            style="display: flex;
+                flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: var(--space-m, 16px);
+align-self: stretch;"
+          >
+            <div class="btn btn-secondary" @click="routeTo(0)">
+              Customer
+            </div>
+            <div class="btn btn-secondary" @click="routeTo(1)">
+              Store
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-lg-6 col-xl-5" v-if="false">
       <div
         class="card"
         style="border-radius: var(--border-radius-promo, 24px);
@@ -114,3 +144,47 @@ export default {
   </div>
   <!-- end row -->
 </template>
+
+<style lang="scss" scoped>
+.card-body {
+  display: flex;
+  padding: var(--space-3xl, 40px) var(--space-2xl, 32px);
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-2xl, 32px);
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.card {
+  border-radius: var(--border-radius-promo, 24px);
+  box-shadow: 0px 4px 16px 0px rgba(16, 8, 63, 0.12);
+  background: var(--background-primary, #fff);
+  max-width: 394px;
+}
+
+.big-text {
+  color: var(--local-primary, #10083f);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.btn-secondary {
+  border-radius: 12px;
+  background: var(--action-neutral-neutral, #e2e1e8);
+  display: flex;
+  height: 48px;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  border: none;
+
+  color: var(--local-primary, #10083f);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px; /* 137.5% */
+}
+</style>

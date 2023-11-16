@@ -99,7 +99,8 @@ export default {
       hide-header
       hide-footer
       size="md"
-      body-class="card-modal-body px-3 py-2"
+      body-class="card-modal-body"
+      style="padding: 32px !important;"
       centered
     >
       <img
@@ -116,11 +117,18 @@ export default {
         <div class="product-price">{{ product.price }} {{ currency }}</div>
         <div class="product-description">{{ product.description }}</div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div
-            class="btn btn-secondary"
-            style="display: flex;
+      <div
+        style="display: flex;
+padding-top: var(--space-m, 16px);
+justify-content: flex-end;
+align-items: flex-start;
+gap: var(--space-m, 16px);
+
+align-self: stretch;"
+      >
+        <div
+          class="btn btn-secondary"
+          style="display: flex;
 height: 44px;
 padding: 7px 16px;
 justify-content: center;
@@ -138,14 +146,12 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: 30px;"
-          >
-            Back
-          </div>
+        >
+          Back
         </div>
-        <div class="col-md-6">
-          <div
-            class="btn btn-secondary"
-            style="display: flex;
+        <div
+          class="btn btn-secondary"
+          style="display: flex;
 height: 44px;
 padding: 7px 16px;
 justify-content: center;
@@ -161,9 +167,8 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: 30px;"
-          >
-            Chat with seller
-          </div>
+        >
+          Chat with seller
         </div>
       </div>
     </b-modal>
@@ -179,7 +184,6 @@ line-height: 30px;"
 .card-modal-body {
   padding: 24px 32px !important;
 }
-
 
 .product-name {
   color: var(--base-900-light, #1a1a1a);
