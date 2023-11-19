@@ -589,8 +589,12 @@ background:  #1F1F1F;"
         <div style="margin-right: 48px; " class="align-self-center">
           Job Board
         </div>
-        <b-avatar size="md" class="bg-soft-danger text-dark font-20"
-          ><span class="">AA</span></b-avatar
+        <router-link to="/account/profile">
+          <b-avatar
+            size="md"
+            class="bg-soft-danger text-dark font-20 hoverable"
+            ><span class="">AA</span></b-avatar
+          ></router-link
         >
       </div>
     </div>
@@ -598,6 +602,9 @@ background:  #1F1F1F;"
   <!-- end Topbar -->
 </template>
 <style>
+.hoverable:hover {
+  cursor: pointer;
+}
 .btn.dropdown-toggle.btn-light {
   border-radius: 24px 0px 0px 24px;
   height: 46px;

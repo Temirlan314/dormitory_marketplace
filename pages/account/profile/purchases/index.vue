@@ -17,21 +17,21 @@ export default {
       tryingToLogIn: false,
       isAuthError: false,
       posts: [
-        {
-          name: "QR hoodie",
-          price: "10 000",
-          description: "New hoodie",
-        },
-        {
-          name: "Murakami book",
-          price: "1 000",
-          description: "Used book",
-        },
-        {
-          name: "Mouse",
-          price: "45 000",
-          description: "New magic mouse. ",
-        },
+        // {
+        //   name: "QR hoodie",
+        //   price: "10 000",
+        //   description: "New hoodie",
+        // },
+        // {
+        //   name: "Murakami book",
+        //   price: "1 000",
+        //   description: "Used book",
+        // },
+        // {
+        //   name: "Mouse",
+        //   price: "45 000",
+        //   description: "New magic mouse. ",
+        // },
       ],
     };
   },
@@ -48,9 +48,56 @@ export default {
     <div class="big-text hoverable" style="margin-bottom: 32px;">
       My purchases
     </div>
-    <div class="d-flex">
+    <div class="d-flex" v-if="posts && posts.length">
       <div v-for="post in posts" style="margin-right: 24px;">
         <ProductCard :product="post" />
+      </div>
+    </div>
+    <div
+      v-else
+      class="d-flex justify-content-center align-content-center"
+      style="width:100%; height: 100%;"
+    >
+      <div
+        style="display: inline-flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 48px;"
+      >
+        <img src="~/assets/images/products/NoPosts.svg" alt="" />
+        <div
+          class=""
+          style="
+color:  #0D0D0D;
+font-size: 32px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.92px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 24px;"
+        >
+          <div>No purchases yet, make your first one!</div>
+          <div
+            class="btn btn-dark"
+            style="
+display: flex;
+justify-content: center;
+align-items: center;
+width: 162px;
+height: 48px;
+padding: 0px 24px;
+gap: 4px;
+border-radius: 24px;
+background:  #1F1F1F;"
+            @click="$router.push('/main')"
+          >
+            Go to main
+          </div>
+        </div>
       </div>
     </div>
   </div>

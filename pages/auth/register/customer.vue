@@ -46,7 +46,7 @@ export default {
           recipient: this.email,
         });
         if (response.data.success) {
-          const res = await this.$axios.post("rest/auth/register", {
+          const res = await this.$axios.post("rest/auth/register/customer", {
             email: this.email,
             firstname: this.name,
             secondName: this.surname,

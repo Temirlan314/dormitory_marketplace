@@ -1,4 +1,6 @@
 <script>
+import Multiselect from "vue-multiselect";
+
 /**
  * Register component
  */
@@ -8,13 +10,77 @@ export default {
       title: `Register `,
     };
   },
+  components: {
+    Multiselect,
+  },
   data() {
-    return {};
+    return {
+      email: "",
+      storeName: "",
+      username: "",
+      password: "",
+      isCodeSent: false,
+      token: "",
+      code: "",
+      category: null,
+    };
+  },
+  async asyncData({ $axios }) {
+    try {
+      const categories = await $axios.get("rest/category/list");
+      // let categories = {
+      //   data: [
+      //     { name: "SMTH", id: 0 },
+      //     { name: "OTHr", id: 1 },
+      //   ],
+      // };
+      return { categories: categories.data };
+    } catch (e) {
+      console.log(e);
+    }
   },
   methods: {
+    customLabel(item) {
+      return `${item.name}`;
+    },
     routeTo(item) {
       if (item == 0) this.$router.push("/auth/register/customer");
       else if (item == 1) this.$router.push("/auth/register/store");
+    },
+    async sendCode() {
+      try {
+        const res = await this.$axios.post("rest/auth/sendCode", {
+          recipient: this.email,
+        });
+        console.log(res);
+        this.token = res.data.token;
+        this.isCodeSent = true;
+      } catch (e) {
+        console.log(e);
+      }
+    },
+    async signUp() {
+      try {
+        const response = await this.$axios.post("rest/auth/validateCode", {
+          token: this.token,
+          userCode: this.code,
+          recipient: this.email,
+        });
+        if (response.data.success) {
+          const res = await this.$axios.post("rest/auth/register/store", {
+            email: this.email,
+            username: this.username,
+            password: this.password,
+            token: this.token,
+            categoryId: this.category.id,
+            storeName: this.storeName
+          });
+          console.log(res);
+          this.$router.push("/auth/login");
+        }
+      } catch (e) {
+        console.log(e);
+      }
     },
   },
   layout: "auth",
@@ -24,97 +90,77 @@ export default {
 <template>
   <div class="row justify-content-center" style="margin-top: 198px">
     <div class="col-md-8 col-lg-6 col-xl-5">
-      <div
-        class="card"
-        style="border-radius: var(--border-radius-promo, 24px);
-  background: var(--background-primary, #FFF);
-  box-shadow: 0px 4px 16px 0px rgba(16, 8, 63, 0.12);
-  padding: var(--space-3xl, 40px) var(--space-2xl, 32px);
-  gap: var(--space-2xl, 32px);"
-      >
-        <div class="card-body">
-          <div
-            style="color: #000;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 32px;"
-          >
+      <div class="card">
+        <div v-if="!isCodeSent" class="card-body">
+          <div class="big-text">
             Sign up
           </div>
-          <form action="#">
-            <div class="form-group mb-3">
-              <input
-                class="form-control"
-                type="email"
-                id="emailaddress"
-                required
-                placeholder="NU e-mail"
-              />
-            </div>
-            <div class="form-group mb-3">
-              <input class="form-control" required placeholder="Name" />
-            </div>
-            <div class="form-group mb-3">
-              <input class="form-control" required placeholder="Surname" />
-            </div>
-            <div class="form-group mb-3">
-              <input class="form-control" required placeholder="Username" />
-            </div>
+          <div
+            style="display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: var(--space-l, 20px);"
+          >
+            <input
+              class="form-control"
+              type="email"
+              id="emailaddress"
+              required
+              placeholder="NU e-mail"
+              style=""
+              v-model="email"
+            />
 
-            <div class="form-group mb-3">
-              <div class="input-group input-group-merge">
-                <input
-                  type="password"
-                  id="password"
-                  class="form-control"
-                  placeholder="Password"
-                />
-                <div class="input-group-append" data-password="false">
-                  <div class="input-group-text">
-                    <span class="password-eye"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <input
+              class="form-control"
+              required
+              placeholder="Store name"
+              v-model="storeName"
+            />
 
-            <div class="form-group mb-0 text-center">
-              <button
-                class="btn btn-soft-dark btn-block"
-                type="submit"
-                style="
-  height: 48px;
-  padding: 0px 24px;
-  gap: 4px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22px;"
-              >
-                Continue
-              </button>
-            </div>
-          </form>
+            <multiselect
+              v-model="category"
+              :options="categories"
+              placeholder="Select category"
+              trackBy="name"
+              :customLabel="customLabel"
+            ></multiselect>
+
+            <input
+              class="form-control"
+              required
+              placeholder="Username"
+              v-model="username"
+            />
+
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Password"
+              v-model="password"
+            />
+          </div>
+          <div class="btn btn-secondary" @click="sendCode()">Continue</div>
         </div>
-        <!-- end card-body -->
+        <div v-if="isCodeSent" class="card-body">
+          <div class="big-text">
+            We’ve sent you passcode, check you mailbox
+          </div>
+          <input
+            class="form-control"
+            type="text"
+            required
+            placeholder="Passcode"
+            v-model="code"
+          />
+          <div class="btn btn-secondary" @click="signUp()">
+            Sign Up
+          </div>
+        </div>
       </div>
       <!-- end card -->
-
-      <div class="row mt-3">
-        <div class="col-12 text-center">
-          <p class="text-muted">
-            Already have an account?
-            <nuxt-link
-              to="/auth/login"
-              class="text-primary font-weight-medium ml-1"
-              >Log in</nuxt-link
-            >
-          </p>
-        </div>
-        <!-- end col -->
-      </div>
-      <!-- end row -->
     </div>
     <!-- end col -->
   </div>
@@ -122,6 +168,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.form-control {
+  display: flex;
+  width: 330px;
+  height: 48px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 4px;
+}
 .card-body {
   display: flex;
   padding: var(--space-3xl, 40px) var(--space-2xl, 32px);
@@ -140,9 +195,11 @@ export default {
 
 .big-text {
   color: var(--local-primary, #10083f);
-  font-size: 32px;
+  text-align: center;
+  /* Desktop/Heading 4 */
+  font-size: 24px;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 28px;
 }
 
 .btn-secondary {
