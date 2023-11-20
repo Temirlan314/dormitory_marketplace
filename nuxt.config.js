@@ -89,7 +89,8 @@ export default {
         endpoints: {
           login: { url: '/rest/auth/authenticate', method: 'post' },
           // logout: { url: '/rest/logout', method: 'post' },
-          // user: { url: '/rest/user', method: 'get' }
+          user: { url: '/rest/user/info', method: 'get' },
+          role: { url: '/rest/user/role', method: 'get' },
         }
       },
     },

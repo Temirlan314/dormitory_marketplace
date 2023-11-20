@@ -17,27 +17,28 @@ export default {
       tryingToLogIn: false,
       isAuthError: false,
       posts: [
-        // {
-        //   name: "QR hoodie",
-        //   price: "10 000",
-        //   description: "New hoodie",
-        // },
-        // {
-        //   name: "Murakami book",
-        //   price: "1 000",
-        //   description: "Used book",
-        // },
-        // {
-        //   name: "Mouse",
-        //   price: "45 000",
-        //   description: "New magic mouse. ",
-        // },
+        {
+          name: "QR hoodie",
+          price: "10 000",
+          description: "New hoodie",
+        },
+        {
+          name: "Murakami book",
+          price: "1 000",
+          description: "Used book",
+        },
+        {
+          name: "Mouse",
+          price: "45 000",
+          description: "New magic mouse. ",
+        },
       ],
     };
   },
   computed: {},
   methods: {},
   components: { ProductCard },
+  // middleware: ["auth", "customer"],
 };
 </script>
 <template>
