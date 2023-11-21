@@ -26,7 +26,7 @@ export default {
                         it happens to the best of us. You might want to check your internet connection.
                         Here's a little tip that might help you get back on track.</p>
 
-                    <nuxt-link to="/" class="btn btn-primary mt-3"><i class="mdi mdi-reply mr-1"></i> Return Home</nuxt-link>
+                    <nuxt-link to="/main" class="btn btn-primary mt-3"><i class="mdi mdi-reply mr-1"></i> Return Home</nuxt-link>
                 </div>
 
             </div> <!-- end card-body -->

@@ -38,7 +38,7 @@ export default {
   computed: {},
   methods: {},
   components: { ProductCard },
-  middleware: ["auth", "customer"],
+  middleware: ["auth", "store"],
 };
 </script>
 <template>

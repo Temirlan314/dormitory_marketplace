@@ -35,13 +35,18 @@ export default {
       ],
     };
   },
-  computed: {},
+  computed: {
+    user() {
+      return this.$auth.user;
+    },
+  },
   methods: {},
   components: { ProductCard },
+  middleware: ["auth"],
 };
 </script>
 <template>
-  <div>
+  <div v-if="user.roles[0] == 'CUSTOMER'">
     <div
       style="display: flex;
 align-items: flex-start;
@@ -53,15 +58,15 @@ gap: 64px;"
           class="bg-soft-danger text-dark font-20"
           style="width: 112px; height: 112px; margin-right: 32px;"
         >
-          <span style="font-size: 32px;">AA</span>
+          <span style="font-size: 32px;"
+            >{{ user.firstname[0] }}{{ user.secondName[0] }}</span
+          >
         </b-avatar>
         <div class="text-dark">
-          <p class="name-text">
-            Alen Amina
-          </p>
+          <p class="name-text">{{ user.firstname }} {{ user.secondName }}</p>
           <div class="info-text">
-            <div style="margin-bottom: 8px;">amina.alen@nu.edu.kz</div>
-            <div>@lemontartaletka</div>
+            <div style="margin-bottom: 8px;">{{ user.email }}</div>
+            <div>@{{ user.username }}</div>
           </div>
         </div>
       </div>
@@ -81,6 +86,47 @@ gap: 64px;"
     <router-link to="/account/profile/posts">
       <div class="big-text hoverable" style="margin-bottom: 32px;">
         My posts
+        <i class="mdi mdi-chevron-right"></i>
+      </div>
+    </router-link>
+
+    <div class="d-flex">
+      <div v-for="post in posts" style="margin-right: 24px;">
+        <ProductCard :product="post" />
+      </div>
+    </div>
+  </div>
+  <div v-else-if="user.roles[0] == 'STORE'">
+    <div
+      style="display: flex;
+align-items: flex-start;
+gap: 64px;"
+    >
+      <div class="d-flex" style="margin-bottom: 60px; ">
+        <b-avatar
+          size="lg"
+          class="bg-soft-danger text-dark font-20"
+          style="width: 112px; height: 112px; margin-right: 32px;"
+        >
+          <span style="font-size: 32px;">{{ user.storeInfo.name[0] }}</span>
+        </b-avatar>
+        <div class="text-dark">
+          <p class="name-text">{{ user.storeInfo.name }}</p>
+          <div class="info-text">
+            <div style="margin-bottom: 8px;">{{ user.email }}</div>
+            <div>@{{ user.username }}</div>
+          </div>
+        </div>
+      </div>
+      <router-link to="/account/profile/edit">
+        <div class="btn edit-btn">
+          Edit
+        </div></router-link
+      >
+    </div>
+    <router-link to="/account/profile/products">
+      <div class="big-text hoverable" style="margin-bottom: 32px;">
+        My products
         <i class="mdi mdi-chevron-right"></i>
       </div>
     </router-link>
