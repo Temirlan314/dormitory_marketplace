@@ -10,6 +10,15 @@ export default {
       title: `Main feed`,
     };
   },
+  async asyncData({ $axios }) {
+    try {
+      const posts = await $axios.get("rest/post/list");
+   
+      return { posts: posts.data };
+    } catch (e) {
+      console.log(e);
+    }
+  },
   data() {
     return {
       submitted: false,
@@ -19,53 +28,53 @@ export default {
       cardModalShow: false,
       product: null,
       currency: "Tenge",
-      posts: [
-        {
-          name: "QR hoodie",
-          price: "10 000",
-          description: "New hoodie",
-        },
-        {
-          name: "Murakami book",
-          price: "1 000",
-          description: "New book, Norwegian wood, hard cover",
-        },
-        {
-          name: "Mouse",
-          price: "45 000",
-          description: "New magic mouse. ",
-        },
-        {
-          name: "QR hoodie",
-          price: "10 000",
-          description: "New hoodie",
-        },
-        {
-          name: "Murakami book",
-          price: "1 000",
-          description: "Used book",
-        },
-        {
-          name: "Mouse",
-          price: "45 000",
-          description: "New magic mouse. ",
-        },
-        {
-          name: "QR hoodie",
-          price: "10 000",
-          description: "New hoodie",
-        },
-        {
-          name: "Murakami book",
-          price: "1 000",
-          description: "Used book",
-        },
-        {
-          name: "Mouse",
-          price: "45 000",
-          description: "New magic mouse. ",
-        },
-      ],
+      // posts: [
+      //   {
+      //     name: "QR hoodie",
+      //     price: "10 000",
+      //     description: "New hoodie",
+      //   },
+      //   {
+      //     name: "Murakami book",
+      //     price: "1 000",
+      //     description: "New book, Norwegian wood, hard cover",
+      //   },
+      //   {
+      //     name: "Mouse",
+      //     price: "45 000",
+      //     description: "New magic mouse. ",
+      //   },
+      //   {
+      //     name: "QR hoodie",
+      //     price: "10 000",
+      //     description: "New hoodie",
+      //   },
+      //   {
+      //     name: "Murakami book",
+      //     price: "1 000",
+      //     description: "Used book",
+      //   },
+      //   {
+      //     name: "Mouse",
+      //     price: "45 000",
+      //     description: "New magic mouse. ",
+      //   },
+      //   {
+      //     name: "QR hoodie",
+      //     price: "10 000",
+      //     description: "New hoodie",
+      //   },
+      //   {
+      //     name: "Murakami book",
+      //     price: "1 000",
+      //     description: "Used book",
+      //   },
+      //   {
+      //     name: "Mouse",
+      //     price: "45 000",
+      //     description: "New magic mouse. ",
+      //   },
+      // ],
     };
   },
   computed: {},
@@ -76,6 +85,7 @@ export default {
     },
   },
   components: { ProductCard },
+  middleware: ["auth"],
 };
 </script>
 <template>

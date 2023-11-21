@@ -10,29 +10,23 @@ export default {
       title: `My posts`,
     };
   },
+  async asyncData({ $axios, $auth }) {
+    try {
+      const posts = await $axios.get(`rest/post/list?ownerId=${$auth.user.id}`, {
+        ownerId: $auth.user.id,
+      });
+
+      return { posts: posts.data };
+    } catch (e) {
+      console.log(e);
+    }
+  },
   data() {
     return {
       submitted: false,
       authError: null,
       tryingToLogIn: false,
       isAuthError: false,
-      posts: [
-        {
-          name: "QR hoodie",
-          price: "10 000",
-          description: "New hoodie",
-        },
-        {
-          name: "Murakami book",
-          price: "1 000",
-          description: "Used book",
-        },
-        {
-          name: "Mouse",
-          price: "45 000",
-          description: "New magic mouse. ",
-        },
-      ],
     };
   },
   computed: {},

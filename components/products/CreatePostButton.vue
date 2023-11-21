@@ -1,5 +1,7 @@
 <script>
 import vue2Dropzone from "vue2-dropzone";
+import Multiselect from "vue-multiselect";
+import objectToFormData from "~/helpers/objectToFormData";
 
 /**
  * Product Card component
@@ -7,10 +9,17 @@ import vue2Dropzone from "vue2-dropzone";
 export default {
   components: {
     vueDropzone: vue2Dropzone,
+    Multiselect,
   },
   data() {
     return {
       createModal: false,
+      title: "",
+      price: null,
+      description: "",
+      categories: [],
+      category: null,
+      files: [],
       dropzoneOptions: {
         url: "https://httpbin.org/post",
         thumbnailWidth: 150,
@@ -24,6 +33,14 @@ export default {
   },
   props: {},
   computed: {},
+  async mounted() {
+    try {
+      const categories = await this.$axios.get("rest/category/list");
+      this.categories = categories.data;
+    } catch (e) {
+      console.log(e);
+    }
+  },
   methods: {
     template: function() {
       return ` <div class="dropzone-previews mt-3">
@@ -48,6 +65,26 @@ export default {
             </div>
         </div>
         `;
+    },
+    customLabel(item) {
+      return `${item.name}`;
+    },
+    async createPost() {
+      if (this.title && this.price && this.description && this.category) {
+        try {
+          let params = {
+            title: this.title,
+            price: parseInt(this.price),
+            description: this.description,
+            categoryId: this.category.id,
+          };
+          let body = objectToFormData(params);
+          await this.$axios.post("rest/post/create", body);
+          this.createModal = false;
+        } catch (e) {
+          console.log(e);
+        }
+      }
     },
   },
 };
@@ -85,6 +122,7 @@ background:  #1F1F1F;"
           :use-custom-slot="true"
           :options="dropzoneOptions"
           style="width: 100%;"
+          v-model="files"
         >
           <div class="dz-message needsclick">
             <i
@@ -108,7 +146,12 @@ line-height: normal;"
               <div class="label-text">
                 Naming*
               </div>
-              <input type="text" class="form-control" placeholder="Naming*" />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Naming*"
+                v-model="title"
+              />
             </div>
           </div>
           <div class="edit-input">
@@ -116,7 +159,12 @@ line-height: normal;"
               <div class="label-text">
                 Price*
               </div>
-              <input type="text" class="form-control" placeholder="Price*" />
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Price*"
+                v-model="price"
+              />
             </div>
           </div>
           <div class="edit-input">
@@ -124,7 +172,26 @@ line-height: normal;"
               <div class="label-text">
                 Price*
               </div>
-              <input type="text" class="form-control" placeholder="Price*" />
+              <multiselect
+                v-model="category"
+                :options="categories"
+                placeholder="Select category"
+                trackBy="name"
+                :customLabel="customLabel"
+              ></multiselect>
+            </div>
+          </div>
+          <div class="edit-input">
+            <div class="name">
+              <div class="label-text">
+                Description*
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Description*"
+                v-model="description"
+              />
             </div>
           </div>
         </div>
@@ -178,6 +245,7 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: 30px;"
+            @click="createPost()"
           >
             Create post
           </div>
@@ -224,9 +292,9 @@ line-height: 30px;"
 
 .label-text {
   color: var(--local-secondary, #706b8c);
-  font-size: 18px;
+  // font-size: 18px;
   font-weight: 700;
   line-height: 38px;
-  width: 115px;
+  width: 130px;
 }
 </style>

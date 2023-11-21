@@ -1,7 +1,13 @@
 export default function ({ $auth, error }) {
-    const role = $auth.role
-    if (role === 'CUSTOMER') {
+    if ($auth.user) {
+        const role = $auth.user.roles[0]
+        if (role === 'CUSTOMER') {
+        } else {
+            error({ statusCode: 403 })
+        }
     } else {
-        error({ statusCode: 403 })
+
+        redirectToLogin()
+
     }
 }

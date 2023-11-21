@@ -219,7 +219,7 @@ background:  #1F1F1F;"
       </div>
       <div></div>
     </div>
-    <div class="d-flex text-dark" v-if="user.roles[0] == 'CUSTOMER'">
+    <div class="d-flex text-dark" v-if="user && user.roles[0] == 'CUSTOMER'">
       <div style="margin-right: 48px; " class="align-self-center">
         Chats
       </div>
@@ -231,13 +231,13 @@ background:  #1F1F1F;"
       </div>
       <router-link to="/account/profile">
         <b-avatar size="md" class="bg-soft-danger text-dark font-20 hoverable"
-          ><span class=""
+          ><span class="" v-if="user"
             >{{ user.firstname[0] }}{{ user.secondName[0] }}</span
           ></b-avatar
         ></router-link
       >
     </div>
-    <div class="d-flex text-dark" v-else-if="user.roles[0] == 'STORE'">
+    <div class="d-flex text-dark" v-else-if="user && user.roles[0] == 'STORE'">
       <div style="margin-right: 48px; " class="align-self-center">
         Chats
       </div>
