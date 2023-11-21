@@ -13,7 +13,7 @@ export default {
   async asyncData({ $axios }) {
     try {
       const posts = await $axios.get("rest/post/list");
-   
+
       return { posts: posts.data };
     } catch (e) {
       console.log(e);
@@ -77,7 +77,11 @@ export default {
       // ],
     };
   },
-  computed: {},
+  computed: {
+    role() {
+      return this.$auth.user.roles[0];
+    },
+  },
   methods: {
     openCardModal(post) {
       this.product = post;
@@ -157,7 +161,8 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: 30px;"
-@click="cardModalShow = false"
+          @click="cardModalShow = false"
+          v-if="role !== 'STORE'"
         >
           Back
         </div>
@@ -179,6 +184,7 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: 30px;"
+          v-if="role !== 'STORE'"
         >
           Chat with seller
         </div>

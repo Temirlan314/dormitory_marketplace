@@ -1,5 +1,5 @@
 <script>
-import CreatePostButton from "./products/CreatePostButton.vue";
+import CreatePostButton from "~/components/products/CreatePostButton.vue";
 
 /**
  * Topbar component

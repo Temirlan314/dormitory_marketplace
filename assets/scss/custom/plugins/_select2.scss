@@ -23,6 +23,15 @@
   gap: 4px;
 }
 
+.custom-multiselect,
+.multiselect__tags {
+  border-radius: 8px;
+  display: flex;
+  height: 38px;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
 .multiselect__placeholder {
   padding-top: 0 !important;
   margin-bottom: 0 !important;

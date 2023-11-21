@@ -178,6 +178,7 @@ line-height: normal;"
                 placeholder="Select category"
                 trackBy="name"
                 :customLabel="customLabel"
+                class="custom-multiselect"
               ></multiselect>
             </div>
           </div>
@@ -292,9 +293,21 @@ line-height: 30px;"
 
 .label-text {
   color: var(--local-secondary, #706b8c);
-  // font-size: 18px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 38px;
-  width: 130px;
+  width: 115px;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid var(--border-default, #d6d5dd);
+  display: flex;
+  padding: var(--space-2xs, 4px) var(--space-m, 16px);
+
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
 }
 </style>
