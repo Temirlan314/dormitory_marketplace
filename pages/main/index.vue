@@ -115,6 +115,7 @@ export default {
       >
         <div class="product-name">{{ product.name }}</div>
         <div class="product-price">{{ product.price }} {{ currency }}</div>
+        <div class="product-price">Seller: Temirlan Primptayev</div>
         <div class="product-description">{{ product.description }}</div>
       </div>
       <div
@@ -146,6 +147,7 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: 30px;"
+@click="cardModalShow = false"
         >
           Back
         </div>
