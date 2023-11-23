@@ -10,6 +10,21 @@ export default {
       title: `My posts`,
     };
   },
+  async asyncData({ $axios, $auth }) {
+    try {
+      const posts = await $axios.get(
+        `rest/post/list?ownerId=${$auth.user.id}`,
+        {
+          ownerId: $auth.user.id,
+        }
+      );
+      const categories = await $axios.get("rest/category/list");
+
+      return { categories: categories.data, posts: posts.data };
+    } catch (e) {
+      console.log(e);
+    }
+  },
   data() {
     return {
       submitted: false,
@@ -44,10 +59,10 @@ export default {
 <template>
   <div>
     <div style="margin-bottom: 24px;">
-      <router-link to="/account/profile"> Profile </router-link>/ My posts
+      <router-link to="/account/profile"> Profile </router-link>/ My products
     </div>
     <div class="big-text hoverable" style="margin-bottom: 32px;">
-      My posts
+      My products
     </div>
     <div class="d-flex" v-if="posts && posts.length">
       <div v-for="post in posts" style="margin-right: 24px;">

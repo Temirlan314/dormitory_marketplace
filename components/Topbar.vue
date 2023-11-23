@@ -57,6 +57,9 @@ export default {
     toggleMenu() {
       this.$parent.toggleMenu();
     },
+    logoutUser() {
+      this.$auth.strategy.token.reset();
+    },
     /**
      * Full screen
      */
@@ -229,13 +232,44 @@ background:  #1F1F1F;"
       <div style="margin-right: 48px; " class="align-self-center">
         Job Board
       </div>
-      <router-link to="/account/profile">
-        <b-avatar size="md" class="bg-soft-danger text-dark font-20 hoverable"
-          ><span class="" v-if="user"
-            >{{ user.firstname[0] }}{{ user.secondName[0] }}</span
-          ></b-avatar
-        ></router-link
+      <!-- <router-link to="/account/profile"> -->
+      <b-avatar
+        size="md"
+        class="bg-soft-danger text-dark font-20 hoverable"
+        @click="showDropdown = !showDropdown"
+        ><span class="" v-if="user"
+          >{{ user.firstname[0] }}{{ user.secondName[0] }}</span
+        ></b-avatar
       >
+      <!-- </router-link> -->
+      <b-dropdown
+        id="dropdown-1"
+        text="Dropdown Button"
+        class="m-md-2"
+        toggle-class="dropdown-btn"
+        v-model="showDropdown"
+      >
+        <b-dropdown-item
+          ><router-link
+            tag="a"
+            to="/account/profile"
+            class="dropdown-item mr-4"
+          >
+            <i class="fe-user mr-1"></i>
+            <span>Edit account</span>
+          </router-link></b-dropdown-item
+        >
+        <b-dropdown-item>
+          <a
+            class="dropdown-item text-danger"
+            @click="logoutUser"
+            href="javascript: void(0);"
+          >
+            <i class="fe-log-out mr-1"></i>
+            <span>{{ $t("logOut") }}</span>
+          </a></b-dropdown-item
+        >
+      </b-dropdown>
     </div>
     <div class="d-flex text-dark" v-else-if="user && user.roles[0] == 'STORE'">
       <div style="margin-right: 48px; " class="align-self-center">
@@ -244,11 +278,37 @@ background:  #1F1F1F;"
       <div style="margin-right: 48px;  " class="align-self-center">
         Analytics
       </div>
-      <router-link to="/account/profile">
-        <b-avatar size="md" class="bg-soft-danger text-dark font-20 hoverable"
-          ><span class="">{{ user.storeInfo.name[0] }}</span></b-avatar
-        ></router-link
+      <b-avatar size="md" class="bg-soft-danger text-dark font-20 hoverable"
+        ><span class="">{{ user.storeInfo.name[0] }}</span></b-avatar
       >
+      <b-dropdown
+        id="dropdown-1"
+        text="Dropdown Button"
+        class="m-md-2"
+        toggle-class="dropdown-btn"
+        v-model="showDropdown"
+      >
+        <b-dropdown-item
+          ><router-link
+            tag="a"
+            to="/account/profile"
+            class="dropdown-item mr-4"
+          >
+            <i class="fe-user mr-1"></i>
+            <span>Edit account</span>
+          </router-link></b-dropdown-item
+        >
+        <b-dropdown-item>
+          <a
+            class="dropdown-item text-danger"
+            @click="logoutUser"
+            href="javascript: void(0);"
+          >
+            <i class="fe-log-out mr-1"></i>
+            <span>{{ $t("logOut") }}</span>
+          </a></b-dropdown-item
+        >
+      </b-dropdown>
     </div>
   </div>
   <!-- end Topbar -->
@@ -262,5 +322,8 @@ background:  #1F1F1F;"
   height: 46px;
   background-color: #f1f1f4;
   border: #e2e1e8;
+}
+.dropdown-btn {
+  display: none;
 }
 </style>

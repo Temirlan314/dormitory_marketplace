@@ -32,7 +32,15 @@ export default {
     <div class="card-text">
       <div class="product-price">{{ product.price }} {{ currency }}</div>
       <div class="product-name">{{ product.name }}</div>
-      <div class="product-description">{{ product.description }}</div>
+      <div
+        class="product-description"
+        style="        
+          text-overflow: clip;
+          overflow: hidden;
+          height: 24px;"
+      >
+        {{ product.description }}
+      </div>
     </div>
   </div>
 </template>

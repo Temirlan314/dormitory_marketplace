@@ -101,8 +101,8 @@ export default {
     <div class="row">
       <div
         v-for="post in posts"
-        style="margin-right: 24px; margin-bottom: 32px;"
-        class="col"
+        style=" margin-bottom: 32px;"
+        class="col-4 hoverable"
         @click="openCardModal(post)"
       >
         <ProductCard :product="post" />
@@ -130,7 +130,9 @@ export default {
         <div class="product-name">{{ product.name }}</div>
         <div class="product-price">{{ product.price }} {{ currency }}</div>
         <div class="product-price">Seller: Temirlan Primptayev</div>
-        <div class="product-description">{{ product.description }}</div>
+        <div class="product-description">
+          {{ product.description }}
+        </div>
       </div>
       <div
         style="display: flex;
@@ -152,10 +154,8 @@ gap: 12px;
 flex: 1 0 0;
 border-radius: 24px;
 border: 1px solid var(--tertiary-gray-200-light, #E4E4E7);
-background: var(--tertiary-gray-100-light, #F4F4F5);
+background: var(--action-accent-accent, #0D0D0D);
 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
-
-color: var(--base-900-light, #1A1A1A);
 text-align: center;
 font-size: 18px;
 font-style: normal;
@@ -164,7 +164,7 @@ line-height: 30px;"
           @click="cardModalShow = false"
           v-if="role !== 'STORE'"
         >
-          Back
+          Buy
         </div>
         <div
           class="btn btn-secondary"
@@ -177,8 +177,10 @@ gap: 12px;
 flex: 1 0 0;
 border-radius: 24px;
 border: 1px solid var(--tertiary-gray-200-light, #E4E4E7);
-background: var(--action-accent-accent, #0D0D0D);
+background: var(--tertiary-gray-100-light, #F4F4F5);
 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+
+color: var(--base-900-light, #1A1A1A);
 text-align: center;
 font-size: 18px;
 font-style: normal;
