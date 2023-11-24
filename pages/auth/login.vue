@@ -43,7 +43,7 @@ export default {
             data: this.form,
           })
           .then(() => {
-            this.$router.push("/account/profile");
+            this.$router.push("/main");
           });
       } catch (e) {
         this.error = handleError(e);

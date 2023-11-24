@@ -246,12 +246,12 @@ line-height: 30px;"
           <div class="edit-input">
             <div class="name">
               <div class="label-text">
-                Naming*
+                Naming
               </div>
               <input
                 type="text"
                 class="form-control"
-                placeholder="Naming*"
+                placeholder="Naming"
                 v-model="title"
               />
             </div>
@@ -259,12 +259,12 @@ line-height: 30px;"
           <div class="edit-input">
             <div class="name">
               <div class="label-text">
-                Price*
+                Price
               </div>
               <input
                 type="number"
                 class="form-control"
-                placeholder="Price*"
+                placeholder="Price"
                 v-model="price"
               />
             </div>
@@ -272,7 +272,7 @@ line-height: 30px;"
           <div class="edit-input">
             <div class="name">
               <div class="label-text">
-                Price*
+                Category
               </div>
               <multiselect
                 v-model="category"
@@ -287,12 +287,12 @@ line-height: 30px;"
           <div class="edit-input">
             <div class="name">
               <div class="label-text">
-                Description*
+                Description
               </div>
               <input
                 type="text"
                 class="form-control"
-                placeholder="Description*"
+                placeholder="Description"
                 v-model="description"
               />
             </div>

@@ -7,6 +7,7 @@ import CreatePostButton from "~/components/products/CreatePostButton.vue";
 export default {
   data() {
     return {
+      showDropdown: false,
       languages: [
         {
           flag: require("~/assets/images/flags/us.jpg"),
@@ -59,6 +60,7 @@ export default {
     },
     logoutUser() {
       this.$auth.strategy.token.reset();
+      this.$router.push("/auth/login");
     },
     /**
      * Full screen
@@ -116,16 +118,6 @@ export default {
     /**
      * Logout user
      */
-    logoutUser() {
-      if (process.env.auth === "firebase") {
-        this.$store.dispatch("auth/logOut");
-      } else if (process.env.auth === "fakebackend") {
-        this.$store.dispatch("authfack/logout");
-      }
-      this.$router.push({
-        path: "/account/login",
-      });
-    },
   },
   components: { CreatePostButton },
 };
@@ -232,44 +224,40 @@ background:  #1F1F1F;"
       <div style="margin-right: 48px; " class="align-self-center">
         Job Board
       </div>
-      <!-- <router-link to="/account/profile"> -->
-      <b-avatar
-        size="md"
-        class="bg-soft-danger text-dark font-20 hoverable"
-        @click="showDropdown = !showDropdown"
-        ><span class="" v-if="user"
-          >{{ user.firstname[0] }}{{ user.secondName[0] }}</span
-        ></b-avatar
+
+      <b-nav-item-dropdown
+        style="list-style-type: none;"
+        right
+        class="notification-list topbar-dropdown"
+        menu-class="profile-dropdown"
+        toggle-class="p-0"
       >
-      <!-- </router-link> -->
-      <b-dropdown
-        id="dropdown-1"
-        text="Dropdown Button"
-        class="m-md-2"
-        toggle-class="dropdown-btn"
-        v-model="showDropdown"
-      >
-        <b-dropdown-item
-          ><router-link
-            tag="a"
-            to="/account/profile"
-            class="dropdown-item mr-4"
-          >
-            <i class="fe-user mr-1"></i>
-            <span>Edit account</span>
-          </router-link></b-dropdown-item
+        <template slot="button-content" class="nav-link dropdown-toggles">
+          <div class="nav-user mr-0">
+            <b-avatar
+              size="md"
+              class="bg-soft-danger text-dark font-20 hoverable"
+              @click=""
+              ><span class="" v-if="user"
+                >{{ user.firstname[0] }}{{ user.secondName[0] }}</span
+              ></b-avatar
+            >
+          </div>
+        </template>
+
+        <router-link tag="a" to="/account/profile" class="dropdown-item mr-4">
+          <i class="fe-user mr-1"></i>
+          <span>Profile</span>
+        </router-link>
+        <a
+          class="dropdown-item text-danger"
+          @click="logoutUser"
+          href="javascript: void(0);"
         >
-        <b-dropdown-item>
-          <a
-            class="dropdown-item text-danger"
-            @click="logoutUser"
-            href="javascript: void(0);"
-          >
-            <i class="fe-log-out mr-1"></i>
-            <span>{{ $t("logOut") }}</span>
-          </a></b-dropdown-item
-        >
-      </b-dropdown>
+          <i class="fe-log-out mr-1"></i>
+          <span>{{ $t("logOut") }}</span>
+        </a>
+      </b-nav-item-dropdown>
     </div>
     <div class="d-flex text-dark" v-else-if="user && user.roles[0] == 'STORE'">
       <div style="margin-right: 48px; " class="align-self-center">
@@ -278,37 +266,37 @@ background:  #1F1F1F;"
       <div style="margin-right: 48px;  " class="align-self-center">
         Analytics
       </div>
-      <b-avatar size="md" class="bg-soft-danger text-dark font-20 hoverable"
-        ><span class="">{{ user.storeInfo.name[0] }}</span></b-avatar
+
+      <b-nav-item-dropdown
+        style="list-style-type: none;"
+        right
+        class="notification-list topbar-dropdown"
+        menu-class="profile-dropdown"
+        toggle-class="p-0"
       >
-      <b-dropdown
-        id="dropdown-1"
-        text="Dropdown Button"
-        class="m-md-2"
-        toggle-class="dropdown-btn"
-        v-model="showDropdown"
-      >
-        <b-dropdown-item
-          ><router-link
-            tag="a"
-            to="/account/profile"
-            class="dropdown-item mr-4"
-          >
-            <i class="fe-user mr-1"></i>
-            <span>Edit account</span>
-          </router-link></b-dropdown-item
+        <template slot="button-content" class="nav-link dropdown-toggles">
+          <div class="nav-user mr-0">
+            <b-avatar
+              size="md"
+              class="bg-soft-danger text-dark font-20 hoverable"
+              ><span class="">{{ user.storeInfo.name[0] }}</span></b-avatar
+            >
+          </div>
+        </template>
+
+        <router-link tag="a" to="/account/profile" class="dropdown-item mr-4">
+          <i class="fe-user mr-1"></i>
+          <span>Profile</span>
+        </router-link>
+        <a
+          class="dropdown-item text-danger"
+          @click="logoutUser"
+          href="javascript: void(0);"
         >
-        <b-dropdown-item>
-          <a
-            class="dropdown-item text-danger"
-            @click="logoutUser"
-            href="javascript: void(0);"
-          >
-            <i class="fe-log-out mr-1"></i>
-            <span>{{ $t("logOut") }}</span>
-          </a></b-dropdown-item
-        >
-      </b-dropdown>
+          <i class="fe-log-out mr-1"></i>
+          <span>{{ $t("logOut") }}</span>
+        </a>
+      </b-nav-item-dropdown>
     </div>
   </div>
   <!-- end Topbar -->
@@ -325,5 +313,8 @@ background:  #1F1F1F;"
 }
 .dropdown-btn {
   display: none;
+}
+.li {
+  list-style-type: none;
 }
 </style>
