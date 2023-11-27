@@ -46,7 +46,11 @@ export default {
       editShow: false,
     };
   },
-  computed: {},
+  computed: {
+    user() {
+      return this.$auth.user;
+    },
+  },
   watch: {
     cardModalShow(val) {
       if (!val) {
@@ -176,7 +180,9 @@ background:  #1F1F1F;"
         >
           <div class="product-name">{{ product.name }}</div>
           <div class="product-price">{{ product.price }} {{ currency }}</div>
-          <div class="product-price">Seller: Temirlan Primptayev</div>
+          <div class="product-price">
+            Seller: {{ user.firstname }} {{ user.secondName }}
+          </div>
           <div class="product-description">{{ product.description }}</div>
         </div>
         <div

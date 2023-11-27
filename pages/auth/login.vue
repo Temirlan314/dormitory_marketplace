@@ -30,12 +30,12 @@ export default {
     },
     async logIn() {
       try {
-        // await this.$axios.get("/sanctum/csrf-cookie", {
-        //   headers: {
-        //     "X-Requested-With": "XMLHttpRequest",
-        //   },
-        //   withCredentials: true,
-        // });
+        await this.$axios.get("/sanctum/csrf-cookie", {
+          headers: {
+            "X-Requested-With": "XMLHttpRequest",
+          },
+          withCredentials: true,
+        });
         console.log(this.form);
         this.error = null;
         await this.$auth

@@ -1,5 +1,6 @@
 <script>
 import CreatePostButton from "~/components/products/CreatePostButton.vue";
+import { mapGetters } from "vuex";
 
 /**
  * Topbar component
@@ -8,6 +9,8 @@ export default {
   data() {
     return {
       showDropdown: false,
+      search: null,
+      selectedCategory: null,
       languages: [
         {
           flag: require("~/assets/images/flags/us.jpg"),
@@ -36,15 +39,19 @@ export default {
         },
       ],
       current_language: this.$i18n.locale,
+      categories: [],
       text: null,
       flag: null,
       value: null,
     };
   },
-  mounted() {
-    this.value = this.languages.find((x) => x.language === this.$i18n.locale);
-    this.text = this.value.title;
-    this.flag = this.value.flag;
+  async mounted() {
+    try {
+      const categories = await this.$axios.get("rest/category/list");
+      this.categories = categories.data;
+    } catch (e) {
+      console.log(e);
+    }
   },
   computed: {
     user() {
@@ -55,6 +62,19 @@ export default {
     /**
      * Toggle menu
      */
+    async searchProduct() {
+      if (this.$route.name == "main___en") {
+        const reponse = await this.$axios.get("rest/post/list", {
+          params: {
+            title: this.search,
+            categoryId: this.selectedCategory?.id,
+          },
+        });
+        this.$store.dispatch("posts/setPosts", reponse.data);
+      } else {
+        this.$router.push(`/main?search=${this.search}`);
+      }
+    },
     toggleMenu() {
       this.$parent.toggleMenu();
     },
@@ -160,20 +180,28 @@ gap: 24px;"
                 class="input-group-prepend"
                 variant="light"
                 style="border-radius: 24px;"
+                v-model="selectedCategory"
               >
                 <template v-slot:button-content>
-                  Category
-                  <i
-                    class="mdi mdi-chevron-down "
-                    style="margin-left: 83px; font-size: 20px;
+                  <div
+                    style="        max-width: 168px;  overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;"
+                  >
+                    {{ selectedCategory ? selectedCategory.name : "Category" }}
+                    <i
+                      class="mdi mdi-chevron-down "
+                      style="margin-left: 83px; font-size: 20px;
 line-height: 20px;"
-                  ></i>
+                    ></i>
+                  </div>
                 </template>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div role="separator" class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+
+                <b-dropdown-item
+                  v-for="category in categories"
+                  @click="selectedCategory = category"
+                  >{{ category.name }}</b-dropdown-item
+                >
               </b-dropdown>
             </div>
             <div>
@@ -186,6 +214,8 @@ line-height: 20px;"
   height: 46px;
   border: #e2e1e8;
   background-color: #F1F1F4;"
+                v-model="search"
+                @keyup.enter="searchProduct"
               />
               <!-- <div class="input-group-append">
           <button class="btn" type="submit">
@@ -301,7 +331,7 @@ background:  #1F1F1F;"
   </div>
   <!-- end Topbar -->
 </template>
-<style>
+<style lang='scss'>
 .hoverable:hover {
   cursor: pointer;
 }

@@ -16,6 +16,8 @@ export default {
       authError: null,
       tryingToLogIn: false,
       isAuthError: false,
+      user: null,
+      password: null,
       posts: [
         {
           name: "QR hoodie",
@@ -36,8 +38,30 @@ export default {
     };
   },
   computed: {},
-  methods: {},
+  mounted() {
+    this.user = this.$auth.user;
+  },
+  methods: {
+    async updateUser() {
+      try {
+        const user = await this.$axios.post(`rest/user/update/${user.id}`, {
+          params: {
+            userId: user.id,
+            newUsername: user.username,
+            newFirstname: user.firstname,
+            newSecondname: user.secondName,
+            newPassword: password ? password : null,
+            newStoreName: user.storeName,
+          },
+        });
+        console.log(user);
+      } catch (e) {
+        console.log(e);
+      }
+    },
+  },
   components: { ProductCard },
+  middleware: ["auth"],
 };
 </script>
 <template>
@@ -47,6 +71,7 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-end;
 gap: 48px;"
+    v-if="user"
   >
     <div
       style="display: flex;
@@ -66,20 +91,43 @@ flex-direction: column;
 align-items: flex-start;
 gap: var(--space-m, 16px);"
       >
-        <div class="edit-input">
+        <div class="edit-input" v-if="user.roles[0] == 'STORE'">
           <div class="name">
             <div class="label-text">
               Name
             </div>
-            <input type="text" class="form-control" placeholder="Amina" />
+            <input
+              type="text"
+              class="form-control"
+              :placeholder="user.storeInfo.name"
+              v-model="user.storeInfo.name"
+            />
           </div>
         </div>
-        <div class="edit-input">
+        <div class="edit-input" v-if="user.roles[0] == 'CUSTOMER'">
+          <div class="name">
+            <div class="label-text">
+              Name
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              :placeholder="user.firstname"
+              v-model="user.firstname"
+            />
+          </div>
+        </div>
+        <div class="edit-input" v-if="user.roles[0] == 'CUSTOMER'">
           <div class="name">
             <div class="label-text">
               Surname
             </div>
-            <input type="text" class="form-control" placeholder="Alen" />
+            <input
+              type="text"
+              class="form-control"
+              :placeholder="user.secondName"
+              v-model="user.secondName"
+            />
           </div>
         </div>
         <div class="edit-input">
@@ -90,10 +138,12 @@ gap: var(--space-m, 16px);"
             <input
               type="text"
               class="form-control"
-              placeholder="@lemontartaletka"
+              :placeholder="user.username"
+              v-model="user.username"
             />
           </div>
         </div>
+
         <div class="edit-input">
           <div class="name">
             <div class="label-text">
@@ -103,6 +153,7 @@ gap: var(--space-m, 16px);"
               type="text"
               class="form-control"
               placeholder="********************"
+              v-model="password"
             />
           </div>
         </div>

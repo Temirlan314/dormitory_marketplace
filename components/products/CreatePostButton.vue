@@ -19,7 +19,7 @@ export default {
       description: "",
       categories: [],
       category: null,
-      files: [],
+      files: null,
       dropzoneOptions: {
         url: "https://httpbin.org/post",
         thumbnailWidth: 150,
@@ -72,13 +72,17 @@ export default {
     async createPost() {
       if (this.title && this.price && this.description && this.category) {
         try {
+          // let file = objectToFormData(this.files);
+          // console.log(file);
           let params = {
             title: this.title,
             price: parseInt(this.price),
             description: this.description,
             categoryId: this.category.id,
+            images: this.files,
           };
           let body = objectToFormData(params);
+          console.log(body);
           await this.$axios.post("rest/post/create", body);
           this.createModal = false;
         } catch (e) {
@@ -116,13 +120,14 @@ background:  #1F1F1F;"
       centered
     >
       <div class="modalbox">
+        {{files}}
         <vue-dropzone
           id="dropzone"
           ref="myVueDropzone"
           :use-custom-slot="true"
           :options="dropzoneOptions"
           style="width: 100%;"
-          v-model="files"
+          @vdropzone-file-added="files = $event"
         >
           <div class="dz-message needsclick">
             <i

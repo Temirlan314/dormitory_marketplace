@@ -1,5 +1,6 @@
 <script>
 import ProductCard from "~/components/products/ProductCard.vue";
+import { mapGetters } from "vuex";
 
 /**
  * Login component
@@ -10,11 +11,11 @@ export default {
       title: `Main feed`,
     };
   },
-  async asyncData({ $axios }) {
+  async asyncData({ $axios, store }) {
     try {
       const posts = await $axios.get("rest/post/list");
-
-      return { posts: posts.data };
+      await store.dispatch("posts/setPosts", posts.data);
+      // return { posts: posts.data };
     } catch (e) {
       console.log(e);
     }
@@ -28,6 +29,8 @@ export default {
       cardModalShow: false,
       product: null,
       currency: "Tenge",
+      minPrice: null,
+      maxPrice: null,
       // posts: [
       //   {
       //     name: "QR hoodie",
@@ -81,11 +84,27 @@ export default {
     role() {
       return this.$auth.user.roles[0];
     },
+    ...mapGetters({
+      posts: "posts/posts",
+    }),
   },
   methods: {
     openCardModal(post) {
       this.product = post;
       this.cardModalShow = true;
+    },
+    async filterByPrice() {
+      try {
+        const reponse = await this.$axios.get("rest/post/list", {
+          params: {
+            priceMin: this.minPrice,
+            priceMax: this.maxPrice,
+          },
+        });
+        this.$store.dispatch("posts/setPosts", reponse.data);
+      } catch (e) {
+        console.log(e);
+      }
     },
   },
   components: { ProductCard },
@@ -94,8 +113,129 @@ export default {
 </script>
 <template>
   <div>
-    <div class="big-text hoverable" style="margin-bottom: 32px;">
+    <div
+      class="big-text hoverable"
+      style="margin-bottom: 32px; display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;"
+    >
       Main feed
+
+      <b-nav-item-dropdown
+        style="list-style-type: none;"
+        right
+        class="notification-list topbar-dropdown"
+        menu-class="profile-dropdown"
+        toggle-class="p-0"
+      >
+        <template slot="button-content" class="nav-link dropdown-toggles">
+          <div
+            style="display: flex;
+padding: var(--space-2xs, 4px) 12px;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 8px;
+border: 1px solid var(--border-default, #D6D5DD);
+background: var(--background-secondary, #F3F3F5);
+color: var(--action-accent-accent, #181818);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;"
+            class="btn"
+          >
+            <i
+              class="mdi mdi-filter-outline
+"
+            ></i>
+            Filter by price range
+          </div>
+        </template>
+
+        <div class="dropdown-item" style="">
+          <div
+            style="display: flex;
+width: 372px;
+padding: 24px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;"
+          >
+            <div
+              style="display: flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+align-self: stretch;"
+            >
+              <input
+                type="text"
+                placeholder="0₸"
+                v-model="minPrice"
+                style="border-radius: 8px;
+                  width: 156px;
+gap: 10px;
+border: 1px solid var(--tertiary-gray-200-light, #E4E4E7);
+background: var(--base-00-light-primary, #FFF);
+display: flex;
+padding: 6px 12px;
+color: var(--base-700-light-tertiary, rgba(26, 26, 26, 0.70));
+
+/* text-base/font-medium$ */
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; /* 150% */
+
+/* shadow/shadow-sm [light] */
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);"
+              />
+              <div>
+                <input
+                v-model="maxPrice"
+                  type="text"
+                  placeholder="20.000₸"
+                  style="border-radius: 8px;
+                  width: 156px;
+padding: 6px 12px;
+border-radius: 8px;
+border: 1px solid var(--tertiary-gray-200-light, #E4E4E7);
+background: var(--base-00-light-primary, #FFF);
+/* shadow/shadow-sm [light] */
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+color: var(--base-700-light-tertiary, rgba(26, 26, 26, 0.70));
+
+/* text-base/font-medium$ */
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; /* 150% */"
+                />
+              </div>
+            </div>
+            <div
+              class="btn"
+              style="display: flex;
+height: 48px;
+padding: 0px 24px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+align-self: stretch;
+border-radius: 24px;
+background: var(--light-ui-background-black, #1F1F1F);
+color: #FFF;
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;"
+@click="filterByPrice"
+            >
+              Apply filter
+            </div>
+          </div>
+        </div>
+      </b-nav-item-dropdown>
     </div>
 
     <div class="row">

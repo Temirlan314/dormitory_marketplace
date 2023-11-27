@@ -24,7 +24,14 @@ export default {
 </script>
 <template>
   <div class="card-vertical hoverable">
+    <!-- <img
+      v-if="product.imageDto && product.imageDto.path"
+      :src="'file:///' + product.imageDto.path"
+      alt="No image"
+      style="width: 358px"
+    /> -->
     <img
+      
       src="~/assets/local_images/Image 2.png"
       alt="No image"
       style="width: 358px"
