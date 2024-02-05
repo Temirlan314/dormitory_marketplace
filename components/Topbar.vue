@@ -64,6 +64,7 @@ export default {
      */
     async searchProduct() {
       if (this.$route.name == "main___en") {
+        // const reponse = await this.$axios.get(`rest/post/search?priceMax=50000000&priceMin=0&queryText=${this.search}&limit=2&offset=0`);
         const reponse = await this.$axios.get("rest/post/list", {
           params: {
             title: this.search,
@@ -199,6 +200,7 @@ line-height: 20px;"
 
                 <b-dropdown-item
                   v-for="category in categories"
+                  :key="category.id"
                   @click="selectedCategory = category"
                   >{{ category.name }}</b-dropdown-item
                 >
@@ -331,7 +333,7 @@ background:  #1F1F1F;"
   </div>
   <!-- end Topbar -->
 </template>
-<style lang='scss'>
+<style lang="scss">
 .hoverable:hover {
   cursor: pointer;
 }
