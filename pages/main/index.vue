@@ -194,7 +194,7 @@ box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);"
               />
               <div>
                 <input
-                v-model="maxPrice"
+                  v-model="maxPrice"
                   type="text"
                   placeholder="20.000₸"
                   style="border-radius: 8px;
@@ -229,7 +229,7 @@ color: #FFF;
 font-size: 16px;
 font-weight: 700;
 line-height: 22px;"
-@click="filterByPrice"
+              @click="filterByPrice"
             >
               Apply filter
             </div>
@@ -257,11 +257,21 @@ line-height: 22px;"
       style="padding: 32px !important;"
       centered
     >
-      <img
+      <!-- <img
         src="~/assets/local_images/Image 2.png"
         alt="No image"
         style="width: 100%; margin-bottom: 32px;"
-      />
+      /> -->
+      <div class="w-100 d-flex justify-content-center">
+        <img
+          :src="
+            `http://ec2-13-51-108-85.eu-north-1.compute.amazonaws.com/${product.imageDto.path}`
+          "
+          alt=""
+          v-if="product && product.imageDto"
+          height="275px"
+        />
+      </div>
       <div
         class="card-text text-center"
         v-if="product"

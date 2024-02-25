@@ -64,13 +64,16 @@ export default {
      */
     async searchProduct() {
       if (this.$route.name == "main___en") {
-        // const reponse = await this.$axios.get(`rest/post/search?priceMax=50000000&priceMin=0&queryText=${this.search}&limit=2&offset=0`);
-        const reponse = await this.$axios.get("rest/post/list", {
-          params: {
-            title: this.search,
-            categoryId: this.selectedCategory?.id,
-          },
-        });
+        const reponse = await this.$axios.get(
+          `rest/post/search?priceMax=50000000&priceMin=0&queryText=${this.search}&limit=2&offset=0`
+        );
+        // const reponse = await this.$axios.get("rest/post/search", {
+        //   params: {
+        //     query: this.search,
+        //     offset: 0,
+        //     categoryId: this.selectedCategory?.id,
+        //   },
+        // });
         this.$store.dispatch("posts/setPosts", reponse.data);
       } else {
         this.$router.push(`/main?search=${this.search}`);

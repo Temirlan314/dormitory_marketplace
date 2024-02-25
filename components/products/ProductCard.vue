@@ -30,12 +30,30 @@ export default {
       alt="No image"
       style="width: 358px"
     /> -->
-    <img
-      
+    <!-- <img
       src="~/assets/local_images/Image 2.png"
       alt="No image"
       style="width: 358px"
-    />
+    /> -->
+    <div
+      style="display: inline-flex; justify-content: center; align-items: center; width: 100%;"
+    >
+      <img
+        :src="
+          `http://ec2-13-51-108-85.eu-north-1.compute.amazonaws.com/${product.imageDto.path}`
+        "
+        alt=""
+        v-if="product && product.imageDto"
+        height="275px"
+      />
+      <img
+        src="~/assets/local_images/Image 2.png"
+        alt="No image"
+        style="width: 358px"
+        v-else
+      />
+    </div>
+
     <div class="card-text">
       <div class="product-price">{{ product.price }} {{ currency }}</div>
       <div class="product-name">{{ product.name }}</div>
