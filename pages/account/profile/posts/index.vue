@@ -74,20 +74,20 @@ export default {
       // this.category = this.categories.find((x) => x.id == this.product.categoryId);
     },
     async update(){
-      // try {
-      //   let params = {
-      //     title: this.title,
-      //     price: parseInt(this.price),
-      //     description: this.description,
-      //     categoryId: this.category.id,
-      //   };
-      //   let body = objectToFormData(params);
-      //   await this.$axios.post(`rest/post/update/${this.product.id}`, body);
-      //   this.editShow = false;
-      //   this.cardModalShow = false;
-      // } catch (e) {
-      //   console.log(e);
-      // }
+      try {
+        let params = {
+          title: this.title,
+          price: parseInt(this.price),
+          description: this.description,
+          categoryId: this.category.id,
+        };
+        let body = objectToFormData(params);
+        await this.$axios.put(`rest/post/update/${this.product.id}`, body);
+        this.editShow = false;
+        this.cardModalShow = false;
+      } catch (e) {
+        console.log(e);
+      }
       this.cardModalShow = false;
     }
   },

@@ -17,7 +17,6 @@ export default {
       tryingToLogIn: false,
       isAuthError: false,
       user: null,
-      password: null,
       posts: [
         {
           name: "QR hoodie",
@@ -43,17 +42,17 @@ export default {
   },
   methods: {
     async updateUser() {
+      console.log("HAHAHA", this.user);
       try {
-        const user = await this.$axios.post(`rest/user/update/${user.id}`, {
+        const user = await this.$axios.put(`rest/user/update/${this.user.id}`, {
           params: {
-            userId: user.id,
-            newUsername: user.username,
-            newFirstname: user.firstname,
-            newSecondname: user.secondName,
-            newPassword: password ? password : null,
-            newStoreName: user.storeName,
+            userId: this.user.id,
+            newFirstname: this.user.firstname,
+            newSecondname: this.user.secondName,
+            newStoreName: this.user.storeName,
           },
         });
+
         console.log(user);
       } catch (e) {
         console.log(e);
@@ -140,28 +139,15 @@ gap: var(--space-m, 16px);"
               class="form-control"
               :placeholder="user.username"
               v-model="user.username"
-            />
-          </div>
-        </div>
-
-        <div class="edit-input">
-          <div class="name">
-            <div class="label-text">
-              Password
-            </div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="********************"
-              v-model="password"
+              disabled
             />
           </div>
         </div>
       </div>
     </div>
-    <div class="btn btn-dark">
+    <button class="btn btn-dark" @click="updateUser()">
       Save changes
-    </div>
+    </button>
   </div>
 </template>
 <style lang="scss" scoped>

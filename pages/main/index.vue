@@ -265,7 +265,7 @@ line-height: 22px;"
       <div class="w-100 d-flex justify-content-center">
         <img
           :src="
-            `http://ec2-13-51-108-85.eu-north-1.compute.amazonaws.com/${product.imageDto.path}`
+            `http://ec2-51-20-251-129.eu-north-1.compute.amazonaws.com/${product.imageDto.path}`
           "
           alt=""
           v-if="product && product.imageDto"
