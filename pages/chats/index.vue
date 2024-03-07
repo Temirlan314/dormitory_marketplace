@@ -1,154 +1,332 @@
 <script>
-import ProductCard from "~/components/products/ProductCard.vue";
-import { mapGetters } from "vuex";
-import Chat from "../../components/widgets/Chat.vue";
+import { chatData, chatMessagesData } from "./data";
+import { required } from "vuelidate/lib/validators";
 
 /**
- * Login component
+ * Chat comoponent
  */
 export default {
   head() {
     return {
-      title: `Main feed`,
+      title: `${this.title} | Bueno.money`,
     };
   },
-  // async asyncData({ $axios, store }) {
-  //   try {
-  //     const posts = await $axios.get("rest/post/list");
-  //     await store.dispatch("posts/setPosts", posts.data);
-  //     // return { posts: posts.data };
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // },
   data() {
     return {
+      chatData: chatData,
+      chatMessagesData: chatMessagesData,
+      title: "Chat",
+      items: [
+        {
+          text: "Minton",
+        },
+        {
+          text: "Apps",
+        },
+        {
+          text: "Chat",
+          active: true,
+        },
+      ],
       submitted: false,
-      authError: null,
-      tryingToLogIn: false,
-      isAuthError: false,
-      cardModalShow: false,
-      product: null,
-      currency: "Tenge",
-      minPrice: null,
-      maxPrice: null,
-      // posts: [
-      //   {
-      //     name: "QR hoodie",
-      //     price: "10 000",
-      //     description: "New hoodie",
-      //   },
-      //   {
-      //     name: "Murakami book",
-      //     price: "1 000",
-      //     description: "New book, Norwegian wood, hard cover",
-      //   },
-      //   {
-      //     name: "Mouse",
-      //     price: "45 000",
-      //     description: "New magic mouse. ",
-      //   },
-      //   {
-      //     name: "QR hoodie",
-      //     price: "10 000",
-      //     description: "New hoodie",
-      //   },
-      //   {
-      //     name: "Murakami book",
-      //     price: "1 000",
-      //     description: "Used book",
-      //   },
-      //   {
-      //     name: "Mouse",
-      //     price: "45 000",
-      //     description: "New magic mouse. ",
-      //   },
-      //   {
-      //     name: "QR hoodie",
-      //     price: "10 000",
-      //     description: "New hoodie",
-      //   },
-      //   {
-      //     name: "Murakami book",
-      //     price: "1 000",
-      //     description: "Used book",
-      //   },
-      //   {
-      //     name: "Mouse",
-      //     price: "45 000",
-      //     description: "New magic mouse. ",
-      //   },
-      // ],
+      form: {
+        message: "",
+      },
+      username: "Designer",
     };
   },
-  computed: {},
-  methods: {
-    openCardModal(post) {
-      this.product = post;
-      this.cardModalShow = true;
-    },
-    async filterByPrice() {
-      try {
-        const reponse = await this.$axios.get("rest/post/list", {
-          params: {
-            priceMin: this.minPrice,
-            priceMax: this.maxPrice,
-          },
-        });
-        this.$store.dispatch("posts/setPosts", reponse.data);
-      } catch (e) {
-        console.log(e);
-      }
+  validations: {
+    form: {
+      message: {
+        required,
+      },
     },
   },
-  components: { ProductCard, Chat },
-  //   middleware: ["auth"],
+  methods: {
+    /**
+     * Get the name of user
+     */
+    chatUsername(name, image) {
+      this.username = name;
+      this.usermessage = "Hello";
+
+      this.chatMessagesData = [];
+      const currentDate = new Date();
+      this.chatMessagesData.push({
+        image: image,
+        name: this.username,
+        message: this.usermessage,
+        time: currentDate.getHours() + ":" + currentDate.getMinutes(),
+      });
+    },
+
+    /**
+     * Char form Submit
+     */
+    // eslint-disable-next-line no-unused-vars
+    formSubmit(e) {
+      this.submitted = true;
+
+      // stop here if form is invalid
+      this.$v.$touch();
+
+      if (this.$v.$invalid) {
+        return;
+      } else {
+        const message = this.form.message;
+        const currentDate = new Date();
+        this.chatMessagesData.push({
+          align: "right",
+          name: "Marcus",
+          message,
+          time: currentDate.getHours() + ":" + currentDate.getMinutes(),
+          image: require("~/assets/images/users/avatar-1.jpg"),
+        });
+      }
+      this.submitted = false;
+      this.form = {};
+    },
+  },
+  middleware: "router-auth",
 };
 </script>
+
 <template>
   <div>
-    <Chat />
+    <!-- <PageHeader :title="title" :items="items" /> -->
+
+    <div class="row">
+      <!-- start chat users-->
+      <div class="col-xl-3 col-lg-4">
+        <div class="card chats-card">
+          <div class="card-body chats-body">
+            <h6 class="chats-header">Chats</h6>
+            <div
+              class="text-body"
+              v-for="(item, index) in chatData"
+              :key="index"
+              @click="chatUsername(item.name, item.image)"
+            >
+              <div class="position-relative">
+                <img
+                  :src="item.image"
+                  class="mr-2 rounded-circle"
+                  height="42"
+                  alt="user"
+                />
+              </div>
+              <div class="chats-message">
+                <div class="chats-name">
+                  {{ item.name }}
+                </div>
+                <div class="message">
+                  {{ item.message }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- chat area -->
+      <div class="col-xl-9 col-lg-8">
+        <div class="card chats-card" style="background-color: #F3F3F5;">
+          <div
+            class="card-body py-2 px-3 border-bottom border-light"
+            style="background-color: #fff; border-radius: 12px 12px 0px 0px;"
+          >
+            <div class="media py-1">
+              <img
+                src="~/assets/images/users/avatar-5.jpg"
+                class="mr-2 rounded-circle"
+                height="36"
+                alt="Brandon Smith"
+              />
+              <div class="media-body">
+                <h5 class="mt-0 mb-0 font-15">
+                  <nuxt-link to="/contacts/profile" class="text-reset">
+                    {{ username }}
+                  </nuxt-link>
+                </h5>
+              </div>
+             
+            </div>
+          </div>
+          <div class="card-body chats-body">
+            <simplebar data-simplebar style="max-height: 460px; width: 100%;">
+              <ul class="conversation-list chat-app-conversation">
+                <li
+                  class="clearfix"
+                  v-for="(data, index) in chatMessagesData"
+                  :key="index"
+                  :class="{ odd: data.align === 'right' }"
+                >
+                  <div class="chat-avatar">
+                    <img :src="data.image" class="rounded" alt="James Z" />
+                    <i>{{ data.time }}</i>
+                  </div>
+                  <div class="conversation-text">
+                    <div class="ctext-wrap">
+                      <i>{{ data.name }}</i>
+                      <p>{{ data.message }}</p>
+                    </div>
+                    <div
+                      class="card mt-2 mb-1 shadow-none border text-left"
+                      v-if="data.file === true"
+                    >
+                      <div class="p-2">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="avatar-sm">
+                              <span class="avatar-title bg-primary rounded"
+                                >PDF</span
+                              >
+                            </div>
+                          </div>
+                          <div class="col pl-0">
+                            <a
+                              href="javascript:void(0);"
+                              class="text-muted font-weight-medium"
+                              >minton-presentation.pdf</a
+                            >
+                            <p class="mb-0">2.3 MB</p>
+                          </div>
+                          <div class="col-auto">
+                            <!-- Button -->
+                            <a
+                              href="javascript:void(0);"
+                              class="btn btn-link btn-lg text-muted"
+                            >
+                              <i class="dripicons-download"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <b-dropdown
+                    class="conversation-actions"
+                    toggle-class="btn-sm btn-link text-reset p-0"
+                    variant="black"
+                    right
+                  >
+                    <template v-slot:button-content>
+                      <i class="mdi mdi-dots-vertical font-18"></i>
+                    </template>
+                    <a class="dropdown-item" href="#">Copy Message</a>
+                    <a class="dropdown-item" href="#">Edit</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                  </b-dropdown>
+                </li>
+              </ul>
+            </simplebar>
+            <div class="row w-100">
+              <div class="col">
+                <div class="mt-2 p-1">
+                  <form
+                    class="needs-validation"
+                    @submit.prevent="formSubmit"
+                    name="chat-form"
+                    id="chat-form"
+                  >
+                    <div class="row">
+                      <div class="col mb-2 mb-sm-0">
+                        <input
+                          type="text"
+                          v-model="form.message"
+                          class="form-control border-0"
+                          placeholder="Enter your text"
+                        />
+                        <div
+                          v-if="submitted && $v.form.message.$error"
+                          class="invalid-feedback"
+                        >
+                          <span v-if="!$v.form.message.required"
+                            >Please enter your message</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-sm-auto">
+                        <div class="btn-group">
+                          <a href="#" class="btn btn-light">
+                            <i class="fe-paperclip"></i>
+                          </a>
+                          <button
+                            type="submit"
+                            class="btn btn-success chat-send btn-block"
+                          >
+                            <i class="fe-send"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- end col -->
+                    </div>
+                    <!-- end row-->
+                  </form>
+                </div>
+              </div>
+              <!-- end col-->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end card-body -->
+        </div>
+        <!-- end card -->
+      </div>
+      <!-- end chat area-->
+    </div>
+    <!-- end row-->
   </div>
 </template>
-<style lang="scss" scoped>
-.big-text {
-  color: #0d0d0d;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: normal;
-}
-.card-modal-body {
-  padding: 24px 32px !important;
-}
 
-.product-name {
-  color: var(--base-900-light, #1a1a1a);
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  margin-bottom: 16px;
-}
-
-.product-price {
-  color: rgba(26, 26, 26, 0.5);
-  font-weight: 500;
-  font-size: 18px;
-  font-style: normal;
+<style scoped>
+.chats-header {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
-  line-height: 30px;
-  margin-bottom: 8px;
 }
 
-.product-description {
-  color: #1a1a1a;
-  font-weight: 500;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 30px;
+.text-body {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding-bottom: 12px;
 }
-.hoverable:hover {
-  cursor: pointer;
+
+.chats-card {
+  border-radius: 12px;
+  border: 1px solid #e4e4e7;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04);
+}
+
+.chats-body {
+  padding: 24px 36px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-s, 12px);
+  max-height: 648px;
+  overflow: scroll;
+  scrollbar-width: thin;
+}
+
+.chats-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.chats-name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+.message {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
 }
 </style>
