@@ -4,6 +4,7 @@ import JobDetail from "~/components/jobs/JobDetail.vue";
 import JobFullDetail from "~/components/jobs/JobFullDetail.vue";
 import Multiselect from "vue-multiselect";
 import objectToFormData from "~/helpers/objectToFormData";
+import JobCreate from "../../components/jobs/JobCreate.vue";
 
 /**
  * Login component
@@ -118,9 +119,8 @@ export default {
   <div>
     <div class="big-text hoverable page-header">
       Job board
-      <button class="add-btn">
-        Add job
-      </button>
+      <!--  -->
+      <JobCreate />
     </div>
     <div class="layout">
       <div class="jobs-card mb-2" v-if="jobsMock && jobsMock.length">
@@ -196,25 +196,6 @@ export default {
 .no-jobs-card img {
   max-width: 321.37px;
   max-height: 265.101px;
-}
-
-.add-btn {
-  display: flex;
-  padding: 10px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background: var(--action-accent-accent, #181818);
-
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
-  color: var(--base-00-light-primary, #fff);
-  text-align: center;
-
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
 }
 
 .jobs-card {

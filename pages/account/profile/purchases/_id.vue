@@ -14,6 +14,9 @@ export default {
       authError: null,
       tryingToLogIn: false,
       isAuthError: false,
+      feedbackModal: false,
+      feedback: "",
+      rating: null,
       posts: [
         {
           name: "QR hoodie",
@@ -108,8 +111,71 @@ export default {
             </div>
           </div>
         </div>
+        <button
+          class="w-100 feedback-button"
+          @click="feedbackModal = !feedbackModal"
+        >
+          Add feedback
+        </button>
       </div>
     </div>
+    <b-modal
+      v-model="feedbackModal"
+      hide-footer
+      hide-header
+      size="md"
+      centered
+      content-class="custom-modal"
+    >
+      <div class="modal-layout">
+        <div class="form-layout">
+          <div class="input-layout">
+            <div class="input-label">
+              Rating
+            </div>
+            <div>
+              <b-form-rating
+                size="lg"
+                no-border
+                class="p-0"
+                v-model="rating"
+              ></b-form-rating>
+            </div>
+          </div>
+          <div class="input-layout">
+            <div class="input-label">
+              Feedback
+            </div>
+            <b-form-textarea
+              class="form-control"
+              placeholder="Good quality"
+              v-model="feedback"
+              rows="3"
+            />
+          </div>
+        </div>
+        <div class="action-buttons w-100">
+          <button
+            class="w-100"
+            style="display: flex;
+height: 44px;
+padding: 7px 16px;
+justify-content: center;
+align-items: center;
+border-radius: 24px;
+background: var(--action-accent-accent, #181818);
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+color: var(--base-00-light-primary, #FFF);
+font-size: 18px;
+font-weight: 600;
+line-height: 30px; /* 166.667% */"
+            @click="feedbackModal = !feedbackModal"
+          >
+            Add feedback
+          </button>
+        </div>
+      </div>
+    </b-modal>
   </div>
 </template>
 <style lang="scss">
@@ -165,7 +231,6 @@ export default {
   border-radius: 12px;
   padding: 48px;
   width: 738px;
-  height: 418px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.04);
   background: #ffffff;
   &-body {
@@ -196,5 +261,67 @@ export default {
       color: #10083f;
     }
   }
+}
+
+.feedback-button {
+  display: flex;
+  height: 44px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--action-accent-accent, #181818);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  color: var(--base-00-light-primary, #fff);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.modal-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl, 24px);
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-m, 16px);
+  align-self: stretch;
+}
+
+.input-layout {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l, 20px);
+  align-self: stretch;
+}
+
+.input-label {
+  min-width: 115px;
+  color: var(--local-secondary, #706b8c);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 38px; /* 211.111% */
+  align-self: flex-start;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid var(--border-default, #d6d5dd);
+  display: flex;
+  padding: var(--space-2xs, 4px) var(--space-m, 16px);
+
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
+.action-buttons {
+  padding-top: 16px;
 }
 </style>
