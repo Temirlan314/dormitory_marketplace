@@ -1,6 +1,8 @@
 <script>
 import { chatData, chatMessagesData } from "./data";
 import { required } from "vuelidate/lib/validators";
+import SockJS from "sockjs-client";
+import Stomp from "stompjs";
 
 /**
  * Chat comoponent
@@ -32,7 +34,9 @@ export default {
       form: {
         message: "",
       },
-      username: "Designer",
+      username: "temirlan",
+      selectedUserId: null,
+      stompClient: null,
     };
   },
   validations: {
@@ -43,6 +47,26 @@ export default {
     },
   },
   methods: {
+    connect() {
+      if (this.username) {
+        const socket = new SockJS("/ws");
+        this.stompClient = this.Stomp.over(socket);
+
+        this.stompClient.connect({}, onConnected, onError);
+      }
+      event.preventDefault();
+    },
+
+    onConnected() {
+      this.stompClient.subscribe(`/user/${this.username}/queue/messages`);
+      // this.stompClient.subscribe(`/public/connected`, this.onMessageReceived);
+
+      this.stompClient.send(
+        "/app/public.addUser",
+        {},
+        JSON.stringify({ username: this.username, status: "ONLINE" })
+      );
+    },
     /**
      * Get the name of user
      */
@@ -86,6 +110,9 @@ export default {
       this.submitted = false;
       this.form = {};
     },
+  },
+  mounted() {
+    // this.connect();
   },
   middleware: "router-auth",
 };
@@ -149,7 +176,6 @@ export default {
                   </nuxt-link>
                 </h5>
               </div>
-             
             </div>
           </div>
           <div class="card-body chats-body">
@@ -165,46 +191,30 @@ export default {
                     <img :src="data.image" class="rounded" alt="James Z" />
                     <i>{{ data.time }}</i>
                   </div>
-                  <div class="conversation-text">
-                    <div class="ctext-wrap">
-                      <i>{{ data.name }}</i>
+                  <div
+                    style=""
+                    :class="
+                      data.name === username ? 'other-message' : 'other-message'
+                    "
+                  >
+                    <div
+                      class="ctext-wrap"
+                      style="border-radius: 16px 16px 4px 16px;
+                      
+background: var(--surface-raspberry, #FFDFED);
+display: flex;
+padding: 10px var(--space-s, 12px);
+justify-content: flex-end;
+align-items: flex-end;
+gap: 6px;
+/* shadow/shadow-sm [light] */
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);"
+                    >
+                      <!-- <i>{{ data.name }}</i> -->
                       <p>{{ data.message }}</p>
                     </div>
-                    <div
-                      class="card mt-2 mb-1 shadow-none border text-left"
-                      v-if="data.file === true"
-                    >
-                      <div class="p-2">
-                        <div class="row align-items-center">
-                          <div class="col-auto">
-                            <div class="avatar-sm">
-                              <span class="avatar-title bg-primary rounded"
-                                >PDF</span
-                              >
-                            </div>
-                          </div>
-                          <div class="col pl-0">
-                            <a
-                              href="javascript:void(0);"
-                              class="text-muted font-weight-medium"
-                              >minton-presentation.pdf</a
-                            >
-                            <p class="mb-0">2.3 MB</p>
-                          </div>
-                          <div class="col-auto">
-                            <!-- Button -->
-                            <a
-                              href="javascript:void(0);"
-                              class="btn btn-link btn-lg text-muted"
-                            >
-                              <i class="dripicons-download"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-                  <b-dropdown
+                  <!-- <b-dropdown
                     class="conversation-actions"
                     toggle-class="btn-sm btn-link text-reset p-0"
                     variant="black"
@@ -216,7 +226,7 @@ export default {
                     <a class="dropdown-item" href="#">Copy Message</a>
                     <a class="dropdown-item" href="#">Edit</a>
                     <a class="dropdown-item" href="#">Delete</a>
-                  </b-dropdown>
+                  </b-dropdown> -->
                 </li>
               </ul>
             </simplebar>
@@ -235,7 +245,7 @@ export default {
                           type="text"
                           v-model="form.message"
                           class="form-control border-0"
-                          placeholder="Enter your text"
+                          placeholder="Write a message..."
                         />
                         <div
                           v-if="submitted && $v.form.message.$error"
@@ -280,6 +290,24 @@ export default {
 </template>
 
 <style scoped>
+.my-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--space-l, 20px);
+  align-self: stretch;
+}
+
+.other-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--space-l, 20px);
+  align-self: stretch;
+}
+
 .chats-header {
   color: #000;
   font-size: 16px;
