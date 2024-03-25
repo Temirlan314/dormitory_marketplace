@@ -55,7 +55,8 @@ export default {
     "~/plugins/quill-editor.js",
     "~/plugins/chartist.js",
     "~/plugins/vue-googlemap.js",
-    "~/plugins/string-filter"
+    "~/plugins/string-filter",
+    "~/plugins/notification.js",
   ],
   /*
   ** Auto import components
@@ -152,6 +153,7 @@ export default {
     scoreUrl: process.env.SCORE_URL || 'https://scoring-sg.bueno.money',
     localeDefault: process.env.LOCALE_DEFAULT || "en-US",
     currencyDefault: process.env.CURRENCY_DEFAULT || "SGD",
+    imgUrl: process.env.IMG_URL || '',
   },
   publicRuntimeConfig: {
     apiUrl: process.env.API_URL,

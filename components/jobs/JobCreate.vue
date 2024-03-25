@@ -6,6 +6,11 @@ export default {
   data() {
     return {
       showModal: false,
+      name: "",
+      price: "",
+      contact: "",
+      description: "",
+      qualifications: "",
     };
   },
   computed: {},

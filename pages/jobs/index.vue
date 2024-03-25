@@ -12,37 +12,15 @@ import JobCreate from "../../components/jobs/JobCreate.vue";
 export default {
   head() {
     return {
-      title: `My products`,
+      title: this.title,
     };
   },
-  //   async asyncData({ $axios, $auth }) {
-  //     try {
-  //       const posts = await $axios.get(
-  //         `rest/post/list?ownerId=${$auth.user.id}`,
-  //         {
-  //           ownerId: $auth.user.id,
-  //         }
-  //       );
-  //       const categories = await $axios.get("rest/category/list");
-
-  //       return { categories: categories.data, posts: posts.data };
-  //     } catch (e) {
-  //       console.log(e);
-  //     }
-  //   },
+  async asyncData({ $axios, $auth }) {},
   data() {
     return {
-      title: "",
+      title: "Job Board",
       price: null,
-      description: "",
-      categories: [],
-      category: null,
 
-      submitted: false,
-      authError: null,
-      tryingToLogIn: false,
-      isAuthError: false,
-      cardModalShow: false,
       product: null,
       currency: "Tenge",
       editShow: false,
@@ -99,16 +77,16 @@ export default {
       return this.$auth.user;
     },
   },
-  watch: {
-    cardModalShow(val) {
-      if (!val) {
-        this.editShow = false;
-      }
-    },
-  },
+  watch: {},
   methods: {
     selectJob(job) {
       this.selectedJob = job;
+      this.$notify({
+        title: "Job selected",
+        message: "Job selected",
+        type: "success",
+      });
+      console.log("AAA");
     },
   },
   components: { ProductCard, Multiselect, JobDetail, JobFullDetail },

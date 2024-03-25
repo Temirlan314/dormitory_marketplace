@@ -107,7 +107,7 @@ gap: 64px;"
 
     <div class="d-flex">
       <div v-for="post in posts" style="margin-right: 24px;">
-        <ProductCard :product="post" />
+        <ProductCard :product="post" :showActions="false" />
       </div>
     </div>
   </div>

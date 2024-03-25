@@ -62,6 +62,9 @@ export default {
     /**
      * Toggle menu
      */
+    router(route) {
+      this.$router.push(`/${route}`);
+    },
     async searchProduct() {
       if (this.$route.name == "main___en") {
         const reponse = await this.$axios.get(
@@ -250,13 +253,25 @@ background:  #1F1F1F;"
       <div></div>
     </div>
     <div class="d-flex text-dark" v-if="user && user.roles[0] == 'CUSTOMER'">
-      <div style="margin-right: 48px; " class="align-self-center">
+      <div
+        style="margin-right: 48px; "
+        class="align-self-center hoverable"
+        @click="router('chats')"
+      >
         Chats
       </div>
-      <div style="margin-right: 48px;  " class="align-self-center">
+      <div
+        style="margin-right: 48px;  "
+        class="align-self-center hoverable"
+        @click="router('auctions')"
+      >
         Auctions
       </div>
-      <div style="margin-right: 48px; " class="align-self-center">
+      <div
+        style="margin-right: 48px; "
+        class="align-self-center hoverable"
+        @click="router('jobs')"
+      >
         Job Board
       </div>
 

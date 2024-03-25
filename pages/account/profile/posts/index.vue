@@ -73,23 +73,24 @@ export default {
       this.description = this.product.description;
       // this.category = this.categories.find((x) => x.id == this.product.categoryId);
     },
-    async update(){
+    async update() {
       try {
         let params = {
+          id: this.product.id,
           title: this.title,
           price: parseInt(this.price),
           description: this.description,
           categoryId: this.category.id,
         };
         let body = objectToFormData(params);
-        await this.$axios.put(`rest/post/update/${this.product.id}`, body);
+        await this.$axios.put(`rest/post/update/`, body);
         this.editShow = false;
         this.cardModalShow = false;
       } catch (e) {
         console.log(e);
       }
       this.cardModalShow = false;
-    }
+    },
   },
   components: { ProductCard, Multiselect },
   middleware: ["auth", "customer"],
@@ -109,7 +110,7 @@ export default {
         style="margin-right: 24px;"
         @click="openCardModal(post)"
       >
-        <ProductCard :product="post" />
+        <ProductCard :product="post" :showActions="false" :showModal="false" />
       </div>
     </div>
     <div

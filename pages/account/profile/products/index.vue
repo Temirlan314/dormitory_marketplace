@@ -110,7 +110,7 @@ export default {
         style="margin-right: 24px;"
         @click="openCardModal(post)"
       >
-        <ProductCard :product="post" />
+        <ProductCard :product="post" :showActions="false" :showModal="false" />
       </div>
     </div>
     <div
