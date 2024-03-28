@@ -60,7 +60,7 @@ export default {
     },
   },
   components: { ProductCard },
-  middleware: ["auth"],
+  middleware: ["authenticate"],
 };
 </script>
 <template>

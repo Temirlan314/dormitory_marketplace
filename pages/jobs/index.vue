@@ -1,13 +1,11 @@
 <script>
-import ProductCard from "~/components/products/ProductCard.vue";
 import JobDetail from "~/components/jobs/JobDetail.vue";
 import JobFullDetail from "~/components/jobs/JobFullDetail.vue";
 import Multiselect from "vue-multiselect";
-import objectToFormData from "~/helpers/objectToFormData";
 import JobCreate from "../../components/jobs/JobCreate.vue";
 
 /**
- * Login component
+ * Job board component
  */
 export default {
   head() {
@@ -15,101 +13,122 @@ export default {
       title: this.title,
     };
   },
-  async asyncData({ $axios, $auth }) {},
+  async asyncData({ $axios, $auth }) {
+    try {
+      const jobs = await $axios.get("rest/job/search", {
+        params: {
+          queryText: null,
+          payUnitId: null,
+          payMin: null,
+          payMax: null,
+          offset: 0,
+          limit: 10,
+        },
+      });
+      const units = await $axios.get("rest/job/payUnits");
+      console.log(jobs.data, units.data);
+      return { jobs: jobs.data, units: units.data };
+    } catch (e) {
+      console.log(e);
+    }
+  },
   data() {
     return {
       title: "Job Board",
-      price: null,
-
-      product: null,
-      currency: "Tenge",
-      editShow: false,
 
       jobs: null,
+      units: null,
       selectedJob: null,
+      loading: false,
       jobsMock: [
         {
           name: "Computer System Organization tutor",
-          price: "5000 tg/hour",
+          payPerUnit: "5000",
+          payUnit: {
+            id: 1,
+            name: "hour",
+          },
           description:
             "Looking for CSCI231 tutor to prepare for final exam and midterm. Expecting tutor have passed the course and got A/A- for the final grade",
-          qualifications: [
-            "Expecting tutor have passed the course and got A/A- for the final grade",
-            "Has good communications skills",
-            "Clearly explains complex concepts",
-          ],
-          contact: {
-            telegram: "@lemontartaletka",
-          },
+          qualifications:
+            "Expecting tutor have passed the course and got A/A- for the final grade, Has good communications skills, Clearly explains complex concepts",
+          contactInfo: "Telegram: @lemontartaletka",
         },
         {
           name: "IELTS tutor",
-          price: "3000 tg/hour",
+          payPerUnit: "3000",
+          payUnit: {
+            id: 1,
+            name: "hour",
+          },
+
           description:
             "Looking for IELTS tutor to prepare school child for IELTS which will be next month",
-          qualifications: [
-            "Expecting tutor have passed the IELTS exam with 7.5 or higher",
-            "Clearly explains complex concepts",
-          ],
-          contact: {
-            telegram: "@Temirlan_P",
-          },
+          qualifications:
+            "Expecting tutor have passed the IELTS exam with 7.5 or higher, Clearly explains complex concepts",
+          contactInfo: "Telegram: @Temirlan_P",
         },
         {
           name: "SMM manager",
-          price: "80 000 tg/month",
+          payPerUnit: "80 000",
+          payUnit: {
+            id: 1,
+            name: "hour",
+          },
           description:
             "Online clothes shop looking for SMM manager with copywriting skills. You responsibilities will include creation of content for Instagram, TikTok, answering...",
-          qualifications: [
-            "Expecting to have experience in SMM",
-            "Have experience in copywriting",
-            "Has good communications skills",
-          ],
-          contact: {
-            telegram: "@achorda",
-          },
+          qualifications:
+            "Expecting to have experience in SMM, Have experience in copywriting, Has good communications skills",
+          contactInfo: "Telegram: @achorda",
         },
       ],
     };
   },
-  computed: {
-    user() {
-      return this.$auth.user;
-    },
-  },
   watch: {},
   methods: {
-    selectJob(job) {
-      this.selectedJob = job;
-      this.$notify({
-        title: "Job selected",
-        message: "Job selected",
-        type: "success",
-      });
-      console.log("AAA");
+    async selectJob(job) {
+      this.loading = true;
+      if (this.selectedJob == job) {
+        this.selectedJob = null;
+        return;
+      }
+      try {
+        const response = await this.$axios.get(`rest/job/${job.id}`);
+        this.selectedJob = response.data;
+      } catch (e) {
+        this.$notify({
+          title: "Job could not be loaded",
+          variant: "error",
+        });
+        this.loading = false;
+        this.selectedJob = null;
+        console.log(e);
+      }
+      this.loading = false;
     },
   },
-  components: { ProductCard, Multiselect, JobDetail, JobFullDetail },
-  //   middleware: ["auth", "customer"],
+  components: { Multiselect, JobDetail, JobFullDetail },
+  middleware: ["authenticate"],
 };
 </script>
 <template>
   <div>
     <div class="big-text hoverable page-header">
       Job board
-      <!--  -->
-      <JobCreate />
+      <JobCreate :units="units" />
     </div>
-    <div class="layout">
+    <div class="layout w-100">
       <div class="jobs-card mb-2" v-if="jobsMock && jobsMock.length">
         <div class="header">
           Showing 1-12 of 34 results
         </div>
         <JobDetail
-          v-for="job of jobsMock"
+          v-for="(job, index) of jobs"
           :job="job"
           @openCardModal="selectJob"
+          :key="job.name + index"
         />
+        <b-pagination> </b-pagination>
       </div>
       <div class="no-jobs-card" v-else>
         <div class="no-jobs-header">
@@ -120,7 +139,7 @@ export default {
           <img src="~/assets/images/products/NoPosts.svg" alt="" class="" />
         </div>
       </div>
-      <JobFullDetail :job="selectedJob" />
+      <JobFullDetail :job="selectedJob" :loading="loading" />
     </div>
   </div>
 </template>
@@ -179,6 +198,8 @@ export default {
 .jobs-card {
   display: flex;
   max-width: 420px;
+  max-height: 700px;
+  overflow-y: scroll;
   padding: var(--space-xl, 24px) 36px var(--space-xl, 24px)
     var(--space-xl, 24px);
   flex-direction: column;
@@ -198,103 +219,14 @@ export default {
   }
 }
 
-//
-//
 .big-text {
   color: #0d0d0d;
   font-size: 32px;
   font-weight: 600;
   line-height: normal;
 }
-.name-text {
-  color: #0d0d0d;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: normal;
-}
-.info-text {
-  color: #0d0d0d;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+
 .hoverable:hover {
   cursor: pointer;
-}
-
-.card-modal-body {
-  padding: 24px 32px !important;
-}
-
-.product-name {
-  color: var(--base-900-light, #1a1a1a);
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  margin-bottom: 16px;
-}
-
-.product-price {
-  color: rgba(26, 26, 26, 0.5);
-  font-weight: 500;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24px;
-  line-height: 30px;
-  margin-bottom: 8px;
-}
-
-.product-description {
-  color: #1a1a1a;
-  font-weight: 500;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 30px;
-}
-
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-m, 16px);
-
-  align-self: stretch;
-}
-
-.name {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  align-self: stretch;
-}
-.edit-input {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-m, 16px);
-  width: 100%;
-}
-
-.label-text {
-  color: var(--local-secondary, #706b8c);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 38px;
-  width: 115px;
-}
-
-.form-control {
-  border-radius: 8px;
-  border: 1px solid var(--border-default, #d6d5dd);
-  display: flex;
-  padding: var(--space-2xs, 4px) var(--space-m, 16px);
-
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
 }
 </style>

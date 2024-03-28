@@ -10,6 +10,10 @@ export default {
     job: {
       type: Object,
     },
+    loading: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {},
   methods: {
@@ -20,39 +24,40 @@ export default {
 };
 </script>
 <template>
-  <div class="job-card w-100" v-if="job">
-    <div class="header">
-      <div class="top-text">{{ job.name }}</div>
-      <div class="price">{{ job.price }}</div>
-      <div class="description">
-        {{ job.description }}
+  <Transition name="fade">
+    <div class="job-card w-100" v-if="!loading && job">
+      <div class="header">
+        <div class="top-text">{{ job.name }}</div>
+        <div class="price">{{ job.payPerUnit }} tg/{{ job.payUnit.name }}</div>
+        <div class="description">
+          {{ job.description }}
+        </div>
       </div>
-    </div>
-    <div class="body">
-      <div class="top-text">Basic qualifications</div>
-      <div class="description">
-        <ul>
-          <li v-for="item of job.qualifications">
-            {{ item }}
-          </li>
-        </ul>
+      <div class="body">
+        <div class="top-text">Basic qualifications</div>
+        <div class="description " style="white-space: pre-line">
+          {{ job.qualifications }}
+        </div>
       </div>
-    </div>
-    <div class="contact" v-if="job.contact">
-      <div class="top-text">Contact me!</div>
-      <div class="description">
-        <div v-if="job.contact.telegram">
-          Telegram: {{ job.contact.telegram }}
+      <div class="contact" v-if="job.contactInfo">
+        <div class="top-text">Contact me!</div>
+        <div class="description">
+          <div>{{ job.contactInfo }}</div>
         </div>
       </div>
     </div>
-  </div>
+    <div v-else-if="loading" class="job-card">
+      <div class="d-flex justify-content-center w-100">
+        <b-spinner></b-spinner>
+      </div>
+    </div>
+  </Transition>
 </template>
 
 <style lang="scss" scoped>
 .job-card {
   display: flex;
-  width: 860px;
+  width: 100%;
   padding: var(--space-xl, 24px) 36px var(--space-xl, 24px)
     var(--space-xl, 24px);
   flex-direction: column;
@@ -156,5 +161,14 @@ export default {
     font-weight: 400;
     line-height: 24px; /* 150% */
   }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

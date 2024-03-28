@@ -36,7 +36,8 @@ export default {
   /*
   ** Global CSS
   */
-  css: ["~/assets/scss/app.scss", 'quill/dist/quill.core.css', 'quill/dist/quill.snow.css', 'quill/dist/quill.bubble.css'],
+  css: ["~/assets/scss/app.scss", 'quill/dist/quill.core.css', 'quill/dist/quill.snow.css', 'quill/dist/quill.bubble.css',
+    "~/assets/scss/custom/plugins/_toasted.scss"],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
@@ -75,8 +76,54 @@ export default {
     'bootstrap-vue/nuxt',
     'nuxt-i18n',
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
+    '@nuxtjs/toast'
   ],
+
+  toast: {
+    position: 'top-center',
+    register: [ // Register custom toasts
+      {
+        name: 'my-error',
+        options: {
+          type: 'error',
+          position: "top-right",
+          duration: 5000,
+          className: "custom-success-toast",
+          iconPack: "mdi",
+          icon: "emoticon-sad",
+          action: {
+            icon: "close",
+            class: "text-white",
+            onClick: (e, toastObject) => {
+              toastObject.goAway(0);
+            },
+          },
+        }
+
+      },
+      {
+        name: 'success',
+        message: 'Default success message',
+        options: {
+          type: 'success',
+          position: "top-right",
+          duration: 5000,
+          className: "custom-success-toast",
+          containerClass: "custom-success-toast",
+          iconPack: "mdi",
+          icon: "emoticon-happy",
+          action: {
+            icon: "close",
+            class: "text-white",
+            onClick: (e, toastObject) => {
+              toastObject.goAway(0);
+            },
+          },
+        }
+      }
+    ]
+  },
 
   auth: {
     strategies: {

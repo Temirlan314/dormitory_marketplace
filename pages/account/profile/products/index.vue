@@ -93,7 +93,7 @@ export default {
     },
   },
   components: { ProductCard, Multiselect },
-  middleware: ["auth", "customer"],
+  middleware: ["authenticate", "customer"],
 };
 </script>
 <template>

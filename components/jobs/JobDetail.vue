@@ -21,9 +21,9 @@ export default {
 };
 </script>
 <template>
-  <div class="layout" @click="onClick()">
+  <div class="layout w-100" @click="onClick()">
     <div class="header">{{ job.name }}</div>
-    <div class="price">{{ job.price }}</div>
+    <div class="price">{{ job.payPerUnit }} tg/{{ job.payUnit.name }}</div>
     <div class="description">
       {{ job.description }}
     </div>

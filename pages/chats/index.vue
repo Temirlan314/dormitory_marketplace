@@ -114,7 +114,6 @@ export default {
   mounted() {
     // this.connect();
   },
-  middleware: "router-auth",
 };
 </script>
 

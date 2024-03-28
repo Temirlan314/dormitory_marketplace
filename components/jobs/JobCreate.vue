@@ -3,14 +3,22 @@
  * Job create button component
  */
 export default {
+  props: {
+    units: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
+  },
   data() {
     return {
       showModal: false,
       name: "",
-      price: "",
-      contact: "",
+      payPerUnit: 0,
+      contactInfo: "",
       description: "",
       qualifications: "",
+      unit: "",
     };
   },
   computed: {},
@@ -21,7 +29,17 @@ export default {
     closeModal() {
       this.showModal = false;
     },
-    submitJob() {
+    async submitJob() {
+      const job = {
+        name: this.name,
+        payPerUnit: this.payPerUnit,
+        contactInfo: this.contactInfo,
+        description: this.description,
+        qualifications: this.qualifications,
+        payUnitId: this.unit.id,
+        id: null,
+      };
+      await this.$axios.post("rest/job", job);
       this.showModal = false;
     },
   },
@@ -58,11 +76,17 @@ export default {
               Salary*
             </div>
             <input
-              type="text"
+              type="number"
               class="form-control"
-              placeholder="xxxx tg/hour"
-              v-model="price"
+              placeholder="9999"
+              v-model="payPerUnit"
             />
+            <select class="form-control w-50" v-model="unit">
+              <option v-for="unit in units" :key="unit.id" :value="unit">
+                {{ unit.name }}
+              </option></select
+            >
+            <div class="align-self-center">{{ payPerUnit }} tg/ {{ unit.name }}</div>
           </div>
           <div class="input-layout">
             <div class="input-label">
@@ -72,7 +96,7 @@ export default {
               type="text"
               class="form-control"
               placeholder="Telegram: @example, Phone: +7 777 777 77 77"
-              v-model="contact"
+              v-model="contactInfo"
             />
           </div>
           <div class="input-layout">

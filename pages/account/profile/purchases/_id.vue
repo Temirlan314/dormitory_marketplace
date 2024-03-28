@@ -69,7 +69,7 @@ export default {
       this.$router.push("/account/profile/purchases");
     },
   },
-  // middleware: ["auth", "customer"],
+  // middleware: ["authenticate", "customer"],
 };
 </script>
 <template>

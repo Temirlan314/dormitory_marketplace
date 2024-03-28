@@ -305,7 +305,7 @@ background:  #1F1F1F;"
           href="javascript: void(0);"
         >
           <i class="fe-log-out mr-1"></i>
-          <span>{{ $t("logOut") }}</span>
+          <span>Log Out</span>
         </a>
       </b-nav-item-dropdown>
     </div>
