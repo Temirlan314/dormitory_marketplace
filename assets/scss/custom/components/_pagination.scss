@@ -1,13 +1,55 @@
-// 
+//
 // pagination.scss
 //
 
-
 // Pagination rounded (Custom)
 .pagination-rounded {
-    .page-link {
-        border-radius: 30px !important;
-        margin: 0 3px;
-        border: none;
-    }
+  .page-link {
+    border-radius: 30px !important;
+    margin: 0 3px;
+    border: none;
+  }
+}
+
+.pagination-page {
+  .page-link {
+    color: var(--base-500-light-secondary, rgba(26, 26, 26, 0.5));
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+  }
+}
+
+.pagination-page.active {
+  .page-link {
+    align-self: center;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px !important;
+    border: 1px solid var(--tertiary-gray-200-light, #e4e4e7) !important;
+    background: var(--base-00-light-primary, #fff) !important;
+    color: var(--base-900-light, #1a1a1a);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+}
+
+.custom-pagination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 0px;
 }

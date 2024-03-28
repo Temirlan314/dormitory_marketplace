@@ -254,7 +254,7 @@ background:  #1F1F1F;"
     </div>
     <div class="d-flex text-dark" v-if="user && user.roles[0] == 'CUSTOMER'">
       <div
-        style="margin-right: 48px; "
+        style="padding-right: 48px;"
         class="align-self-center hoverable"
         @click="router('chats')"
       >

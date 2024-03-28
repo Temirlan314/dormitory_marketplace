@@ -10,6 +10,7 @@ export default {
   },
   data() {
     return {
+      submitted: false,
       form: {
         username: null,
         password: null,
@@ -25,7 +26,6 @@ export default {
       // } else {
       this.submitted = true;
       await this.logIn();
-      this.submitted = false;
       // }
     },
     async logIn() {
@@ -46,6 +46,8 @@ export default {
             this.$router.push("/main");
           });
       } catch (e) {
+        console.log(e);
+        this.submitted = false;
         this.error = handleError(e);
       }
     },
@@ -104,18 +106,14 @@ margin-bottom: 32px;"
 
             <div class="form-group mb-0 text-center">
               <button
-                class="btn btn-soft-dark btn-block"
+                class="btn btn-soft-dark btn-block login-btn "
                 type="submit"
-                style="
-height: 48px;
-padding: 0px 24px;
-gap: 4px;
-border-radius: 12px;
-font-size: 16px;
-font-weight: 700;
-line-height: 22px;"
+                :disabled="submitted"
               >
-                Log In
+                <span v-if="!submitted">
+                  Log In
+                </span>
+                <span v-else> <b-spinner /> </span>
               </button>
             </div>
           </form>
@@ -148,3 +146,15 @@ line-height: 22px;"
   </div>
   <!-- end row -->
 </template>
+
+<style scoped>
+.login-btn {
+  height: 48px;
+  padding: 0px 24px;
+  gap: 4px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+</style>

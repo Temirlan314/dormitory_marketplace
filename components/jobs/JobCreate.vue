@@ -19,6 +19,7 @@ export default {
       description: "",
       qualifications: "",
       unit: "",
+      loading: false,
     };
   },
   computed: {},
@@ -30,6 +31,7 @@ export default {
       this.showModal = false;
     },
     async submitJob() {
+      this.loading = true;
       const job = {
         name: this.name,
         payPerUnit: this.payPerUnit,
@@ -39,8 +41,23 @@ export default {
         payUnitId: this.unit.id,
         id: null,
       };
-      await this.$axios.post("rest/job", job);
-      this.showModal = false;
+      try {
+        await this.$axios.post("rest/job", job);
+        this.loading = false;
+        this.$emit("jobCreated");
+        this.showModal = false;
+        this.$notify({
+          title: "Job post has been successfully added!",
+          variant: "success",
+        });
+      } catch (e) {
+        console.log(e);
+        this.$notify({
+          title: "Error! Job post wasn’t added. Try again",
+          variant: "error",
+        });
+        this.loading = false;
+      }
     },
   },
 };
@@ -86,7 +103,9 @@ export default {
                 {{ unit.name }}
               </option></select
             >
-            <div class="align-self-center">{{ payPerUnit }} tg/ {{ unit.name }}</div>
+            <div class="align-self-center">
+              {{ payPerUnit }} tg/ {{ unit.name }}
+            </div>
           </div>
           <div class="input-layout">
             <div class="input-label">
@@ -124,7 +143,9 @@ export default {
         </div>
         <div class="action-buttons">
           <button @click="closeModal()">Back</button>
-          <button @click="submitJob()" class="submit">Post job</button>
+          <button @click="submitJob()" class="submit" :disabled="loading">
+            Post job
+          </button>
         </div>
       </div>
     </b-modal>
